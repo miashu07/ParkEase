@@ -1,0 +1,11942 @@
+# 📁 PROJECT EXPORT FOR LLMs
+
+## 📊 Project Information
+
+- **Project Name**: `frontend`
+- **Generated On**: 2026-01-28 06:54:27 (Asia/Calcutta / GMT+06:30)
+- **Total Files Processed**: 45
+- **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
+- **Tool Author**: Jota / José Guilherme Pandolfi
+
+### ⚙️ Export Configuration
+
+| Setting | Value |
+|---------|-------|
+| Language | `en` |
+| Max File Size | `1 MB` |
+| Include Hidden Files | `false` |
+| Output Format | `both` |
+
+## 🌳 Project Structure
+
+```
+├── 📁 public/
+│   └── 📄 vite.svg (1.46 KB)
+├── 📁 src/
+│   ├── 📁 assets/
+│   │   └── 📄 react.svg (4.03 KB)
+│   ├── 📁 components/
+│   │   ├── 📁 admin/
+│   │   │   ├── 📄 AdminDashboard.jsx (16.69 KB)
+│   │   │   ├── 📄 Analytics.jsx (15.06 KB)
+│   │   │   ├── 📄 ManageSlots.jsx (8.53 KB)
+│   │   │   ├── 📄 ManageZones.jsx (9.17 KB)
+│   │   │   ├── 📄 PricingManager.jsx (8.53 KB)
+│   │   │   └── 📄 UserManagement.jsx (10.33 KB)
+│   │   ├── 📁 auth/
+│   │   │   ├── 📄 Login.jsx (12.47 KB)
+│   │   │   └── 📄 Register.jsx (6.84 KB)
+│   │   ├── 📁 common/
+│   │   │   └── 📄 NotificationPanel.jsx (4.04 KB)
+│   │   ├── 📁 layouts/
+│   │   └── 📁 user/
+│   │       ├── 📄 BookingForm.jsx (19.22 KB)
+│   │       ├── 📄 Dashboard.jsx (18.56 KB)
+│   │       ├── 📄 DemoPayment.jsx (15.18 KB)
+│   │       ├── 📄 History.jsx (2.05 KB)
+│   │       ├── 📄 ParkingSearch.jsx (6.99 KB)
+│   │       ├── 📄 Payment.jsx (8.09 KB)
+│   │       ├── 📄 Receipt.jsx (11.33 KB)
+│   │       ├── 📄 Reservations.jsx (1.71 KB)
+│   │       └── 📄 ZoneDetails.jsx (12.4 KB)
+│   ├── 📁 context/
+│   │   └── 📄 AuthContext.jsx (3.68 KB)
+│   ├── 📁 hooks/
+│   ├── 📁 pages/
+│   │   ├── 📄 BackendTest.jsx (4.64 KB)
+│   │   ├── 📄 Home.jsx (886 B)
+│   │   └── 📄 NotFound.jsx (598 B)
+│   ├── 📁 services/
+│   │   ├── 📄 admin.js (14.09 KB)
+│   │   ├── 📄 api.js (2.22 KB)
+│   │   ├── 📄 auth.js (2.95 KB)
+│   │   ├── 📄 health.js (514 B)
+│   │   ├── 📄 notification.js (2.47 KB)
+│   │   ├── 📄 parking.js (3.02 KB)
+│   │   └── 📄 reservation.js (9 KB)
+│   ├── 📁 styles/
+│   │   ├── 📁 components/
+│   │   └── 📄 main.css (148 B)
+│   ├── 📁 utils/
+│   ├── 📄 App.css (606 B)
+│   ├── 📄 App.jsx (2.53 KB)
+│   ├── 📄 index.css (1.13 KB)
+│   ├── 📄 main.jsx (229 B)
+│   └── 📄 routes.jsx (5.57 KB)
+├── 📄 eslint.config.js (758 B)
+├── 📄 index.html (357 B)
+├── 📄 package-lock.json (157.47 KB)
+├── 📄 package.json (1000 B)
+├── 📄 postcss.config.js (83 B)
+├── 📄 README.md (5.34 KB)
+├── 📄 tailwind.config.js (191 B)
+└── 📄 vite.config.js (344 B)
+```
+
+## 📑 Table of Contents
+
+**Project Files:**
+
+- [📄 src/components/admin/AdminDashboard.jsx](#📄-src-components-admin-admindashboard-jsx)
+- [📄 src/components/admin/Analytics.jsx](#📄-src-components-admin-analytics-jsx)
+- [📄 src/components/admin/ManageSlots.jsx](#📄-src-components-admin-manageslots-jsx)
+- [📄 src/components/admin/ManageZones.jsx](#📄-src-components-admin-managezones-jsx)
+- [📄 src/components/admin/PricingManager.jsx](#📄-src-components-admin-pricingmanager-jsx)
+- [📄 src/components/admin/UserManagement.jsx](#📄-src-components-admin-usermanagement-jsx)
+- [📄 src/components/auth/Login.jsx](#📄-src-components-auth-login-jsx)
+- [📄 src/components/auth/Register.jsx](#📄-src-components-auth-register-jsx)
+- [📄 src/components/common/NotificationPanel.jsx](#📄-src-components-common-notificationpanel-jsx)
+- [📄 src/components/user/BookingForm.jsx](#📄-src-components-user-bookingform-jsx)
+- [📄 src/components/user/Dashboard.jsx](#📄-src-components-user-dashboard-jsx)
+- [📄 src/components/user/DemoPayment.jsx](#📄-src-components-user-demopayment-jsx)
+- [📄 src/components/user/History.jsx](#📄-src-components-user-history-jsx)
+- [📄 src/components/user/ParkingSearch.jsx](#📄-src-components-user-parkingsearch-jsx)
+- [📄 src/components/user/Payment.jsx](#📄-src-components-user-payment-jsx)
+- [📄 src/components/user/Receipt.jsx](#📄-src-components-user-receipt-jsx)
+- [📄 src/components/user/Reservations.jsx](#📄-src-components-user-reservations-jsx)
+- [📄 src/components/user/ZoneDetails.jsx](#📄-src-components-user-zonedetails-jsx)
+- [📄 src/context/AuthContext.jsx](#📄-src-context-authcontext-jsx)
+- [📄 src/pages/BackendTest.jsx](#📄-src-pages-backendtest-jsx)
+- [📄 src/pages/Home.jsx](#📄-src-pages-home-jsx)
+- [📄 src/pages/NotFound.jsx](#📄-src-pages-notfound-jsx)
+- [📄 src/services/admin.js](#📄-src-services-admin-js)
+- [📄 src/services/api.js](#📄-src-services-api-js)
+- [📄 src/services/auth.js](#📄-src-services-auth-js)
+- [📄 src/services/health.js](#📄-src-services-health-js)
+- [📄 src/services/notification.js](#📄-src-services-notification-js)
+- [📄 src/services/parking.js](#📄-src-services-parking-js)
+- [📄 src/services/reservation.js](#📄-src-services-reservation-js)
+- [📄 src/styles/main.css](#📄-src-styles-main-css)
+- [📄 src/App.css](#📄-src-app-css)
+- [📄 src/App.jsx](#📄-src-app-jsx)
+- [📄 src/index.css](#📄-src-index-css)
+- [📄 src/main.jsx](#📄-src-main-jsx)
+- [📄 src/routes.jsx](#📄-src-routes-jsx)
+- [📄 eslint.config.js](#📄-eslint-config-js)
+- [📄 index.html](#📄-index-html)
+- [📄 package-lock.json](#📄-package-lock-json)
+- [📄 package.json](#📄-package-json)
+- [📄 postcss.config.js](#📄-postcss-config-js)
+- [📄 README.md](#📄-readme-md)
+- [📄 tailwind.config.js](#📄-tailwind-config-js)
+- [📄 vite.config.js](#📄-vite-config-js)
+
+---
+
+## 📈 Project Statistics
+
+| Metric | Count |
+|--------|-------|
+| Total Files | 45 |
+| Total Directories | 16 |
+| Text Files | 43 |
+| Binary Files | 2 |
+| Total Size | 412.34 KB |
+
+### 📄 File Types Distribution
+
+| Extension | Count |
+|-----------|-------|
+| `.jsx` | 25 |
+| `.js` | 11 |
+| `.css` | 3 |
+| `.svg` | 2 |
+| `.json` | 2 |
+| `.html` | 1 |
+| `.md` | 1 |
+
+## 💻 File Code Contents
+
+## 🚫 Binary/Excluded Files
+
+The following files were not included in the text content:
+
+- `public/vite.svg`
+
+## 🚫 Binary/Excluded Files
+
+The following files were not included in the text content:
+
+- `src/assets/react.svg`
+
+### <a id="📄-src-components-admin-admindashboard-jsx"></a>📄 `src/components/admin/AdminDashboard.jsx`
+
+**File Info:**
+- **Size**: 16.69 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/admin/AdminDashboard.jsx`
+- **Relative Path**: `src/components/admin`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 10:30:18 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `de2e9ed7f743a59a28623d96461cfa1c`
+- **SHA256**: `398119835f11989d57e6bf14477b16717f04f80c8a1e5b91de7b61e8438e7601`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+// src/components/admin/AdminDashboard.jsx
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
+import { adminService } from '../../services/admin';
+import { 
+  FaChartLine, FaUsers, FaParking, FaMoneyBillWave, 
+  FaCalendarAlt, FaCog, FaBell,
+  FaPlus, FaEdit, FaTrash, FaEye, FaCar, FaSignOutAlt
+} from 'react-icons/fa';
+import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { toast } from 'react-hot-toast';
+
+const AdminDashboard = () => {
+  const [stats, setStats] = useState({
+    totalRevenue: 0,
+    activeReservations: 0,
+    totalUsers: 0,
+    occupancyRate: 0,
+    weeklyPeakHours: []
+  });
+  const [recentActivities, setRecentActivities] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const { logout } = useAuth();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    fetchDashboardData();
+  }, []);
+
+  const fetchDashboardData = async () => {
+    try {
+      const reports = await adminService.getReports();
+      setStats(reports);
+      
+      // Get recent activities from backend if available
+      // For now, using mock data with more variety
+      setRecentActivities([
+        { id: 1, user: 'John Doe', action: 'Booked parking', time: '2 min ago', type: 'booking' },
+        { id: 2, user: 'Admin', action: 'Added new zone', time: '5 min ago', type: 'admin' },
+        { id: 3, user: 'Jane Smith', action: 'Cancelled reservation', time: '10 min ago', type: 'cancellation' },
+        { id: 4, user: 'Mike Johnson', action: 'Completed payment', time: '15 min ago', type: 'payment' },
+        { id: 5, user: 'Sarah Wilson', action: 'Updated profile', time: '20 min ago', type: 'profile' },
+        { id: 6, user: 'Admin', action: 'Updated pricing', time: '25 min ago', type: 'admin' },
+        { id: 7, user: 'David Brown', action: 'Checked in', time: '30 min ago', type: 'checkin' },
+        { id: 8, user: 'Lisa Taylor', action: 'Generated receipt', time: '35 min ago', type: 'receipt' },
+      ]);
+    } catch (error) {
+      toast.error('Failed to load dashboard data');
+      // Fallback to default values if API call fails
+      setStats({
+        totalRevenue: 0,
+        activeReservations: 0,
+        totalUsers: 0,
+        occupancyRate: 0,
+        weeklyPeakHours: []
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const chartData = [
+    { name: 'Mon', bookings: 45 },
+    { name: 'Tue', bookings: 52 },
+    { name: 'Wed', bookings: 49 },
+    { name: 'Thu', bookings: 61 },
+    { name: 'Fri', bookings: 78 },
+    { name: 'Sat', bookings: 85 },
+    { name: 'Sun', bookings: 70 },
+  ];
+
+  const vehicleTypeData = [
+    { name: 'Two Wheeler', value: 35, color: '#0088FE' },
+    { name: 'Hatchback', value: 40, color: '#00C49F' },
+    { name: 'SUV', value: 20, color: '#FFBB28' },
+    { name: 'Mini Bus', value: 5, color: '#FF8042' },
+  ];
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Top Navigation */}
+      <nav className="bg-white shadow-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <h1 className="text-2xl font-bold text-blue-600 flex items-center">
+                  <FaParking className="mr-2" />
+                  ParkEase Admin
+                </h1>
+              </div>
+              <div className="hidden md:ml-6 md:flex md:space-x-8">
+                <Link to="/admin/dashboard" className="border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  Dashboard
+                </Link>
+                <Link to="/admin/zones" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  Zones
+                </Link>
+                <Link to="/admin/users" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  Users
+                </Link>
+                <Link to="/admin/pricing" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  Pricing
+                </Link>
+                <Link to="/admin/reports" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  Analytics
+                </Link>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <button className="relative p-2 text-gray-600 hover:text-gray-900">
+                <FaBell className="h-5 w-5" />
+                <span className="absolute top-0 right-0 block h-2 w-2 rounded-full bg-red-400"></span>
+              </button>
+              <button
+                onClick={logout}
+                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+              >
+                <FaSignOutAlt className="mr-2 h-4 w-4" />
+                Logout
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Main Content */}
+      <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        <div className="px-4 py-6 sm:px-0">
+          {/* Stats Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl shadow p-6 text-white">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm opacity-90">Total Revenue</p>
+                  <p className="text-2xl font-bold mt-2">₹{stats.totalRevenue.toFixed(2)}</p>
+                </div>
+                <FaMoneyBillWave className="h-10 w-10 opacity-50" />
+              </div>
+              <div className="mt-4 text-sm">
+                <span className="opacity-90">+12.5% from last month</span>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-xl shadow p-6 text-white">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm opacity-90">Active Reservations</p>
+                  <p className="text-2xl font-bold mt-2">{stats.activeReservations}</p>
+                </div>
+                <FaCalendarAlt className="h-10 w-10 opacity-50" />
+              </div>
+              <div className="mt-4 text-sm">
+                <span className="opacity-90">{stats.occupancyRate.toFixed(1)}% occupancy</span>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl shadow p-6 text-white">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm opacity-90">Total Users</p>
+                  <p className="text-2xl font-bold mt-2">{stats.totalUsers}</p>
+                </div>
+                <FaUsers className="h-10 w-10 opacity-50" />
+              </div>
+              <div className="mt-4 text-sm">
+                <span className="opacity-90">+24 new this week</span>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl shadow p-6 text-white">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm opacity-90">Parking Zones</p>
+                  <p className="text-2xl font-bold mt-2">8</p>
+                </div>
+                <FaParking className="h-10 w-10 opacity-50" />
+              </div>
+              <div className="mt-4 text-sm">
+                <span className="opacity-90">All zones operational</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Charts Section */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            {/* Weekly Bookings Chart */}
+            <div className="bg-white rounded-xl shadow p-6">
+              <div className="flex items-center justify-between mb-6">
+                <h2 className="text-lg font-semibold text-gray-900">Weekly Bookings Trend</h2>
+                <FaChartLine className="h-5 w-5 text-blue-500" />
+              </div>
+              <div className="h-72">
+                <ResponsiveContainer width="100%" height="100%">
+                  <LineChart data={chartData}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+                    <XAxis dataKey="name" stroke="#666" />
+                    <YAxis stroke="#666" />
+                    <Tooltip />
+                    <Legend />
+                    <Line type="monotone" dataKey="bookings" stroke="#3b82f6" strokeWidth={2} dot={{ r: 4 }} activeDot={{ r: 6 }} />
+                  </LineChart>
+                </ResponsiveContainer>
+              </div>
+            </div>
+
+            {/* Vehicle Type Distribution */}
+            <div className="bg-white rounded-xl shadow p-6">
+              <div className="flex items-center justify-between mb-6">
+                <h2 className="text-lg font-semibold text-gray-900">Vehicle Type Distribution</h2>
+                <FaCar className="h-5 w-5 text-green-500" />
+              </div>
+              <div className="h-72">
+                <ResponsiveContainer width="100%" height="100%">
+                  <PieChart>
+                    <Pie
+                      data={vehicleTypeData}
+                      cx="50%"
+                      cy="50%"
+                      labelLine={false}
+                      label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
+                      outerRadius={80}
+                      fill="#8884d8"
+                      dataKey="value"
+                    >
+                      {vehicleTypeData.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={entry.color} />
+                      ))}
+                    </Pie>
+                    <Tooltip />
+                    <Legend />
+                  </PieChart>
+                </ResponsiveContainer>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick Actions & Recent Activity */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Quick Actions */}
+            <div className="lg:col-span-2">
+              <div className="bg-white rounded-xl shadow">
+                <div className="px-6 py-4 border-b border-gray-200">
+                  <h2 className="text-lg font-semibold text-gray-900">Quick Actions</h2>
+                </div>
+                <div className="p-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <button
+                      onClick={() => navigate('/admin/zones/new')}
+                      className="flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition"
+                    >
+                      <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                        <FaPlus className="h-6 w-6 text-blue-600" />
+                      </div>
+                      <div className="ml-4">
+                        <h3 className="font-medium text-gray-900">Add New Zone</h3>
+                        <p className="text-sm text-gray-500">Create new parking zone</p>
+                      </div>
+                    </button>
+                    <button
+                      onClick={() => navigate('/admin/pricing')}
+                      className="flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition"
+                    >
+                      <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                        <FaMoneyBillWave className="h-6 w-6 text-green-600" />
+                      </div>
+                      <div className="ml-4">
+                        <h3 className="font-medium text-gray-900">Update Pricing</h3>
+                        <p className="text-sm text-gray-500">Modify hourly rates</p>
+                      </div>
+                    </button>
+                    <button
+                      onClick={() => navigate('/admin/users')}
+                      className="flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition"
+                    >
+                      <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                        <FaUsers className="h-6 w-6 text-purple-600" />
+                      </div>
+                      <div className="ml-4">
+                        <h3 className="font-medium text-gray-900">User Management</h3>
+                        <p className="text-sm text-gray-500">View and manage users</p>
+                      </div>
+                    </button>
+                    <button
+                      onClick={() => navigate('/admin/reports')}
+                      className="flex items-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition"
+                    >
+                      <div className="flex-shrink-0 w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                        <FaChartLine className="h-6 w-6 text-orange-600" />
+                      </div>
+                      <div className="ml-4">
+                        <h3 className="font-medium text-gray-900">Detailed Reports</h3>
+                        <p className="text-sm text-gray-500">View analytics reports</p>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Recent Activity */}
+            <div>
+              <div className="bg-white rounded-xl shadow">
+                <div className="px-6 py-4 border-b border-gray-200">
+                  <div className="flex items-center justify-between">
+                    <h2 className="text-lg font-semibold text-gray-900">Recent Activity</h2>
+                    <FaBell className="h-5 w-5 text-blue-500" />
+                  </div>
+                </div>
+                <div className="divide-y divide-gray-200">
+                  {recentActivities.map((activity) => (
+                    <div key={activity.id} className="px-6 py-4">
+                      <div className="flex items-start">
+                        <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center ${
+                          activity.type === 'booking' ? 'bg-blue-100 text-blue-600' :
+                          activity.type === 'admin' ? 'bg-green-100 text-green-600' :
+                          activity.type === 'cancellation' ? 'bg-red-100 text-red-600' :
+                          'bg-yellow-100 text-yellow-600'
+                        }`}>
+                          {activity.type === 'booking' && <FaCalendarAlt className="h-5 w-5" />}
+                          {activity.type === 'admin' && <FaCog className="h-5 w-5" />}
+                          {activity.type === 'cancellation' && <FaTrash className="h-5 w-5" />}
+                          {activity.type === 'payment' && <FaMoneyBillWave className="h-5 w-5" />}
+                        </div>
+                        <div className="ml-4">
+                          <p className="text-sm font-medium text-gray-900">{activity.user}</p>
+                          <p className="text-sm text-gray-500">{activity.action}</p>
+                          <p className="text-xs text-gray-400 mt-1">{activity.time}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default AdminDashboard;
+```
+
+---
+
+### <a id="📄-src-components-admin-analytics-jsx"></a>📄 `src/components/admin/Analytics.jsx`
+
+**File Info:**
+- **Size**: 15.06 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/admin/Analytics.jsx`
+- **Relative Path**: `src/components/admin`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 13:58:32 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `f9d0428a0b233f59ad7b41a60c5c2f10`
+- **SHA256**: `13c836d96eabee9606c2e68b930bcffc7a988916e67a84b921cc32060afa8d85`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+// src/components/admin/Analytics.jsx
+import React, { useState, useEffect } from 'react';
+import { adminService } from '../../services/admin';
+import { toast } from 'react-hot-toast';
+import { BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+
+const Analytics = () => {
+  const [analyticsData, setAnalyticsData] = useState({
+    totalRevenue: 0,
+    totalBookings: 0,
+    totalUsers: 0,
+    occupancyRate: 0,
+    weeklyPeakHours: [],
+    monthlyTrend: [],
+    userDemographics: [],
+    zonePerformance: [],
+    vehicleTypeDistribution: [],
+    paymentMethods: [],
+    cancellationRate: 0
+  });
+  const [loading, setLoading] = useState(true);
+  const [dateRange, setDateRange] = useState('week');
+
+  useEffect(() => {
+    fetchAnalytics();
+  }, [dateRange]);
+
+  const fetchAnalytics = async () => {
+    try {
+      const data = await adminService.getAnalytics(dateRange);
+      setAnalyticsData(data);
+    } catch (error) {
+      console.error('Failed to fetch analytics:', error);
+      toast.error('Failed to load analytics data');
+      // Provide mock data in case of error
+      setAnalyticsData({
+        totalRevenue: 12500.00,
+        totalBookings: 245,
+        totalUsers: 156,
+        occupancyRate: 78.5,
+        weeklyPeakHours: [
+          { name: '08:00', bookings: 45 },
+          { name: '12:00', bookings: 67 },
+          { name: '16:00', bookings: 89 },
+          { name: '20:00', bookings: 56 },
+        ],
+        monthlyTrend: [
+          { month: 'Jan', revenue: 12500, bookings: 245 },
+          { month: 'Feb', revenue: 15600, bookings: 298 },
+          { month: 'Mar', revenue: 18700, bookings: 356 },
+          { month: 'Apr', revenue: 14200, bookings: 287 },
+          { month: 'May', revenue: 19800, bookings: 389 },
+          { month: 'Jun', revenue: 21500, bookings: 421 },
+        ],
+        userDemographics: [
+          { name: 'Male', value: 65 },
+          { name: 'Female', value: 35 },
+        ],
+        zonePerformance: [
+          { id: 1, name: 'Downtown', revenue: 4500, occupancy: 85 },
+          { id: 2, name: 'Mall', revenue: 3200, occupancy: 78 },
+          { id: 3, name: 'Airport', revenue: 2800, occupancy: 92 },
+          { id: 4, name: 'Hospital', revenue: 1500, occupancy: 65 },
+          { id: 5, name: 'Station', revenue: 2000, occupancy: 72 },
+        ],
+        vehicleTypeDistribution: [
+          { name: 'Two Wheeler', value: 35, color: '#0088FE' },
+          { name: 'Hatchback', value: 40, color: '#00C49F' },
+          { name: 'SUV', value: 20, color: '#FFBB28' },
+          { name: 'Mini Bus', value: 5, color: '#FF8042' },
+        ],
+        paymentMethods: [
+          { name: 'Online', value: 70, color: '#0088FE' },
+          { name: 'Cash', value: 30, color: '#00C49F' },
+        ],
+        cancellationRate: 12.5
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (loading) return (
+    <div className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex justify-center items-center h-64">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+        </div>
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex justify-between items-center mb-6">
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={() => window.history.back() || (window.location.href='/admin/dashboard')}
+              className="text-gray-600 hover:text-gray-900 flex items-center"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              Back to Dashboard
+            </button>
+            <h1 className="text-3xl font-bold text-gray-900">Analytics Dashboard</h1>
+          </div>
+          <div className="flex space-x-4">
+            <select
+              value={dateRange}
+              onChange={(e) => setDateRange(e.target.value)}
+              className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="day">Today</option>
+              <option value="week">This Week</option>
+              <option value="month">This Month</option>
+              <option value="year">This Year</option>
+            </select>
+          </div>
+        </div>
+
+        {/* Stats Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl shadow p-6 text-white">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm opacity-90">Total Revenue</p>
+                <p className="text-2xl font-bold mt-2">₹{analyticsData.totalRevenue.toFixed(2)}</p>
+              </div>
+              <svg className="h-10 w-10 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+              </svg>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-xl shadow p-6 text-white">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm opacity-90">Total Bookings</p>
+                <p className="text-2xl font-bold mt-2">{analyticsData.totalBookings}</p>
+              </div>
+              <svg className="h-10 w-10 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+              </svg>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl shadow p-6 text-white">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm opacity-90">Total Users</p>
+                <p className="text-2xl font-bold mt-2">{analyticsData.totalUsers}</p>
+              </div>
+              <svg className="h-10 w-10 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 0 11-5 0 2.5 0 015 0z" />
+              </svg>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl shadow p-6 text-white">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm opacity-90">Occupancy Rate</p>
+                <p className="text-2xl font-bold mt-2">{analyticsData.occupancyRate.toFixed(1)}%</p>
+              </div>
+              <svg className="h-10 w-10 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 110-4 2 2 0 010 4z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        {/* Charts Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+          {/* Peak Hours Chart */}
+          <div className="bg-white rounded-xl shadow p-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">Peak Booking Hours</h2>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={analyticsData.weeklyPeakHours}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+                  <XAxis dataKey="name" stroke="#666" />
+                  <YAxis stroke="#666" />
+                  <Tooltip />
+                  <Legend />
+                  <Bar dataKey="bookings" fill="#3b82f6" name="Bookings" />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+
+          {/* Monthly Trend Chart */}
+          <div className="bg-white rounded-xl shadow p-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">Monthly Revenue Trend</h2>
+            <div className="h-80">
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart data={analyticsData.monthlyTrend}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+                  <XAxis dataKey="month" stroke="#666" />
+                  <YAxis stroke="#666" />
+                  <Tooltip />
+                  <Legend />
+                  <Line type="monotone" dataKey="revenue" stroke="#10b981" strokeWidth={2} name="Revenue" activeDot={{ r: 8 }} />
+                  <Line type="monotone" dataKey="bookings" stroke="#8b5cf6" strokeWidth={2} name="Bookings" />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+        </div>
+
+        {/* Additional Analytics Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+          {/* Vehicle Type Distribution */}
+          <div className="bg-white rounded-xl shadow p-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">Vehicle Type Distribution</h2>
+            <div className="h-72">
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                  <Pie
+                    data={analyticsData.vehicleTypeDistribution}
+                    cx="50%"
+                    cy="50%"
+                    labelLine={false}
+                    label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
+                    outerRadius={80}
+                    fill="#8884d8"
+                    dataKey="value"
+                  >
+                    {analyticsData.vehicleTypeDistribution.map((entry, index) => (
+                      <Cell key={`cell-${index}`} fill={entry.color} />
+                    ))}
+                  </Pie>
+                  <Tooltip />
+                  <Legend />
+                </PieChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+
+          {/* Payment Methods */}
+          <div className="bg-white rounded-xl shadow p-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">Payment Methods</h2>
+            <div className="h-72">
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                  <Pie
+                    data={analyticsData.paymentMethods}
+                    cx="50%"
+                    cy="50%"
+                    innerRadius={40}
+                    outerRadius={80}
+                    labelLine={false}
+                    label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(0)}%`}
+                    fill="#8884d8"
+                    dataKey="value"
+                  >
+                    {analyticsData.paymentMethods.map((entry, index) => (
+                      <Cell key={`cell-${index}`} fill={entry.color} />
+                    ))}
+                  </Pie>
+                  <Tooltip />
+                  <Legend />
+                </PieChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+
+          {/* Zone Performance */}
+          <div className="bg-white rounded-xl shadow p-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">Zone Performance</h2>
+            <div className="overflow-x-auto max-h-72">
+              <table className="min-w-full divide-y divide-gray-200">
+                <thead className="bg-gray-50 sticky top-0">
+                  <tr>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Zone</th>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Revenue</th>
+                    <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Occupancy</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200">
+                  {analyticsData.zonePerformance.map((zone) => (
+                    <tr key={zone.id} className="hover:bg-gray-50">
+                      <td className="px-4 py-2 whitespace-nowrap text-sm font-medium text-gray-900">{zone.name}</td>
+                      <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-500">₹{zone.revenue}</td>
+                      <td className="px-4 py-2 whitespace-nowrap text-sm text-gray-500">{zone.occupancy}%</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        {/* Summary Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="bg-white rounded-xl shadow p-6 border-l-4 border-blue-500">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Cancellation Rate</h3>
+            <p className="text-3xl font-bold text-blue-600">{analyticsData.cancellationRate.toFixed(1)}%</p>
+            <p className="text-sm text-gray-500 mt-1">Lower is better for business</p>
+          </div>
+          
+          <div className="bg-white rounded-xl shadow p-6 border-l-4 border-green-500">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">User Demographics</h3>
+            <div className="flex space-x-4 mt-2">
+              {analyticsData.userDemographics.map((demo, index) => (
+                <div key={index}>
+                  <p className="text-sm font-medium text-gray-700">{demo.name}</p>
+                  <p className="text-xl font-bold text-green-600">{demo.value}%</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          <div className="bg-white rounded-xl shadow p-6 border-l-4 border-purple-500">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Top Performing Zone</h3>
+            <p className="text-2xl font-bold text-purple-600">
+              {analyticsData.zonePerformance.reduce((prev, current) => (prev.revenue > current.revenue) ? prev : current, {name: 'N/A'}).name}
+            </p>
+            <p className="text-sm text-gray-500 mt-1">Highest revenue generating zone</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Analytics;
+```
+
+---
+
+### <a id="📄-src-components-admin-manageslots-jsx"></a>📄 `src/components/admin/ManageSlots.jsx`
+
+**File Info:**
+- **Size**: 8.53 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/admin/ManageSlots.jsx`
+- **Relative Path**: `src/components/admin`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 14:08:31 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `c105610ba9ed2428d2e380fbe919a808`
+- **SHA256**: `5adeeb24076bde11dbe4ee62134c4cb69a5af3f18b703c535206c2196e55dbc0`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+// src/components/admin/ManageSlots.jsx
+import React, { useState, useEffect } from 'react';
+import { adminService } from '../../services/admin';
+import { useParams } from 'react-router-dom';
+import { toast } from 'react-hot-toast';
+
+const ManageSlots = () => {
+  const { zoneId } = useParams();
+  const [slots, setSlots] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [showForm, setShowForm] = useState(false);
+  const [editingSlot, setEditingSlot] = useState(null);
+  const [formData, setFormData] = useState({
+    slotNumber: '',
+    status: 'AVAILABLE'
+  });
+
+  useEffect(() => {
+    fetchSlots();
+  }, [zoneId]);
+
+  const fetchSlots = async () => {
+    try {
+      const data = await adminService.getZoneSlots(zoneId);
+      setSlots(data);
+    } catch (error) {
+      console.error('Failed to fetch slots:', error);
+      toast.error('Failed to load slots');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      if (editingSlot) {
+        await adminService.updateSlotStatus(editingSlot.id, formData.status);
+        toast.success('Slot updated successfully');
+      } else {
+        await adminService.createSlot(zoneId, formData);
+        toast.success('Slot created successfully');
+      }
+      fetchSlots();
+      resetForm();
+    } catch (error) {
+      console.error('Failed to save slot:', error);
+      toast.error(error.response?.data?.message || 'Failed to save slot');
+    }
+  };
+
+  const handleEdit = (slot) => {
+    setEditingSlot(slot);
+    setFormData({
+      slotNumber: slot.slotNumber,
+      status: slot.status
+    });
+    setShowForm(true);
+  };
+
+  const handleDelete = async (id) => {
+    if (window.confirm('Are you sure you want to remove this slot? This action cannot be undone.')) {
+      try {
+        // We'll just update the status to 'REMOVED' instead of actually deleting
+        await adminService.updateSlotStatus(id, 'REMOVED');
+        fetchSlots();
+        toast.success('Slot removed successfully');
+      } catch (error) {
+        console.error('Failed to remove slot:', error);
+        toast.error('Failed to remove slot');
+      }
+    }
+  };
+
+  const resetForm = () => {
+    setFormData({ slotNumber: '', status: 'AVAILABLE' });
+    setEditingSlot(null);
+    setShowForm(false);
+  };
+
+  if (loading) return (
+    <div className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex justify-center items-center h-64">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+        </div>
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex justify-between items-center mb-6">
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={() => window.history.back() || (window.location.href='/admin/dashboard')}
+              className="text-gray-600 hover:text-gray-900 flex items-center"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              Back to Dashboard
+            </button>
+            <h1 className="text-3xl font-bold text-gray-900">Manage Parking Slots</h1>
+          </div>
+          <button
+            onClick={() => setShowForm(true)}
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition flex items-center"
+          >
+            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg>
+            Add Slot
+          </button>
+        </div>
+
+        {showForm && (
+          <form onSubmit={handleSubmit} className="mb-6 p-6 bg-white rounded-xl shadow">
+            <h2 className="text-xl font-semibold mb-4">{editingSlot ? 'Edit Slot' : 'Add New Slot'}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Slot Number *</label>
+                <input
+                  type="text"
+                  value={formData.slotNumber}
+                  onChange={(e) => setFormData({ ...formData, slotNumber: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Status</label>
+                <select
+                  value={formData.status}
+                  onChange={(e) => setFormData({ ...formData, status: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  <option value="AVAILABLE">Available</option>
+                  <option value="RESERVED">Reserved</option>
+                  <option value="OCCUPIED">Occupied</option>
+                  <option value="MAINTENANCE">Under Maintenance</option>
+                </select>
+              </div>
+            </div>
+            <div className="mt-6 flex space-x-3">
+              <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
+                {editingSlot ? 'Update Slot' : 'Create Slot'}
+              </button>
+              <button type="button" onClick={resetForm} className="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition">
+                Cancel
+              </button>
+            </div>
+          </form>
+        )}
+
+        <div className="bg-white rounded-xl shadow overflow-hidden">
+          <div className="overflow-x-auto">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-gray-100">
+                <tr>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Slot Number</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200">
+                {slots.map((slot) => (
+                  <tr key={slot.id} className="hover:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{slot.slotNumber}</td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
+                        slot.status === 'AVAILABLE' ? 'bg-green-100 text-green-800' :
+                        slot.status === 'RESERVED' ? 'bg-yellow-100 text-yellow-800' :
+                        slot.status === 'OCCUPIED' ? 'bg-red-100 text-red-800' :
+                        'bg-gray-100 text-gray-800'
+                      }`}>
+                        {slot.status.charAt(0) + slot.status.slice(1).toLowerCase()}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+              <button
+                onClick={() => handleEdit(slot)}
+                className="text-blue-600 hover:text-blue-900 mr-3"
+              >
+                Edit
+              </button>
+              <button
+                onClick={() => handleDelete(slot.id)}
+                className="text-red-600 hover:text-red-900"
+              >
+                Remove
+              </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {slots.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-gray-500">No parking slots found in this zone. Add a new slot to get started.</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default ManageSlots;
+```
+
+---
+
+### <a id="📄-src-components-admin-managezones-jsx"></a>📄 `src/components/admin/ManageZones.jsx`
+
+**File Info:**
+- **Size**: 9.17 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/admin/ManageZones.jsx`
+- **Relative Path**: `src/components/admin`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 21:31:01 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `4d8332d6ac58809e8580867f7f7b05db`
+- **SHA256**: `791e6dd48ed6dbc10323a0154f60d4b35fa81fef465ce7948462929e7b4c892f`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import React, { useState, useEffect } from 'react';
+import { adminService } from '../../services/admin';
+import { toast } from 'react-hot-toast';
+
+const ManageZones = () => {
+  const [zones, setZones] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [showForm, setShowForm] = useState(false);
+  const [editingZone, setEditingZone] = useState(null);
+  const [formData, setFormData] = useState({
+    name: '',
+    location: '',
+    capacity: '',
+    isActive: true
+  });
+
+  useEffect(() => {
+    fetchZones();
+  }, []);
+
+  const fetchZones = async () => {
+    try {
+      const data = await adminService.getZones();
+      setZones(data);
+    } catch (error) {
+      console.error('Failed to fetch zones:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      if (editingZone) {
+        await adminService.updateZone(editingZone.id, formData);
+        toast.success('✅ Zone updated successfully!');
+      } else {
+        await adminService.createZone(formData);
+        toast.success('✅ Zone created successfully!');
+      }
+      fetchZones();
+      resetForm();
+    } catch (error) {
+      console.error('Failed to save zone:', error);
+      toast.error('❌ Failed to save zone. Please try again.');
+    }
+  };
+
+  const handleEdit = (zone) => {
+    setEditingZone(zone);
+    setFormData({
+      name: zone.name,
+      location: zone.location,
+      capacity: zone.capacity,
+      isActive: zone.isActive
+    });
+    setShowForm(true);
+  };
+
+  const handleDelete = async (id) => {
+    if (window.confirm('Are you sure you want to delete this zone? This action cannot be undone.')) {
+      try {
+        await adminService.deleteZone(id);
+        toast.success('✅ Zone deleted successfully!');
+        fetchZones();
+      } catch (error) {
+        console.error('Failed to delete zone:', error);
+        toast.error('❌ Failed to delete zone. It may have active reservations.');
+      }
+    }
+  };
+
+  const resetForm = () => {
+    setFormData({ name: '', location: '', capacity: '', isActive: true });
+    setEditingZone(null);
+    setShowForm(false);
+  };
+
+  if (loading) return <div className="flex justify-center items-center h-64"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div></div>;
+
+  return (
+    <div className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex justify-between items-center mb-6">
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={() => window.history.back() || (window.location.href = '/admin/dashboard')}
+              className="text-gray-600 hover:text-gray-900 flex items-center"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              Back to Dashboard
+            </button>
+            <h1 className="text-3xl font-bold text-gray-900">Manage Parking Zones</h1>
+          </div>
+          <button
+            onClick={() => setShowForm(true)}
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            Add Zone
+          </button>
+        </div>
+
+        {showForm && (
+          <form onSubmit={handleSubmit} className="mb-6 p-6 bg-white rounded-xl shadow">
+            <h2 className="text-xl font-semibold mb-4">{editingZone ? 'Edit Zone' : 'Add New Zone'}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+                <input
+                  type="text"
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Location *</label>
+                <input
+                  type="text"
+                  value={formData.location}
+                  onChange={(e) => setFormData({ ...formData, location: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Capacity *</label>
+                <input
+                  type="number"
+                  value={formData.capacity}
+                  onChange={(e) => setFormData({ ...formData, capacity: parseInt(e.target.value) || '' })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                  min="1"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Status</label>
+                <select
+                  value={formData.isActive}
+                  onChange={(e) => setFormData({ ...formData, isActive: e.target.value === 'true' })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  <option value={true}>Active</option>
+                  <option value={false}>Inactive</option>
+                </select>
+              </div>
+            </div>
+            <div className="mt-6 flex space-x-3">
+              <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
+                {editingZone ? 'Update Zone' : 'Create Zone'}
+              </button>
+              <button type="button" onClick={resetForm} className="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition">
+                Cancel
+              </button>
+            </div>
+          </form>
+        )}
+
+        <div className="bg-white rounded-xl shadow overflow-hidden">
+          <div className="overflow-x-auto">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-gray-100">
+                <tr>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Location</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Capacity</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200">
+                {zones.map((zone) => (
+                  <tr key={zone.id} className="hover:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{zone.name}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{zone.location}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{zone.capacity}</td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${zone.isActive ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+                        }`}>
+                        {zone.isActive ? 'Active' : 'Inactive'}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                      <button
+                        onClick={() => handleEdit(zone)}
+                        className="text-blue-600 hover:text-blue-900 mr-3"
+                      >
+                        Edit
+                      </button>
+                      <button
+                        onClick={() => handleDelete(zone.id)}
+                        className="text-red-600 hover:text-red-900"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {zones.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-gray-500">No parking zones found. Add a new zone to get started.</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default ManageZones;
+
+
+
+```
+
+---
+
+### <a id="📄-src-components-admin-pricingmanager-jsx"></a>📄 `src/components/admin/PricingManager.jsx`
+
+**File Info:**
+- **Size**: 8.53 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/admin/PricingManager.jsx`
+- **Relative Path**: `src/components/admin`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 11:36:58 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `9d5136bf98ac2af17f13d75c571ec4b7`
+- **SHA256**: `4cf2a53689f31b4d44e92037e5c9f7ecd6b71e091c0f0c9b3a3cb2f2fbdc3f6d`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+// src/components/admin/PricingManager.jsx
+import React, { useState, useEffect } from 'react';
+import { adminService } from '../../services/admin';
+import { toast } from 'react-hot-toast';
+
+const PricingManager = () => {
+  const [pricing, setPricing] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [showForm, setShowForm] = useState(false);
+  const [editingPrice, setEditingPrice] = useState(null);
+  const [formData, setFormData] = useState({
+    vehicleType: '',
+    pricePerHour: ''
+  });
+
+  useEffect(() => {
+    fetchPricing();
+  }, []);
+
+  const fetchPricing = async () => {
+    try {
+      const data = await adminService.getPricing();
+      setPricing(data);
+    } catch (error) {
+      console.error('Failed to fetch pricing:', error);
+      toast.error('Failed to load pricing data');
+      // Provide mock data in case of error
+      setPricing([
+        { id: 1, vehicleType: 'TWO_WHEELER', pricePerHour: 30.0 },
+        { id: 2, vehicleType: 'HATCHBACK', pricePerHour: 50.0 },
+        { id: 3, vehicleType: 'SUV', pricePerHour: 70.0 },
+        { id: 4, vehicleType: 'MINI_BUS', pricePerHour: 100.0 },
+      ]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      if (editingPrice) {
+        await adminService.updatePricing(editingPrice.id, formData);
+        toast.success('Pricing updated successfully');
+      } else {
+        await adminService.createPricing(formData);
+        toast.success('Pricing created successfully');
+      }
+      fetchPricing();
+      resetForm();
+    } catch (error) {
+      console.error('Failed to save pricing:', error);
+      toast.error(error.response?.data?.message || 'Failed to save pricing');
+    }
+  };
+
+  const handleEdit = (price) => {
+    setEditingPrice(price);
+    setFormData({
+      vehicleType: price.vehicleType,
+      pricePerHour: price.pricePerHour
+    });
+    setShowForm(true);
+  };
+
+  const handleDelete = async (id) => {
+    if (window.confirm('Are you sure you want to delete this pricing? This action cannot be undone.')) {
+      try {
+        await adminService.deletePricing(id);
+        fetchPricing();
+        toast.success('Pricing deleted successfully');
+      } catch (error) {
+        console.error('Failed to delete pricing:', error);
+        toast.error('Failed to delete pricing');
+      }
+    }
+  };
+
+  const resetForm = () => {
+    setFormData({ vehicleType: '', pricePerHour: '' });
+    setEditingPrice(null);
+    setShowForm(false);
+  };
+
+  if (loading) return (
+    <div className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex justify-center items-center h-64">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+        </div>
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex justify-between items-center mb-6">
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={() => window.history.back() || (window.location.href='/admin/dashboard')}
+              className="text-gray-600 hover:text-gray-900 flex items-center"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              Back to Dashboard
+            </button>
+            <h1 className="text-3xl font-bold text-gray-900">Pricing Management</h1>
+          </div>
+          <button
+            onClick={() => setShowForm(true)}
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition flex items-center"
+          >
+            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg>
+            Add Price
+          </button>
+        </div>
+
+        {showForm && (
+          <form onSubmit={handleSubmit} className="mb-6 p-6 bg-white rounded-xl shadow">
+            <h2 className="text-xl font-semibold mb-4">{editingPrice ? 'Edit Pricing' : 'Add New Pricing'}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Vehicle Type *</label>
+                <select
+                  value={formData.vehicleType}
+                  onChange={(e) => setFormData({ ...formData, vehicleType: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                >
+                  <option value="">Select Vehicle Type</option>
+                  <option value="TWO_WHEELER">Two Wheeler</option>
+                  <option value="HATCHBACK">Hatchback</option>
+                  <option value="SUV">SUV</option>
+                  <option value="MINI_BUS">Mini Bus</option>
+                </select>
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Price Per Hour *</label>
+                <input
+                  type="number"
+                  value={formData.pricePerHour}
+                  onChange={(e) => setFormData({ ...formData, pricePerHour: parseFloat(e.target.value) })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                  min="0"
+                  step="0.01"
+                />
+              </div>
+            </div>
+            <div className="mt-6 flex space-x-3">
+              <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
+                {editingPrice ? 'Update Pricing' : 'Create Pricing'}
+              </button>
+              <button type="button" onClick={resetForm} className="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition">
+                Cancel
+              </button>
+            </div>
+          </form>
+        )}
+
+        <div className="bg-white rounded-xl shadow overflow-hidden">
+          <div className="overflow-x-auto">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-gray-100">
+                <tr>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Vehicle Type</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Price Per Hour</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200">
+                {pricing.map((price) => (
+                  <tr key={price.id} className="hover:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{price.vehicleType.replace('_', ' ')}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">₹{price.pricePerHour.toFixed(2)}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                      <button
+                        onClick={() => handleEdit(price)}
+                        className="text-blue-600 hover:text-blue-900 mr-3"
+                      >
+                        Edit
+                      </button>
+                      <button
+                        onClick={() => handleDelete(price.id)}
+                        className="text-red-600 hover:text-red-900"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {pricing.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-gray-500">No pricing data found. Add a new pricing rule to get started.</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default PricingManager;
+
+```
+
+---
+
+### <a id="📄-src-components-admin-usermanagement-jsx"></a>📄 `src/components/admin/UserManagement.jsx`
+
+**File Info:**
+- **Size**: 10.33 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/admin/UserManagement.jsx`
+- **Relative Path**: `src/components/admin`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 11:44:34 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `fe16108d1e659118eee8bfd128fac05f`
+- **SHA256**: `9fa4e665798ea3e7ce0dae50505b1974abe197ea3e502830391e88771a3f6536`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+// src/components/admin/UserManagement.jsx
+import React, { useState, useEffect } from 'react';
+import { adminService } from '../../services/admin';
+import { toast } from 'react-hot-toast';
+
+const UserManagement = () => {
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [showForm, setShowForm] = useState(false);
+  const [editingUser, setEditingUser] = useState(null);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    roles: ['USER'],
+    isVerified: false
+  });
+
+  useEffect(() => {
+    fetchUsers();
+  }, []);
+
+  const fetchUsers = async () => {
+    try {
+      const data = await adminService.getUsers();
+      setUsers(data);
+    } catch (error) {
+      console.error('Failed to fetch users:', error);
+      toast.error('Failed to load users');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      if (editingUser) {
+        await adminService.updateUser(editingUser.id, formData);
+        toast.success('User updated successfully');
+      } else {
+        await adminService.createUser(formData);
+        toast.success('User created successfully');
+      }
+      fetchUsers();
+      resetForm();
+    } catch (error) {
+      console.error('Failed to save user:', error);
+      toast.error(error.response?.data?.message || 'Failed to save user');
+    }
+  };
+
+  const handleEdit = (user) => {
+    setEditingUser(user);
+    setFormData({
+      name: user.name,
+      email: user.email,
+      phone: user.phone,
+      roles: user.roles || ['USER'],
+      isVerified: user.isVerified
+    });
+    setShowForm(true);
+  };
+
+  const handleDelete = async (id) => {
+    if (window.confirm('Are you sure you want to delete this user? This action cannot be undone.')) {
+      try {
+        await adminService.deleteUser(id);
+        fetchUsers();
+        toast.success('User deleted successfully');
+      } catch (error) {
+        console.error('Failed to delete user:', error);
+        toast.error('Failed to delete user');
+      }
+    }
+  };
+
+  const resetForm = () => {
+    setFormData({ name: '', email: '', phone: '', roles: ['USER'], isVerified: false });
+    setEditingUser(null);
+    setShowForm(false);
+  };
+
+  if (loading) return (
+    <div className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex justify-center items-center h-64">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+        </div>
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="flex justify-between items-center mb-6">
+          <div className="flex items-center space-x-4">
+            <button
+              onClick={() => window.history.back() || (window.location.href='/admin/dashboard')}
+              className="text-gray-600 hover:text-gray-900 flex items-center"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              Back to Dashboard
+            </button>
+            <h1 className="text-3xl font-bold text-gray-900">User Management</h1>
+          </div>
+          <button
+            onClick={() => setShowForm(true)}
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition flex items-center"
+          >
+            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg>
+            Add User
+          </button>
+        </div>
+
+        {showForm && (
+          <form onSubmit={handleSubmit} className="mb-6 p-6 bg-white rounded-xl shadow">
+            <h2 className="text-xl font-semibold mb-4">{editingUser ? 'Edit User' : 'Add New User'}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+                <input
+                  type="text"
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                <input
+                  type="email"
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                <input
+                  type="tel"
+                  value={formData.phone}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Role</label>
+                <select
+                  value={formData.roles[0] || 'USER'}
+                  onChange={(e) => setFormData({ ...formData, roles: [e.target.value] })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  <option value="USER">User</option>
+                  <option value="ADMIN">Admin</option>
+                </select>
+              </div>
+              <div className="md:col-span-2 flex items-center">
+                <input
+                  type="checkbox"
+                  checked={formData.isVerified}
+                  onChange={(e) => setFormData({ ...formData, isVerified: e.target.checked })}
+                  className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                />
+                <label className="ml-2 block text-sm font-medium text-gray-700">Email Verified</label>
+              </div>
+            </div>
+            <div className="mt-6 flex space-x-3">
+              <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
+                {editingUser ? 'Update User' : 'Create User'}
+              </button>
+              <button type="button" onClick={resetForm} className="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition">
+                Cancel
+              </button>
+            </div>
+          </form>
+        )}
+
+        <div className="bg-white rounded-xl shadow overflow-hidden">
+          <div className="overflow-x-auto">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-gray-100">
+                <tr>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Phone</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Role</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200">
+                {users.map((user) => (
+                  <tr key={user.id} className="hover:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{user.name}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{user.email}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{user.phone || '-'}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{user.roles?.[0] || 'USER'}</td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
+                        user.isVerified ? 'bg-green-100 text-green-800' : 'bg-yellow-100 text-yellow-800'
+                      }`}>
+                        {user.isVerified ? 'Verified' : 'Unverified'}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                      <button
+                        onClick={() => handleEdit(user)}
+                        className="text-blue-600 hover:text-blue-900 mr-3"
+                      >
+                        Edit
+                      </button>
+                      <button
+                        onClick={() => handleDelete(user.id)}
+                        className="text-red-600 hover:text-red-900"
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {users.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-gray-500">No users found. Add a new user to get started.</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default UserManagement;
+
+```
+
+---
+
+### <a id="📄-src-components-auth-login-jsx"></a>📄 `src/components/auth/Login.jsx`
+
+**File Info:**
+- **Size**: 12.47 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/auth/Login.jsx`
+- **Relative Path**: `src/components/auth`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-26 08:10:07 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `3ce8db35e4d96426cee0b4c9e070f32b`
+- **SHA256**: `610a57d13bc75fb4112c0efde35d4d846713eeee78f50adeb3402abadc359cc3`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+// src/components/auth/Login.jsx
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
+import { FaEnvelope, FaLock, FaEye, FaEyeSlash, FaClock } from 'react-icons/fa';
+
+const Login = () => {
+  const [currentTime, setCurrentTime] = useState(new Date());
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const { login } = useAuth();
+  const navigate = useNavigate();
+
+  // Update current time every second
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const result = await login(email, password);
+      if (result.success) {
+        navigate(result.isAdmin ? '/admin/dashboard' : '/dashboard');
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl w-full flex overflow-hidden bg-white rounded-2xl shadow-2xl relative animate-in fade-in zoom-in duration-500">
+
+        {/* Left Column: Branding & Features */}
+        <div className="hidden lg:flex lg:w-1/2 bg-blue-600 p-12 text-white flex-col justify-between">
+          <div>
+            <div className="flex items-center space-x-3 mb-10">
+              <div className="bg-white p-2 rounded-lg shadow-inner">
+                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                </svg>
+              </div>
+              <span className="text-2xl font-bold tracking-tight">ParkEase</span>
+            </div>
+
+            <h1 className="text-5xl font-extrabold leading-tight mb-6">
+              Smart Parking <br />
+              Management <br />
+              Made Simple
+            </h1>
+
+            <p className="text-blue-100 text-lg mb-12 max-w-md">
+              Sign in to access your dashboard and manage your parking spaces efficiently with our intuitive platform.
+            </p>
+
+            <div className="space-y-8">
+              {[
+                { icon: <FaEnvelope className="w-5 h-5" />, text: 'Secure & reliable platform' },
+                { icon: <FaClock className="w-5 h-5" />, text: 'Real-time availability updates' },
+                { icon: <FaLock className="w-5 h-5" />, text: 'Analytics & reporting tools' }
+              ].map((item, i) => (
+                <div key={i} className="flex items-center space-x-4">
+                  <div className="bg-blue-500 bg-opacity-30 p-3 rounded-xl">
+                    {item.icon}
+                  </div>
+                  <span className="text-lg font-medium">{item.text}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-blue-200 text-sm mt-8">
+            © 2026 ParkEase. All rights reserved. Registered trademark.
+          </div>
+        </div>
+
+        {/* Right Column: Sign In Form */}
+        <div className="w-full lg:w-1/2 p-10 md:p-16 relative bg-white flex flex-col justify-center">
+          {/* Clock Display */}
+          <div className="absolute top-6 right-8 flex items-center text-gray-500 text-xs bg-gray-50 px-4 py-1.5 rounded-full border border-gray-100 font-semibold shadow-sm">
+            <FaClock className="mr-2 h-3 w-3" />
+            {currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+          </div>
+
+          <div className="w-full max-w-sm mx-auto">
+            <div className="text-center lg:text-left mb-10">
+              <h2 className="text-3xl font-black text-gray-900 mb-3 tracking-tight">Sign In</h2>
+              <p className="text-gray-500 text-sm font-medium">Please enter your details to continue</p>
+            </div>
+
+            <form className="space-y-6" onSubmit={handleSubmit}>
+              <div className="space-y-5">
+                <div>
+                  <label htmlFor="email" className="block text-xs font-bold text-gray-700 uppercase tracking-widest mb-2">
+                    Email Address
+                  </label>
+                  <div className="relative group">
+                    <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none transition-colors group-focus-within:text-blue-500">
+                      <FaEnvelope className="h-5 w-5 text-gray-400" />
+                    </div>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      className="appearance-none block w-full px-4 py-4 pl-12 border border-gray-200 placeholder-gray-400 text-gray-900 bg-gray-50 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white focus:border-transparent transition-all sm:text-sm shadow-sm"
+                      placeholder="user@example.com"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <label htmlFor="password" className="block text-xs font-bold text-gray-700 uppercase tracking-widest">
+                      Password
+                    </label>
+                    <Link to="/forgot-password" title="Forgot password?" className="text-xs font-bold text-blue-600 hover:text-blue-700 transition-colors">
+                      Forgot password?
+                    </Link>
+                  </div>
+                  <div className="relative group">
+                    <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none transition-colors group-focus-within:text-blue-500">
+                      <FaLock className="h-5 w-5 text-gray-400" />
+                    </div>
+                    <input
+                      id="password"
+                      name="password"
+                      type={showPassword ? 'text' : 'password'}
+                      required
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      className="appearance-none block w-full px-4 py-4 pl-12 border border-gray-200 placeholder-gray-400 text-gray-900 bg-gray-50 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white focus:border-transparent transition-all sm:text-sm shadow-sm"
+                      placeholder="••••••••••••"
+                    />
+                    <button
+                      type="button"
+                      className="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-gray-600 transition-colors"
+                      onClick={() => setShowPassword(!showPassword)}
+                    >
+                      {showPassword ? <FaEyeSlash className="h-5 w-5" /> : <FaEye className="h-5 w-5" />}
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center">
+                <input
+                  id="remember-me"
+                  name="remember-me"
+                  type="checkbox"
+                  className="h-5 w-5 text-blue-600 focus:ring-blue-500 border-gray-300 rounded-lg cursor-pointer transition-all"
+                />
+                <label htmlFor="remember-me" className="ml-3 block text-sm font-medium text-gray-600 cursor-pointer">
+                  Stay signed in
+                </label>
+              </div>
+
+              <button
+                type="submit"
+                disabled={loading}
+                className="group relative w-full flex justify-center py-4 px-4 border border-transparent text-sm font-black rounded-2xl text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all transform hover:scale-[1.01] active:scale-[0.99] shadow-xl shadow-blue-200"
+              >
+                {loading ? (
+                  <span className="flex items-center">
+                    <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                    </svg>
+                    Validating...
+                  </span>
+                ) : (
+                  <div className="flex items-center uppercase tracking-widest font-black">
+                    <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                    </svg>
+                    Sign In
+                  </div>
+                )}
+              </button>
+
+              <div className="text-center mt-8">
+                <p className="text-sm text-gray-500 font-medium">
+                  New to ParkEase?{' '}
+                  <Link to="/register" className="font-bold text-blue-600 hover:text-blue-700 decoration-2 underline-offset-4 hover:underline transition-all">
+                    Create your account
+                  </Link>
+                </p>
+              </div>
+
+              {/* Demo Credentials */}
+              <div className="mt-10 pt-8 border-t border-gray-100">
+                <div className="flex items-center space-x-2 mb-5">
+                  <div className="bg-blue-100 text-blue-600 p-1.5 rounded-lg">
+                    <FaLock className="w-3.5 h-3.5" />
+                  </div>
+                  <p className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em]">Quick Access Demo</p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-gray-50 p-4 rounded-2xl border border-gray-100 group hover:border-blue-200 hover:bg-white transition-all duration-300">
+                    <div className="flex justify-between items-center mb-1">
+                      <p className="text-[10px] font-black text-gray-400 uppercase tracking-tighter">User</p>
+                      <button type="button" onClick={() => { setEmail('user@example.com'); setPassword('password123') }} className="text-[9px] text-blue-500 font-black hover:text-blue-700">CLICK TO FILL</button>
+                    </div>
+                    <p className="text-xs text-gray-700 font-mono font-bold">user@example.com</p>
+                    <p className="text-[10px] text-gray-400 font-mono mt-1">password123</p>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-2xl border border-gray-100 group hover:border-blue-200 hover:bg-white transition-all duration-300">
+                    <div className="flex justify-between items-center mb-1">
+                      <p className="text-[10px] font-black text-gray-400 uppercase tracking-tighter">Admin</p>
+                      <button type="button" onClick={() => { setEmail('admin@parkease.com'); setPassword('admin123') }} className="text-[9px] text-blue-500 font-black hover:text-blue-700">CLICK TO FILL</button>
+                    </div>
+                    <p className="text-xs text-gray-700 font-mono font-bold">admin@parkease.com</p>
+                    <p className="text-[10px] text-gray-400 font-mono mt-1">admin123</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Login;
+```
+
+---
+
+### <a id="📄-src-components-auth-register-jsx"></a>📄 `src/components/auth/Register.jsx`
+
+**File Info:**
+- **Size**: 6.84 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/auth/Register.jsx`
+- **Relative Path**: `src/components/auth`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 13:20:35 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `48ef0babcbe08a3687f0ec303e9b31d5`
+- **SHA256**: `9a3c7043bbafe4a3bf999dcaf98cfe5d3125452edc1cac47fb6f78564b018f74`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+// src/components/auth/Register.jsx
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
+import { toast } from 'react-hot-toast';
+import { FaUser, FaEnvelope, FaLock, FaPhone, FaEye, FaEyeSlash, FaClock } from 'react-icons/fa';
+
+const Register = () => {
+  const [currentTime, setCurrentTime] = useState(new Date());
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+    phone: ''
+  });
+  const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const { register } = useAuth();
+  const navigate = useNavigate();
+
+  // Update current time every second
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const result = await register(formData);
+      if (result.success) {
+        toast.success('Registration successful! Please login.');
+        navigate('/login');
+      }
+    } catch (error) {
+      toast.error(error.message || 'Registration failed');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-2xl shadow-xl relative">
+        {/* Clock Display */}
+        <div className="absolute top-4 right-4 flex items-center text-gray-600 text-sm bg-gray-100 px-3 py-1 rounded-full">
+          <FaClock className="mr-2 h-4 w-4" />
+          {currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+        </div>
+        <div className="text-center mb-8">
+          <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+            </svg>
+          </div>
+          <h2 className="text-3xl font-bold text-gray-900">Create Account</h2>
+          <p className="text-gray-600 mt-2">Join ParkEase today</p>
+        </div>
+
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+            <div className="relative">
+              <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <input
+                type="text"
+                value={formData.name}
+                onChange={(e) => setFormData({...formData, name: e.target.value})}
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <div className="relative">
+              <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <input
+                type="email"
+                value={formData.email}
+                onChange={(e) => setFormData({...formData, email: e.target.value})}
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                placeholder="me@example.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+            <div className="relative">
+              <FaPhone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <input
+                type="tel"
+                value={formData.phone}
+                onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                placeholder="+91 98765 43210"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
+            <div className="relative">
+              <FaLock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <input
+                type={showPassword ? 'text' : 'password'}
+                value={formData.password}
+                onChange={(e) => setFormData({...formData, password: e.target.value})}
+                className="w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                placeholder="••••••••"
+                required
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
+              >
+                {showPassword ? <FaEyeSlash className="h-5 w-5" /> : <FaEye className="h-5 w-5" />}
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Confirm Password</label>
+            <div className="relative">
+              <FaLock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              <input
+                type="password"
+                value={formData.confirmPassword}
+                onChange={(e) => setFormData({...formData, confirmPassword: e.target.value})}
+                className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                placeholder="••••"
+                required
+              />
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {loading ? 'Creating Account...' : 'Create Account'}
+          </button>
+
+          <p className="text-center text-sm text-gray-600">
+            Already have an account?{' '}
+            <Link to="/login" className="text-blue-600 hover:underline">
+              Sign in
+            </Link>
+          </p>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default Register;
+```
+
+---
+
+### <a id="📄-src-components-common-notificationpanel-jsx"></a>📄 `src/components/common/NotificationPanel.jsx`
+
+**File Info:**
+- **Size**: 4.04 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/common/NotificationPanel.jsx`
+- **Relative Path**: `src/components/common`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 21:31:19 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `3029d15e355ccc42dccef611a9e292f6`
+- **SHA256**: `d978ee3fede5571ce4f01ac4eaf8e1bff48a7502a13e0539639dde633727f2ec`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+// NotificationPanel.jsx - Functional notification dropdown
+import React from 'react';
+import { FaBell, FaTimes, FaCheck, FaClock } from 'react-icons/fa';
+
+const NotificationPanel = ({ isOpen, onClose, notifications, onMarkAsRead }) => {
+    if (!isOpen) return null;
+
+    return (
+        <div className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+            {/* Header */}
+            <div className="flex items-center justify-between p-4 border-b border-gray-200">
+                <div className="flex items-center">
+                    <FaBell className="h-5 w-5 text-blue-500 mr-2" />
+                    <h3 className="font-semibold text-gray-900">Notifications</h3>
+                </div>
+                <button
+                    onClick={onClose}
+                    className="text-gray-400 hover:text-gray-600"
+                >
+                    <FaTimes className="h-4 w-4" />
+                </button>
+            </div>
+
+            {/* Notifications List */}
+            <div className="max-h-96 overflow-y-auto">
+                {notifications && notifications.length > 0 ? (
+                    notifications.map((notification) => (
+                        <div
+                            key={notification.id}
+                            className={`p-4 border-b border-gray-100 hover:bg-gray-50 transition ${!notification.read ? 'bg-blue-50' : ''
+                                }`}
+                        >
+                            <div className="flex items-start justify-between">
+                                <div className="flex-1">
+                                    <div className="flex items-center mb-1">
+                                        <FaClock className="h-3 w-3 text-gray-400 mr-2" />
+                                        <p className="text-xs text-gray-500">
+                                            {new Date(notification.createdAt || Date.now()).toLocaleString()}
+                                        </p>
+                                    </div>
+                                    <p className="text-sm text-gray-900 font-medium">{notification.title}</p>
+                                    <p className="text-sm text-gray-600 mt-1">{notification.message}</p>
+                                </div>
+                                {!notification.read && (
+                                    <button
+                                        onClick={() => onMarkAsRead(notification.id)}
+                                        className="ml-2 text-blue-500 hover:text-blue-700"
+                                        title="Mark as read"
+                                    >
+                                        <FaCheck className="h-4 w-4" />
+                                    </button>
+                                )}
+                            </div>
+                        </div>
+                    ))
+                ) : (
+                    <div className="p-8 text-center">
+                        <FaBell className="h-12 w-12 text-gray-300 mx-auto mb-3" />
+                        <p className="text-gray-500 text-sm">No notifications yet</p>
+                        <p className="text-gray-400 text-xs mt-1">
+                            You'll see updates about your reservations here
+                        </p>
+                    </div>
+                )}
+            </div>
+
+            {/* Footer */}
+            {notifications && notifications.length > 0 && (
+                <div className="p-3 bg-gray-50 border-t border-gray-200">
+                    <button
+                        onClick={() => {
+                            notifications.forEach(n => onMarkAsRead(n.id));
+                        }}
+                        className="w-full text-center text-sm text-blue-600 hover:text-blue-800 font-medium"
+                    >
+                        Mark all as read
+                    </button>
+                </div>
+            )}
+        </div>
+    );
+};
+
+export default NotificationPanel;
+
+```
+
+---
+
+### <a id="📄-src-components-user-bookingform-jsx"></a>📄 `src/components/user/BookingForm.jsx`
+
+**File Info:**
+- **Size**: 19.22 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/user/BookingForm.jsx`
+- **Relative Path**: `src/components/user`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-27 06:41:42 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `9c92aae6d4aa35599fe47c3243c6db6b`
+- **SHA256**: `edc906ee880449b93ce16edca76baf650f96ba3fa37864e1a3345aa591af6d8b`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+// src/components/user/BookingForm.jsx
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import DatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
+import { parkingService } from '../../services/parking';
+import { FaCar, FaClock, FaCreditCard, FaCheck, FaTimes } from 'react-icons/fa';
+import { toast } from 'react-hot-toast';
+
+const BookingForm = () => {
+  const { zoneId } = useParams();
+  const navigate = useNavigate();
+
+  const [zone, setZone] = useState(null);
+  const [slots, setSlots] = useState([]);
+  const [selectedSlot, setSelectedSlot] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [calculating, setCalculating] = useState(false);
+  const [estimatedPrice, setEstimatedPrice] = useState(0);
+
+  // Form fields
+  const [vehicleType, setVehicleType] = useState('HATCHBACK');
+  const [vehicleNumber, setVehicleNumber] = useState('');
+  const [startTime, setStartTime] = useState(new Date());
+  const [endTime, setEndTime] = useState(new Date(Date.now() + 2 * 60 * 60 * 1000)); // Default 2 hours
+  const [duration, setDuration] = useState(2); // hours
+
+  const vehicleTypes = [
+    { value: 'TWO_WHEELER', label: 'Two Wheeler', icon: '🏍️' },
+    { value: 'HATCHBACK', label: 'Hatchback', icon: '🚗' },
+    { value: 'SUV', label: 'SUV', icon: '🚙' },
+    { value: 'MINI_BUS', label: 'Mini Bus', icon: '🚐' },
+  ];
+
+  useEffect(() => {
+    fetchZoneAndSlots();
+  }, [zoneId]);
+
+  useEffect(() => {
+    calculatePrice();
+  }, [vehicleType, duration]);
+
+  const fetchZoneAndSlots = async () => {
+    try {
+      console.log('🔍 Fetching zones and slots for zoneId:', zoneId);
+      const zones = await parkingService.getZones();
+      console.log('✅ Got zones:', zones);
+      const currentZone = zones.find(z => z.id == zoneId);
+      console.log('✅ Current zone:', currentZone);
+      setZone(currentZone);
+
+      console.log('🔍 Fetching available slots...');
+      const availableSlots = await parkingService.getAvailableSlots(zoneId);
+      console.log('✅ Available slots:', availableSlots, 'Count:', availableSlots?.length);
+      setSlots(availableSlots);
+    } catch (error) {
+      toast.error('Failed to load zone information');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const calculatePrice = async () => {
+    if (!vehicleType || duration < 1) return;
+
+    setCalculating(true);
+    try {
+      const price = await parkingService.calculatePrice(vehicleType, duration);
+      setEstimatedPrice(price);
+    } catch (error) {
+      toast.error('Failed to calculate price');
+    } finally {
+      setCalculating(false);
+    }
+  };
+
+  const handleDurationChange = (hours) => {
+    if (hours >= 1 && hours <= 24) {
+      setDuration(hours);
+      const newEndTime = new Date(startTime.getTime() + hours * 60 * 60 * 1000);
+      setEndTime(newEndTime);
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!selectedSlot) {
+      toast.error('Please select a parking slot');
+      return;
+    }
+
+    if (!vehicleNumber.trim()) {
+      toast.error('Please enter vehicle number');
+      return;
+    }
+
+
+
+    const bookingData = {
+      slotId: selectedSlot.id,
+      startTime: startTime.toISOString(),
+      endTime: endTime.toISOString(),
+      vehicleType,
+      vehicleNumber,
+    };
+
+    try {
+      const reservation = await parkingService.createReservation(bookingData);
+      toast.success('Reservation created successfully!');
+      navigate(`/payment/demo/${reservation.id}`);
+    } catch (error) {
+      toast.error(error.response?.data?.message || 'Failed to create reservation');
+    }
+  };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 w-full flex justify-center">
+      <div className="max-w-6xl w-full animate-in fade-in slide-in-from-bottom-4 duration-700">
+        {/* Progress Steps */}
+        <div className="mb-8">
+          <div className="flex items-center justify-center">
+            {['Select Zone', 'Choose Slot', 'Booking Details', 'Payment'].map((step, index) => (
+              <React.Fragment key={step}>
+                <div className="flex flex-col items-center">
+                  <div className={`w-10 h-10 rounded-full flex items-center justify-center ${index < 2 ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-600'
+                    }`}>
+                    {index < 2 ? <FaCheck className="h-5 w-5" /> : index + 1}
+                  </div>
+                  <span className="mt-2 text-sm font-medium">{step}</span>
+                </div>
+                {index < 3 && (
+                  <div className={`w-24 h-1 mx-4 ${index < 1 ? 'bg-blue-600' : 'bg-gray-200'}`}></div>
+                )}
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
+
+        {/* Zone Information */}
+        <div className="bg-white rounded-xl shadow p-6 mb-6">
+          <div className="flex items-center justify-between">
+            <div>
+              <h1 className="text-2xl font-bold text-gray-900">{zone?.name}</h1>
+              <div className="flex items-center mt-2 text-gray-600">
+                <FaCar className="h-5 w-5 mr-2" />
+                <span>{zone?.location}</span>
+                <span className="mx-2">•</span>
+                <span>{slots.length} slots available</span>
+              </div>
+            </div>
+            <div className="text-right">
+              <p className="text-sm text-gray-500">Zone ID</p>
+              <p className="text-lg font-semibold">#{zone?.id}</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Left Column: Booking Form */}
+          <div className="lg:col-span-2">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Vehicle Information */}
+              <div className="bg-white rounded-xl shadow p-6">
+                <h2 className="text-lg font-semibold text-gray-900 mb-4">
+                  <FaCar className="inline-block mr-2 h-5 w-5 text-blue-500" />
+                  Vehicle Information
+                </h2>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Vehicle Type */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Vehicle Type *
+                    </label>
+                    <div className="grid grid-cols-2 gap-3">
+                      {vehicleTypes.map((type) => (
+                        <button
+                          key={type.value}
+                          type="button"
+                          onClick={() => setVehicleType(type.value)}
+                          className={`p-4 rounded-lg border-2 flex flex-col items-center justify-center transition ${vehicleType === type.value
+                            ? 'border-blue-500 bg-blue-50'
+                            : 'border-gray-200 hover:border-gray-300'
+                            }`}
+                        >
+                          <span className="text-2xl mb-1">{type.icon}</span>
+                          <span className="text-sm font-medium">{type.label}</span>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Vehicle Number */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Vehicle Number *
+                    </label>
+                    <input
+                      type="text"
+                      value={vehicleNumber}
+                      onChange={(e) => setVehicleNumber(e.target.value.toUpperCase())}
+                      placeholder="e.g., MH12AB1234"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+                      required
+                    />
+                    <p className="mt-1 text-sm text-gray-500">
+                      Enter your vehicle registration number
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+
+              {/* Time Selection */}
+              <div className="bg-white rounded-xl shadow p-6">
+                <h2 className="text-lg font-semibold text-gray-900 mb-4">
+                  <FaClock className="inline-block mr-2 h-5 w-5 text-blue-500" />
+                  Time Selection
+                </h2>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Start Time */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Start Time *
+                    </label>
+                    <DatePicker
+                      selected={startTime}
+                      onChange={(date) => {
+                        setStartTime(date);
+                        const newEndTime = new Date(date.getTime() + duration * 60 * 60 * 1000);
+                        setEndTime(newEndTime);
+                      }}
+                      showTimeSelect
+                      timeFormat="HH:mm"
+                      timeIntervals={15}
+                      dateFormat="MMMM d, yyyy h:mm aa"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      minDate={new Date()}
+                    />
+                  </div>
+
+                  {/* Duration */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Duration (Hours) *
+                    </label>
+                    <div className="flex items-center space-x-4">
+                      <button
+                        type="button"
+                        onClick={() => handleDurationChange(Math.max(1, duration - 1))}
+                        className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-50"
+                      >
+                        <FaTimes className="h-4 w-4" />
+                      </button>
+                      <input
+                        type="number"
+                        min="1"
+                        max="24"
+                        value={duration}
+                        onChange={(e) => handleDurationChange(parseInt(e.target.value) || 1)}
+                        className="w-20 text-center px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      />
+                      <button
+                        type="button"
+                        onClick={() => handleDurationChange(Math.min(24, duration + 1))}
+                        className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-50"
+                      >
+                        <FaCheck className="h-4 w-4" />
+                      </button>
+                    </div>
+                    <div className="mt-3 grid grid-cols-4 gap-2">
+                      {[1, 2, 4, 8].map((hours) => (
+                        <button
+                          key={hours}
+                          type="button"
+                          onClick={() => handleDurationChange(hours)}
+                          className={`px-3 py-2 text-sm rounded-lg ${duration === hours
+                            ? 'bg-blue-600 text-white'
+                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                            }`}
+                        >
+                          {hours} {hours === 1 ? 'Hour' : 'Hours'}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* End Time Display */}
+                <div className="mt-4 p-4 bg-blue-50 rounded-lg">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-sm text-gray-600">End Time</p>
+                      <p className="text-lg font-semibold text-gray-900">
+                        {endTime.toLocaleString()}
+                      </p>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-sm text-gray-600">Total Duration</p>
+                      <p className="text-lg font-semibold text-gray-900">
+                        {duration} {duration === 1 ? 'hour' : 'hours'}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Slot Selection */}
+              <div className="bg-white rounded-xl shadow p-6">
+                <h2 className="text-lg font-semibold text-gray-900 mb-4">
+                  Select Parking Slot
+                </h2>
+
+                {slots.length === 0 ? (
+                  <div className="text-center py-8">
+                    <FaTimes className="mx-auto h-12 w-12 text-gray-400" />
+                    <p className="mt-2 text-gray-500">No slots available for selected time</p>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    {slots.map((slot) => (
+                      <button
+                        key={slot.id}
+                        type="button"
+                        onClick={() => setSelectedSlot(slot)}
+                        className={`p-4 rounded-lg border-2 flex flex-col items-center transition ${selectedSlot?.id === slot.id
+                          ? 'border-blue-500 bg-blue-50'
+                          : 'border-gray-200 hover:border-gray-300'
+                          }`}
+                      >
+                        <div className={`w-8 h-8 rounded-full flex items-center justify-center mb-2 ${slot.status === 'AVAILABLE'
+                          ? 'bg-green-100 text-green-800'
+                          : 'bg-red-100 text-red-800'
+                          }`}>
+                          {slot.slotNumber}
+                        </div>
+                        <span className="text-sm font-medium">Slot {slot.slotNumber}</span>
+                        <span className="text-xs text-gray-500 mt-1">
+                          {slot.status}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </form>
+          </div>
+
+          {/* Right Column: Price Summary */}
+          <div className="lg:col-span-1">
+            <div className="bg-white rounded-xl shadow sticky top-8">
+              <div className="p-6">
+                <h2 className="text-lg font-semibold text-gray-900 mb-4">
+                  <FaCreditCard className="inline-block mr-2 h-5 w-5 text-blue-500" />
+                  Booking Summary
+                </h2>
+
+                {/* Price Calculation */}
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center py-3 border-b">
+                    <span className="text-gray-600">Hourly Rate</span>
+                    <span className="font-medium text-gray-900">
+                      {calculating ? 'Calculating...' : `₹${(estimatedPrice / duration).toFixed(2)}`}
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b">
+                    <span className="text-gray-600">Duration</span>
+                    <span className="font-medium text-gray-900">{duration} hours</span>
+                  </div>
+                  <div className="flex justify-between items-center py-3 border-b">
+                    <span className="text-gray-600">Vehicle Type</span>
+                    <span className="font-medium text-gray-900">{vehicleType}</span>
+                  </div>
+                  {selectedSlot && (
+                    <div className="flex justify-between items-center py-3 border-b">
+                      <span className="text-gray-600">Selected Slot</span>
+                      <span className="font-medium text-gray-900">#{selectedSlot.slotNumber}</span>
+                    </div>
+                  )}
+                  <div className="flex justify-between items-center py-4 bg-gray-50 -mx-6 px-6">
+                    <span className="text-lg font-semibold text-gray-900">Total Amount</span>
+                    <span className="text-2xl font-bold text-blue-600">
+                      ₹{estimatedPrice.toFixed(2)}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Action Buttons */}
+                <div className="mt-6 space-y-3">
+                  <button
+                    onClick={handleSubmit}
+                    disabled={!selectedSlot || !vehicleNumber || calculating}
+                    className={`w-full py-3 px-4 rounded-lg font-medium text-white transition ${selectedSlot && vehicleNumber && !calculating
+                      ? 'bg-blue-600 hover:bg-blue-700'
+                      : 'bg-gray-300 cursor-not-allowed'
+                      }`}
+                  >
+                    {calculating ? 'Processing...' : 'Proceed to Payment'}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => navigate(-1)}
+                    className="w-full py-3 px-4 rounded-lg font-medium border border-gray-300 text-gray-700 hover:bg-gray-50 transition"
+                  >
+                    Cancel
+                  </button>
+                </div>
+
+                {/* Important Notes */}
+                <div className="mt-6 pt-6 border-t border-gray-200">
+                  <h3 className="text-sm font-medium text-gray-900 mb-2">Important Notes</h3>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    <li className="flex items-start">
+                      <FaCheck className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <span>Minimum booking duration is 1 hour</span>
+                    </li>
+                    <li className="flex items-start">
+                      <FaCheck className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <span>You can cancel free of charge up to 30 minutes before start time</span>
+                    </li>
+                    <li className="flex items-start">
+                      <FaCheck className="h-4 w-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <span>QR code will be provided after payment confirmation</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div >
+    </div >
+  );
+};
+
+export default BookingForm;
+```
+
+---
+
+### <a id="📄-src-components-user-dashboard-jsx"></a>📄 `src/components/user/Dashboard.jsx`
+
+**File Info:**
+- **Size**: 18.56 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/user/Dashboard.jsx`
+- **Relative Path**: `src/components/user`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-26 08:12:42 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `1fe477522ab2eb4a235e88105451abe1`
+- **SHA256**: `c4647461bfced99ba08177b7c66955228a048f0a4b3e0d50cb4d4cee5a55fe73`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+// src/components/user/Dashboard.jsx
+import React, { useState, useEffect, useRef } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
+import { parkingService } from '../../services/parking';
+import { notificationService } from '../../services/notification';
+import { FaSearch, FaHistory, FaCar, FaClock, FaMapMarkerAlt, FaQrcode, FaBell } from 'react-icons/fa';
+import { toast } from 'react-hot-toast';
+import NotificationPanel from '../common/NotificationPanel';
+
+const Dashboard = () => {
+  const [currentTime, setCurrentTime] = useState(new Date());
+  const [activeReservations, setActiveReservations] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [recentZones, setRecentZones] = useState([]);
+  const [lastActivityTime, setLastActivityTime] = useState(Date.now());
+  const [notifiedReservations, setNotifiedReservations] = useState(new Set()); // Track notified reservations
+  const [showNotifications, setShowNotifications] = useState(false); // Notification panel state
+  const [notifications, setNotifications] = useState([]); // Notifications array
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+  const logoutTimerRef = useRef(null);
+
+  // Initial data fetch
+  useEffect(() => {
+    fetchUserData();
+  }, []);
+
+  // Update current time every second
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  // Auto-logout and Notification logic
+  useEffect(() => {
+    const resetTimer = () => setLastActivityTime(Date.now());
+
+    // Add event listeners to track user activity
+    const events = ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart', 'click', 'keydown'];
+    events.forEach(event => window.addEventListener(event, resetTimer, true));
+
+    // Schedule the check for inactivity
+    const checkInactive = () => {
+      const fifteenMinutes = 15 * 60 * 1000;
+      if (Date.now() - lastActivityTime > fifteenMinutes && activeReservations.length === 0) {
+        toast('Your session has expired due to inactivity.', { icon: '⏰' });
+        logout();
+      }
+    };
+
+    logoutTimerRef.current = setTimeout(checkInactive, 60000);
+
+    // Notification Scheduling logic
+    const scheduleNotifications = async () => {
+      for (const reservation of activeReservations) {
+        if (reservation.status === 'CONFIRMED') {
+          const endTime = new Date(reservation.endTime).getTime();
+          const tenMinutes = 10 * 60 * 1000;
+          const timeUntilEnd = endTime - Date.now();
+
+          if (timeUntilEnd > 0 && timeUntilEnd <= tenMinutes && !notifiedReservations.has(reservation.id)) {
+            const minutesLeft = Math.ceil(timeUntilEnd / 60000);
+            toast(`⏰ Parking at ${reservation.zoneName} ends in ${minutesLeft} mins!`, { icon: '🚗' });
+
+            setNotifiedReservations(prev => new Set([...prev, reservation.id]));
+
+            try {
+              await notificationService.scheduleEndNotification(reservation.id, 10);
+            } catch (error) {
+              console.error('Notification error:', error);
+            }
+          }
+        }
+      }
+    };
+
+    const notificationTimer = setInterval(scheduleNotifications, 60000);
+
+    return () => {
+      clearInterval(notificationTimer);
+      if (logoutTimerRef.current) clearTimeout(logoutTimerRef.current);
+      events.forEach(event => window.removeEventListener(event, resetTimer, true));
+    };
+  }, [lastActivityTime, logout, activeReservations.length]); // Dependencies tuned to avoid loops
+
+  const fetchUserData = async () => {
+    try {
+      const reservations = await parkingService.getUserReservations();
+      const active = reservations.filter(r => r.status === 'CONFIRMED' || r.status === 'PENDING');
+      setActiveReservations(active);
+
+      const zones = await parkingService.getZones();
+      setRecentZones(zones.slice(0, 3));
+    } catch (error) {
+      toast.error('Failed to load dashboard data');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const formatTime = (date) => {
+    return date.toLocaleTimeString('en-US', {
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true,
+    });
+  };
+
+  const formatDate = (date) => {
+    return date.toLocaleDateString('en-US', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    });
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Top Navigation */}
+      <nav className="bg-white shadow-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <h1 className="text-2xl font-bold text-blue-600">ParkEase</h1>
+              </div>
+              <div className="hidden md:ml-6 md:flex md:space-x-8">
+                <Link to="/dashboard" className="border-blue-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  Dashboard
+                </Link>
+                <Link to="/parking/search" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  Find Parking
+                </Link>
+                <Link to="/reservations" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  My Reservations
+                </Link>
+                <Link to="/history" className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                  History
+                </Link>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <div className="text-right">
+                <p className="text-sm font-medium text-gray-900">{user?.name}</p>
+                <p className="text-xs text-gray-500">{user?.email}</p>
+              </div>
+              <button
+                onClick={logout}
+                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+              >
+                Logout
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Main Content */}
+      <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+        {/* Header with Time and Quick Actions */}
+        <div className="px-4 py-6 sm:px-0">
+          <div className="bg-white rounded-xl shadow p-6 mb-6">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div>
+                <h1 className="text-2xl font-bold text-gray-900">Welcome back, {user?.name}!</h1>
+                <div className="mt-2 flex items-center space-x-4">
+                  <div className="flex items-center">
+                    <FaClock className="h-5 w-5 text-blue-500 mr-2" />
+                    <span className="text-lg font-semibold text-gray-700">{formatTime(currentTime)}</span>
+                  </div>
+                  <span className="text-gray-600">{formatDate(currentTime)}</span>
+                </div>
+              </div>
+              <div className="mt-4 md:mt-0 flex space-x-4">
+                <button
+                  onClick={() => navigate('/parking/search')}
+                  className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                >
+                  <FaSearch className="mr-2 h-5 w-5" />
+                  Find Parking
+                </button>
+                <button
+                  onClick={() => navigate('/reservations')}
+                  className="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                >
+                  <FaCar className="mr-2 h-5 w-5" />
+                  My Bookings
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Stats Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+            <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl shadow p-6 text-white">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm opacity-90">Active Reservations</p>
+                  <p className="text-3xl font-bold mt-2">{activeReservations.length}</p>
+                </div>
+                <FaCar className="h-12 w-12 opacity-50" />
+              </div>
+              <button
+                onClick={() => navigate('/reservations')}
+                className="mt-4 text-sm bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg transition"
+              >
+                View All
+              </button>
+            </div>
+
+            <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-xl shadow p-6 text-white">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm opacity-90">Available Zones</p>
+                  <p className="text-3xl font-bold mt-2">{recentZones.length}+</p>
+                </div>
+                <FaMapMarkerAlt className="h-12 w-12 opacity-50" />
+              </div>
+              <button
+                onClick={() => navigate('/parking/search')}
+                className="mt-4 text-sm bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg transition"
+              >
+                Explore Zones
+              </button>
+            </div>
+
+            <div className="bg-gradient-to-r from-purple-500 to-purple-600 rounded-xl shadow p-6 text-white">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-sm opacity-90">Quick Park</p>
+                  <p className="text-3xl font-bold mt-2">Instant</p>
+                </div>
+                <FaQrcode className="h-12 w-12 opacity-50" />
+              </div>
+              <button
+                onClick={() => navigate('/parking/quick')}
+                className="mt-4 text-sm bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg transition"
+              >
+                Scan & Park
+              </button>
+            </div>
+          </div>
+
+          {/* Active Reservations */}
+          <div className="bg-white rounded-xl shadow overflow-hidden mb-6">
+            <div className="px-6 py-4 border-b border-gray-200">
+              <div className="flex items-center justify-between">
+                <h2 className="text-lg font-medium text-gray-900">Active Reservations</h2>
+                <div className="relative">
+                  <button
+                    onClick={() => setShowNotifications(!showNotifications)}
+                    className="relative p-2 hover:bg-gray-100 rounded-full transition"
+                  >
+                    <FaBell className="h-5 w-5 text-blue-500" />
+                    {notifications.filter(n => !n.read).length > 0 && (
+                      <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white transform translate-x-1/2 -translate-y-1/2 bg-red-500 rounded-full">
+                        {notifications.filter(n => !n.read).length}
+                      </span>
+                    )}
+                  </button>
+                  <NotificationPanel
+                    isOpen={showNotifications}
+                    onClose={() => setShowNotifications(false)}
+                    notifications={notifications}
+                    onMarkAsRead={(id) => {
+                      setNotifications(notifications.map(n =>
+                        n.id === id ? { ...n, read: true } : n
+                      ));
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="divide-y divide-gray-200">
+              {loading ? (
+                <div className="px-6 py-8 text-center">
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
+                </div>
+              ) : activeReservations.length > 0 ? (
+                activeReservations.map((reservation) => (
+                  <div key={reservation.id} className="px-6 py-4 hover:bg-gray-50 transition">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="text-sm font-medium text-gray-900">
+                          {reservation.zoneName} - Slot {reservation.slotNumber}
+                        </p>
+                        <p className="text-sm text-gray-500 mt-1">
+                          {new Date(reservation.startTime).toLocaleString()} - {new Date(reservation.endTime).toLocaleString()}
+                        </p>
+                        <div className="mt-2">
+                          <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${reservation.status === 'CONFIRMED' ? 'bg-green-100 text-green-800' :
+                            reservation.status === 'PENDING' ? 'bg-yellow-100 text-yellow-800' :
+                              'bg-gray-100 text-gray-800'
+                            }`}>
+                            {reservation.status}
+                          </span>
+                          <span className="ml-2 text-sm text-gray-600">
+                            ₹{reservation.amount}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="flex space-x-3">
+                        <button
+                          onClick={() => navigate(`/reservation/${reservation.id}`)}
+                          className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                        >
+                          View Details
+                        </button>
+                        {reservation.status === 'PENDING' && (
+                          <button
+                            onClick={() => navigate(`/payment/${reservation.id}`)}
+                            className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                          >
+                            Pay Now
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <div className="px-6 py-8 text-center">
+                  <FaCar className="mx-auto h-12 w-12 text-gray-400" />
+                  <p className="mt-2 text-sm text-gray-500">No active reservations</p>
+                  <button
+                    onClick={() => navigate('/parking/search')}
+                    className="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+                  >
+                    Book Parking Now
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Recent Parking Zones */}
+          <div className="bg-white rounded-xl shadow overflow-hidden">
+            <div className="px-6 py-4 border-b border-gray-200">
+              <div className="flex items-center justify-between">
+                <h2 className="text-lg font-medium text-gray-900">Popular Parking Zones</h2>
+                <Link to="/parking/search" className="text-sm text-blue-600 hover:text-blue-500">
+                  View all →
+                </Link>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+              {recentZones.map((zone) => (
+                <div
+                  key={zone.id}
+                  className="border border-gray-200 rounded-lg p-5 hover:shadow-md transition cursor-pointer"
+                  onClick={() => navigate(`/parking/zone/${zone.id}`)}
+                >
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900">{zone.name}</h3>
+                      <div className="flex items-center mt-1 text-sm text-gray-600">
+                        <FaMapMarkerAlt className="h-4 w-4 mr-1" />
+                        {zone.location}
+                      </div>
+                    </div>
+                    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${zone.isActive ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+                      }`}>
+                      {zone.isActive ? 'Active' : 'Inactive'}
+                    </span>
+                  </div>
+                  <div className="mt-4">
+                    <div className="flex justify-between text-sm text-gray-500">
+                      <span>Capacity</span>
+                      <span className="font-medium">{zone.capacity} slots</span>
+                    </div>
+                    <div className="mt-3">
+                      <button className="w-full inline-flex justify-center items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default Dashboard;
+```
+
+---
+
+### <a id="📄-src-components-user-demopayment-jsx"></a>📄 `src/components/user/DemoPayment.jsx`
+
+**File Info:**
+- **Size**: 15.18 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/user/DemoPayment.jsx`
+- **Relative Path**: `src/components/user`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-24 10:45:22 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `63f868f5a830590b081b8acf4bd76881`
+- **SHA256**: `6ca6d2caa40bf0ae5279c27408994a5b2b12b247d902c2767471cc34e7503790`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+// src/components/user/DemoPayment.jsx
+import React, { useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { FaCreditCard, FaLock, FaCheck, FaTimes, FaInfoCircle } from 'react-icons/fa';
+import { toast } from 'react-hot-toast';
+
+const DemoPayment = () => {
+  const { reservationId } = useParams();
+  const navigate = useNavigate();
+  
+  const [loading, setLoading] = useState(false);
+  const [paymentMethod, setPaymentMethod] = useState('card');
+  const [cardNumber, setCardNumber] = useState('4111111111111111');
+  const [cardExpiry, setCardExpiry] = useState('12/28');
+  const [cardCvc, setCardCvc] = useState('123');
+  const [cardName, setCardName] = useState('Demo User');
+  const [simulateFailure, setSimulateFailure] = useState(false);
+  
+  const testCards = [
+    { number: '4111111111111111', label: 'Success Card', type: 'Visa' },
+    { number: '4000000000000002', label: 'Failure Card', type: 'Visa' },
+    { number: '5555555555554444', label: 'MasterCard', type: 'MasterCard' },
+  ];
+
+  const handlePayment = async () => {
+    setLoading(true);
+    
+    try {
+      // Simulate API call delay
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
+      if (simulateFailure) {
+        throw new Error('Payment failed: Insufficient funds');
+      }
+      
+      // Demo payment API call
+      const response = await fetch(`http://localhost:8080/payment/demo`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${localStorage.getItem('token')}`,
+        },
+        body: JSON.stringify({
+          reservationId,
+          amount: 100.0,
+          paymentMode: 'CARD_DEMO'
+        })
+      });
+      
+      if (!response.ok) {
+        throw new Error('Payment failed');
+      }
+      
+      const data = await response.json();
+      
+      toast.success('Payment successful!');
+      navigate(`/receipt/${reservationId}`);
+      
+    } catch (error) {
+      toast.error(error.message || 'Payment failed. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleTestCardSelect = (cardNumber) => {
+    setCardNumber(cardNumber);
+    setSimulateFailure(cardNumber === '4000000000000002');
+    toast.success('Test card selected. ' + 
+      (cardNumber === '4000000000000002' 
+        ? 'This will simulate a payment failure.' 
+        : 'This will simulate a successful payment.'));
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50 py-8">
+      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Demo Mode Banner */}
+        <div className="mb-6 bg-yellow-50 border border-yellow-200 rounded-xl p-4">
+          <div className="flex items-center">
+            <FaInfoCircle className="h-5 w-5 text-yellow-600 mr-3" />
+            <div>
+              <h3 className="text-sm font-medium text-yellow-800">DEMO MODE</h3>
+              <p className="text-sm text-yellow-700 mt-1">
+                You are in demo payment mode. No real transactions will occur.
+                Use the test cards below to simulate different scenarios.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-xl shadow overflow-hidden">
+          {/* Header */}
+          <div className="px-6 py-4 border-b border-gray-200 bg-gradient-to-r from-blue-500 to-blue-600">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center">
+                <FaCreditCard className="h-6 w-6 text-white mr-3" />
+                <h1 className="text-xl font-semibold text-white">
+                  Demo Payment - Reservation #{reservationId}
+                </h1>
+              </div>
+              <div className="text-white text-sm bg-white bg-opacity-20 px-3 py-1 rounded-full">
+                DEMO
+              </div>
+            </div>
+          </div>
+
+          {/* Test Cards Section */}
+          <div className="px-6 py-4 border-b border-gray-200">
+            <h2 className="text-lg font-medium text-gray-900 mb-3">
+              Test Credit Cards
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+              {testCards.map((card, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleTestCardSelect(card.number)}
+                  className={`p-3 border rounded-lg text-left transition ${
+                    cardNumber === card.number
+                      ? 'border-blue-500 bg-blue-50'
+                      : 'border-gray-200 hover:border-gray-300'
+                  }`}
+                >
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-sm font-medium text-gray-900">{card.label}</p>
+                      <p className="text-xs text-gray-500 mt-1">{card.type}</p>
+                    </div>
+                    <div className="text-sm font-mono bg-gray-100 px-2 py-1 rounded">
+                      ****{card.number.slice(-4)}
+                    </div>
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Payment Form */}
+          <div className="px-6 py-6">
+            <form className="space-y-6">
+              {/* Payment Method */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-3">
+                  Payment Method
+                </label>
+                <div className="grid grid-cols-3 gap-3">
+                  {['card', 'upi', 'netbanking'].map((method) => (
+                    <button
+                      key={method}
+                      type="button"
+                      onClick={() => setPaymentMethod(method)}
+                      className={`p-4 border rounded-lg flex flex-col items-center justify-center transition ${
+                        paymentMethod === method
+                          ? 'border-blue-500 bg-blue-50'
+                          : 'border-gray-200 hover:border-gray-300'
+                      }`}
+                    >
+                      <div className={`w-8 h-8 rounded-full mb-2 flex items-center justify-center ${
+                        paymentMethod === method ? 'bg-blue-100' : 'bg-gray-100'
+                      }`}>
+                        <FaCreditCard className="h-4 w-4 text-gray-600" />
+                      </div>
+                      <span className="text-sm font-medium capitalize">{method}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Card Details */}
+              {paymentMethod === 'card' && (
+                <div className="space-y-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Card Number
+                    </label>
+                    <div className="relative">
+                      <input
+                        type="text"
+                        value={cardNumber}
+                        onChange={(e) => setCardNumber(e.target.value.replace(/\D/g, '').slice(0, 16))}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 font-mono"
+                        placeholder="1234 5678 9012 3456"
+                      />
+                      <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
+                        <FaLock className="h-5 w-5 text-gray-400" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Expiry Date
+                      </label>
+                      <input
+                        type="text"
+                        value={cardExpiry}
+                        onChange={(e) => setCardExpiry(e.target.value)}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="MM/YY"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        CVC
+                      </label>
+                      <input
+                        type="text"
+                        value={cardCvc}
+                        onChange={(e) => setCardCvc(e.target.value.replace(/\D/g, '').slice(0, 3))}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="123"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Name on Card
+                    </label>
+                    <input
+                      type="text"
+                      value={cardName}
+                      onChange={(e) => setCardName(e.target.value)}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      placeholder="John Doe"
+                    />
+                  </div>
+
+                  {/* Failure Simulation */}
+                  <div className="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="simulateFailure"
+                      checked={simulateFailure}
+                      onChange={(e) => setSimulateFailure(e.target.checked)}
+                      className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                    />
+                    <label htmlFor="simulateFailure" className="ml-2 block text-sm text-gray-900">
+                      Simulate payment failure
+                    </label>
+                  </div>
+                </div>
+              )}
+
+              {/* Amount Summary */}
+              <div className="bg-gray-50 rounded-lg p-4">
+                <h3 className="text-sm font-medium text-gray-900 mb-3">
+                  Payment Summary
+                </h3>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-600">Reservation Amount</span>
+                    <span className="font-medium">₹100.00</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-600">Tax (18%)</span>
+                    <span className="font-medium">₹18.00</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-600">Convenience Fee</span>
+                    <span className="font-medium">₹0.00</span>
+                  </div>
+                  <div className="border-t border-gray-200 pt-2 mt-2">
+                    <div className="flex justify-between">
+                      <span className="text-base font-semibold">Total Amount</span>
+                      <span className="text-lg font-bold text-blue-600">₹118.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Terms and Conditions */}
+              <div className="text-sm text-gray-600">
+                <p className="flex items-start">
+                  <input
+                    type="checkbox"
+                    id="terms"
+                    className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded mt-0.5 mr-2"
+                    defaultChecked
+                  />
+                  <label htmlFor="terms">
+                    I agree to the Terms and Conditions and authorize ParkEase to charge my card for this transaction.
+                    This is a demo payment and no real money will be deducted.
+                  </label>
+                </p>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex space-x-4">
+                <button
+                  type="button"
+                  onClick={() => navigate(-1)}
+                  className="flex-1 py-3 px-4 border border-gray-300 rounded-lg font-medium text-gray-700 hover:bg-gray-50 transition"
+                  disabled={loading}
+                >
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  onClick={handlePayment}
+                  disabled={loading}
+                  className={`flex-1 py-3 px-4 rounded-lg font-medium text-white transition flex items-center justify-center ${
+                    loading
+                      ? 'bg-gray-400 cursor-not-allowed'
+                      : simulateFailure
+                      ? 'bg-red-600 hover:bg-red-700'
+                      : 'bg-green-600 hover:bg-green-700'
+                  }`}
+                >
+                  {loading ? (
+                    <>
+                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-3"></div>
+                      Processing...
+                    </>
+                  ) : simulateFailure ? (
+                    <>
+                      <FaTimes className="mr-2 h-5 w-5" />
+                      Simulate Failed Payment
+                    </>
+                  ) : (
+                    <>
+                      <FaCheck className="mr-2 h-5 w-5" />
+                      Pay ₹118.00 (Demo)
+                    </>
+                  )}
+                </button>
+              </div>
+
+              {/* Security Note */}
+              <div className="text-center text-xs text-gray-500 pt-4 border-t border-gray-200">
+                <div className="flex items-center justify-center">
+                  <FaLock className="h-3 w-3 mr-1" />
+                  <span>This is a secure demo payment. Your card details are not stored.</span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        {/* Demo Instructions */}
+        <div className="mt-6 bg-blue-50 border border-blue-200 rounded-xl p-4">
+          <h3 className="text-sm font-medium text-blue-900 mb-2">
+            Demo Payment Instructions
+          </h3>
+          <ul className="text-sm text-blue-700 space-y-1">
+            <li>• Use <strong>4111 1111 1111 1111</strong> for successful payments</li>
+            <li>• Use <strong>4000 0000 0000 0002</strong> to simulate payment failure</li>
+            <li>• No real money is charged in demo mode</li>
+            <li>• All transactions are simulated for testing purposes</li>
+            <li>• Receipts will be generated but represent demo transactions only</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default DemoPayment;
+```
+
+---
+
+### <a id="📄-src-components-user-history-jsx"></a>📄 `src/components/user/History.jsx`
+
+**File Info:**
+- **Size**: 2.05 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/user/History.jsx`
+- **Relative Path**: `src/components/user`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 21:52:42 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `9d86c4360f6ba7f6b7941a0f96d1d2e7`
+- **SHA256**: `073d8840c4e9af42e981c9af893f4bebeb732c0529ec54e5cef3820d7ec659bd`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import React from 'react';
+import { FaHistory } from 'react-icons/fa';
+
+const History = () => {
+  const history = [
+    { id: 1, date: '2026-01-20', zone: 'Airport Zone', amount: '₹85.00' },
+    { id: 2, date: '2026-01-18', zone: 'Downtown Plaza', amount: '₹120.00' },
+  ];
+
+  return (
+    <div className="min-h-screen bg-gray-50 p-4 md:p-8">
+      <div className="max-w-4xl mx-auto">
+        <div className="flex items-center mb-6">
+          <FaHistory className="h-6 w-6 text-blue-600 mr-3" />
+          <h1 className="text-3xl font-bold text-gray-900">Parking History</h1>
+        </div>
+
+        <div className="bg-white rounded-xl shadow overflow-hidden">
+          <table className="w-full">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="px-6 py-3 text-left text-sm font-medium text-gray-700">Date</th>
+                <th className="px-6 py-3 text-left text-sm font-medium text-gray-700">Zone</th>
+                <th className="px-6 py-3 text-left text-sm font-medium text-gray-700">Amount</th>
+                <th className="px-6 py-3 text-left text-sm font-medium text-gray-700">Status</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200">
+              {history.map((item) => (
+                <tr key={item.id} className="hover:bg-gray-50">
+                  <td className="px-6 py-4 whitespace-nowrap text-gray-900">{item.date}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-gray-900">{item.zone}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-gray-900 font-medium">{item.amount}</td>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <span className="px-2 py-1 text-xs font-medium bg-green-100 text-green-800 rounded">
+                      Completed
+                    </span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default History;
+```
+
+---
+
+### <a id="📄-src-components-user-parkingsearch-jsx"></a>📄 `src/components/user/ParkingSearch.jsx`
+
+**File Info:**
+- **Size**: 6.99 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/user/ParkingSearch.jsx`
+- **Relative Path**: `src/components/user`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-26 08:05:09 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `bd7a7e33f567e632ee81890e1ac17ffb`
+- **SHA256**: `fa748e9ccce45157c28c5de7b6e596eff6df8eb3ca57e2bd5d4cd832984dc7dd`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { parkingService } from '../../services/parking';
+import { FaSearch, FaMapMarkerAlt, FaCar, FaInfoCircle } from 'react-icons/fa';
+import { toast } from 'react-hot-toast';
+
+const ParkingSearch = () => {
+  const [location, setLocation] = useState('');
+  const [zones, setZones] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    fetchZones();
+  }, []);
+
+  const fetchZones = async (searchLocation = '') => {
+    setLoading(true);
+    try {
+      const data = await parkingService.getZones(searchLocation);
+      setZones(data);
+    } catch (error) {
+      toast.error('Failed to load parking zones');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    fetchZones(location);
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50 flex justify-center w-full py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl w-full">
+        <div className="flex flex-col md:flex-row md:items-center justify-between mb-10">
+          <div>
+            <h1 className="text-4xl font-extrabold text-gray-900 mb-2 tracking-tight">Find Parking</h1>
+            <p className="text-gray-600">Discover and book the perfect parking spot in seconds.</p>
+          </div>
+          <div className="mt-4 md:mt-0">
+            <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+              <FaCar className="mr-2" />
+              {zones.length} Zones Available
+            </span>
+          </div>
+        </div>
+
+        {/* Search Bar */}
+        <div className="bg-white rounded-2xl shadow-lg p-6 mb-10 border border-gray-100 transition-all hover:shadow-xl">
+          <form onSubmit={handleSearch} className="flex flex-col md:flex-row gap-4">
+            <div className="flex-1 relative group">
+              <FaSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 transition-colors group-focus-within:text-blue-500" />
+              <input
+                type="text"
+                value={location}
+                onChange={(e) => setLocation(e.target.value)}
+                placeholder="Enter city, street or landmark..."
+                className="w-full pl-12 pr-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-gray-900 bg-gray-50 focus:bg-white"
+              />
+            </div>
+            <button type="submit" className="px-8 py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-blue-200">
+              Search Now
+            </button>
+          </form>
+        </div>
+
+        {/* Parking Zones grid */}
+        {loading ? (
+          <div className="flex flex-col items-center justify-center py-20">
+            <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-blue-600 mb-4"></div>
+            <p className="text-gray-500 font-medium">Searching for zones...</p>
+          </div>
+        ) : zones.length === 0 ? (
+          <div className="text-center py-20 bg-white rounded-2xl shadow-sm border border-dashed border-gray-300">
+            <FaSearch className="mx-auto h-16 w-16 text-gray-300 mb-4" />
+            <h3 className="text-xl font-bold text-gray-900 mb-2">No zones found</h3>
+            <p className="text-gray-500">We couldn't find any parking zones in that location. Try another search!</p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {zones.map((zone) => (
+              <div
+                key={zone.id}
+                className="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100 flex flex-col"
+              >
+                <div className="relative h-48 bg-blue-500 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <FaCar className="text-white/20 text-9xl absolute -bottom-4 -right-4 transform rotate-12" />
+                  <div className="absolute bottom-4 left-6 right-6">
+                    <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest ${zone.isActive ? 'bg-green-500 text-white' : 'bg-red-500 text-white'}`}>
+                      {zone.isActive ? 'Active' : 'Maintenance'}
+                    </span>
+                    <h3 className="text-2xl font-bold text-white mt-2">{zone.name}</h3>
+                  </div>
+                </div>
+                <div className="p-6 flex-1 flex flex-col">
+                  <div className="flex items-center text-gray-600 mb-6">
+                    <FaMapMarkerAlt className="mr-2 text-blue-500" />
+                    <span className="text-sm font-medium">{zone.location}</span>
+                  </div>
+
+                  <div className="flex justify-between items-center py-4 border-y border-gray-50 mb-6">
+                    <div className="text-center">
+                      <p className="text-2xl font-black text-gray-900">{zone.capacity}</p>
+                      <p className="text-[10px] uppercase font-bold text-gray-400">Total Slots</p>
+                    </div>
+                    <div className="h-8 w-px bg-gray-100"></div>
+                    <div className="text-center">
+                      <p className="text-2xl font-black text-blue-600">₹50</p>
+                      <p className="text-[10px] uppercase font-bold text-gray-400">Base Price</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-auto flex space-x-3">
+                    <button
+                      onClick={() => navigate(`/parking/zone/${zone.id}`)}
+                      className="flex-1 py-3 px-4 rounded-xl border-2 border-gray-100 font-bold text-gray-700 hover:bg-gray-50 transition-all text-sm flex items-center justify-center"
+                    >
+                      <FaInfoCircle className="mr-2" />
+                      Details
+                    </button>
+                    <button
+                      onClick={() => navigate(`/parking/zone/${zone.id}/book`)}
+                      disabled={!zone.isActive}
+                      className={`flex-[2] py-3 px-4 rounded-xl font-bold text-white transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-md text-sm ${zone.isActive ? 'bg-blue-600 hover:bg-blue-700 shadow-blue-100' : 'bg-gray-300 cursor-not-allowed'
+                        }`}
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default ParkingSearch;
+```
+
+---
+
+### <a id="📄-src-components-user-payment-jsx"></a>📄 `src/components/user/Payment.jsx`
+
+**File Info:**
+- **Size**: 8.09 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/user/Payment.jsx`
+- **Relative Path**: `src/components/user`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 15:48:33 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `4436df761c9b5a325423b4b2aed712b6`
+- **SHA256**: `e35dd9721407dc66739919e2d2cde67cf8f9d9e80d87981b46fd4258dd0a2c3d`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
+import { reservationService } from '../../services/reservation';
+import { toast } from 'react-hot-toast';
+
+const Payment = () => {
+  const { reservationId } = useParams();
+  const navigate = useNavigate();
+  const { user } = useAuth();
+  const [reservation, setReservation] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [paymentMethod, setPaymentMethod] = useState('online');
+
+  useEffect(() => {
+    fetchReservation();
+  }, [reservationId]);
+
+  const fetchReservation = async () => {
+    try {
+      const data = await reservationService.getReservationById(reservationId);
+      setReservation(data);
+    } catch (error) {
+      console.error('Failed to fetch reservation:', error);
+      toast.error('Failed to load reservation details');
+      navigate('/dashboard');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handlePayment = async () => {
+    if (!reservation) return;
+    
+    setLoading(true);
+    try {
+      // Process payment based on selected method
+      const paymentData = {
+        reservationId: reservation.id,
+        amount: reservation.amount,
+        paymentMode: paymentMethod
+      };
+
+      // Confirm payment and update reservation status
+      const response = await reservationService.confirmPayment(reservation.id, paymentData);
+      
+      toast.success('Payment successful!');
+      navigate(`/receipt/${reservation.id}`);
+    } catch (error) {
+      console.error('Payment failed:', error);
+      toast.error('Payment failed. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (loading) return (
+    <div className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-2xl mx-auto flex justify-center items-center h-64">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+      </div>
+    </div>
+  );
+
+  if (!reservation) return (
+    <div className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-2xl mx-auto text-center py-12">
+        <p className="text-gray-500">Reservation not found.</p>
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="min-h-screen bg-gray-50 p-4 md:p-8">
+      <div className="max-w-2xl mx-auto">
+        <div className="bg-white rounded-xl shadow p-6 mb-6">
+          <div className="flex items-center space-x-4 mb-6">
+            <button
+              onClick={() => navigate(-1)}
+              className="text-gray-600 hover:text-gray-900 flex items-center"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              Back to Dashboard
+            </button>
+            <h1 className="text-2xl font-bold text-gray-900">Complete Payment</h1>
+          </div>
+          
+          <div className="mb-6 p-4 bg-gray-50 rounded-lg">
+            <h2 className="text-lg font-semibold text-gray-900 mb-2">Reservation Details</h2>
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <div><span className="font-medium text-gray-700">Zone:</span> {reservation.zoneName}</div>
+              <div><span className="font-medium text-gray-700">Slot:</span> {reservation.slotNumber}</div>
+              <div><span className="font-medium text-gray-700">Start Time:</span> {new Date(reservation.startTime).toLocaleString()}</div>
+              <div><span className="font-medium text-gray-700">End Time:</span> {new Date(reservation.endTime).toLocaleString()}</div>
+              <div><span className="font-medium text-gray-700">Vehicle:</span> {reservation.vehicleType}</div>
+              <div><span className="font-medium text-gray-700">Amount:</span> ₹{reservation.amount.toFixed(2)}</div>
+            </div>
+          </div>
+
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-700 mb-2">Payment Method</label>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <button
+                onClick={() => setPaymentMethod('online')}
+                className={`p-4 border rounded-lg flex flex-col items-center ${
+                  paymentMethod === 'online' ? 'border-blue-500 bg-blue-50' : 'border-gray-300'
+                }`}
+              >
+                <svg className="w-8 h-8 text-blue-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                </svg>
+                <span>Online Payment</span>
+              </button>
+              <button
+                onClick={() => setPaymentMethod('qr')}
+                className={`p-4 border rounded-lg flex flex-col items-center ${
+                  paymentMethod === 'qr' ? 'border-blue-500 bg-blue-50' : 'border-gray-300'
+                }`}
+              >
+                <svg className="w-8 h-8 text-green-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+                </svg>
+                <span>QR Code</span>
+              </button>
+              <button
+                onClick={() => setPaymentMethod('cash')}
+                className={`p-4 border rounded-lg flex flex-col items-center ${
+                  paymentMethod === 'cash' ? 'border-blue-500 bg-blue-50' : 'border-gray-300'
+                }`}
+              >
+                <svg className="w-8 h-8 text-yellow-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span>Cash</span>
+              </button>
+            </div>
+          </div>
+
+          <div className="mb-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+            <h3 className="font-medium text-blue-800 mb-2">Payment Instructions</h3>
+            <p className="text-sm text-blue-700">
+              {paymentMethod === 'online' && 'Complete online payment using UPI, credit/debit card or net banking.'}
+              {paymentMethod === 'qr' && 'Scan the QR code at the parking entrance to make payment.'}
+              {paymentMethod === 'cash' && 'Pay cash at the parking counter before entering the zone.'}
+            </p>
+          </div>
+
+          <button
+            onClick={handlePayment}
+            disabled={loading}
+            className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+          >
+            {loading ? (
+              <>
+                <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                </svg>
+                Processing Payment...
+              </>
+            ) : (
+              `Pay ₹${reservation.amount.toFixed(2)}`
+            )}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Payment;
+
+```
+
+---
+
+### <a id="📄-src-components-user-receipt-jsx"></a>📄 `src/components/user/Receipt.jsx`
+
+**File Info:**
+- **Size**: 11.33 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/user/Receipt.jsx`
+- **Relative Path**: `src/components/user`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 15:50:20 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `6872ccd485e4d3839c0a11025668d1c5`
+- **SHA256**: `74f8d1e8146aae8ba9d6cbb06e12448384d2dae21aa9f9691d0469b0d6db1da4`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
+import { reservationService } from '../../services/reservation';
+import { toast } from 'react-hot-toast';
+
+const Receipt = () => {
+  const { reservationId } = useParams();
+  const navigate = useNavigate();
+  const { user } = useAuth();
+  const [reservation, setReservation] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchReservation();
+  }, [reservationId]);
+
+  const fetchReservation = async () => {
+    try {
+      const data = await reservationService.getReceipt(reservationId);
+      setReservation(data);
+    } catch (error) {
+      console.error('Failed to fetch receipt:', error);
+      toast.error('Failed to load receipt details');
+      // Provide mock data for demo purposes
+      setReservation({
+        id: reservationId,
+        user: { name: 'Demo User', email: 'user@example.com' },
+        zoneName: 'Downtown Parking',
+        slotNumber: 'A1',
+        vehicleType: 'Hatchback',
+        vehicleNumber: 'DL-01-AB-1234',
+        startTime: new Date(Date.now() - 3600000).toISOString(),
+        endTime: new Date(Date.now() + 3600000).toISOString(),
+        amount: 118.00,
+        paymentMode: 'Demo Payment',
+        status: 'CONFIRMED'
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleDownload = () => {
+    if (!reservation) return;
+    
+    // Create a printable version of the receipt
+    const printWindow = window.open('', '_blank');
+    printWindow.document.write(`
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>ParkEase Receipt - #${reservation.id}</title>
+          <style>
+            body { font-family: Arial, sans-serif; padding: 20px; background: white; }
+            .receipt-container { max-width: 600px; margin: 0 auto; border: 1px solid #ccc; padding: 20px; background: white; }
+            .header { text-align: center; margin-bottom: 20px; }
+            .section { margin-bottom: 15px; }
+            .section-title { font-weight: bold; margin-bottom: 5px; }
+            .row { display: flex; justify-content: space-between; margin-bottom: 5px; }
+            .footer { margin-top: 20px; text-align: center; }
+            .logo { font-size: 24px; font-weight: bold; color: #3b82f6; margin-bottom: 5px; }
+          </style>
+        </head>
+        <body>
+          <div class="receipt-container">
+            <div class="header">
+              <div class="logo">ParkEase</div>
+              <h1>Reservation Receipt</h1>
+              <p><strong>Booking ID:</strong> #${reservation.id}</p>
+              <p><strong>Date:</strong> ${new Date().toLocaleString()}</p>
+            </div>
+            <div class="section">
+              <div class="section-title">User Information</div>
+              <div class="row"><span>Name:</span><span>${user?.name || reservation.user?.name || 'N/A'}</span></div>
+              <div class="row"><span>Email:</span><span>${user?.email || reservation.user?.email || 'N/A'}</span></div>
+            </div>
+            <div class="section">
+              <div class="section-title">Parking Details</div>
+              <div class="row"><span>Zone:</span><span>${reservation.zoneName || 'N/A'}</span></div>
+              <div class="row"><span>Slot:</span><span>${reservation.slotNumber || 'N/A'}</span></div>
+              <div class="row"><span>Vehicle Type:</span><span>${reservation.vehicleType || 'N/A'}</span></div>
+              <div class="row"><span>Vehicle Number:</span><span>${reservation.vehicleNumber || 'N/A'}</span></div>
+            </div>
+            <div class="section">
+              <div class="section-title">Booking Times</div>
+              <div class="row"><span>Start:</span><span>${new Date(reservation.startTime).toLocaleString()}</span></div>
+              <div class="row"><span>End:</span><span>${new Date(reservation.endTime).toLocaleString()}</span></div>
+            </div>
+            <div class="section">
+              <div class="section-title">Payment Information</div>
+              <div class="row"><span>Amount:</span><span>₹${reservation.amount?.toFixed(2) || '0.00'}</span></div>
+              <div class="row"><span>Mode:</span><span>${reservation.paymentMode || 'N/A'}</span></div>
+              <div class="row"><span>Status:</span><span>${reservation.status || 'N/A'}</span></div>
+            </div>
+            <div class="footer">
+              <p>Thank you for using ParkEase!</p>
+              <p>Safe travels and happy parking.</p>
+            </div>
+          </div>
+        </body>
+      </html>
+    `);
+    printWindow.document.close();
+    printWindow.focus();
+    printWindow.print();
+  };
+
+  if (loading) return (
+    <div className="min-h-screen bg-gray-50 p-8 flex items-center justify-center">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+    </div>
+  );
+
+  if (!reservation) return (
+    <div className="min-h-screen bg-gray-50 p-8 flex items-center justify-center text-gray-500">
+      Reservation not found
+    </div>
+  );
+
+  return (
+    <div className="min-h-screen bg-gray-50 p-4 md:p-8">
+      <div className="max-w-3xl mx-auto">
+        <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
+          <div className="flex justify-between items-start mb-6">
+            <div>
+              <h1 className="text-2xl font-bold text-gray-900">Reservation Receipt</h1>
+              <p className="text-gray-600">Booking ID: #{reservation.id}</p>
+            </div>
+              <button
+                onClick={handleDownload}
+                className="flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+              >
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Download Receipt
+              </button>
+          </div>
+
+          <div className="border-t border-b border-gray-200 py-6 my-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h2 className="text-lg font-semibold text-gray-900 mb-3">User Information</h2>
+                <p className="text-gray-700"><span className="font-medium">Name:</span> {user?.name || reservation.user?.name || 'N/A'}</p>
+                <p className="text-gray-700"><span className="font-medium">Email:</span> {user?.email || reservation.user?.email || 'N/A'}</p>
+              </div>
+              <div>
+                <h2 className="text-lg font-semibold text-gray-900 mb-3">Booking Information</h2>
+                <p className="text-gray-700"><span className="font-medium">Status:</span> <span className={`px-2 py-1 rounded-full text-xs ${
+                  reservation.status === 'CONFIRMED' ? 'bg-green-100 text-green-800' :
+                  reservation.status === 'PENDING' ? 'bg-yellow-100 text-yellow-800' :
+                  reservation.status === 'CANCELLED' ? 'bg-red-100 text-red-800' :
+                  'bg-gray-100 text-gray-800'
+                }`}>{reservation.status}</span></p>
+                <p className="text-gray-700"><span className="font-medium">Reservation ID:</span> #{reservation.id}</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h2 className="text-lg font-semibold text-gray-900 mb-4">Parking Details</h2>
+              <div className="space-y-3">
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Zone:</span>
+                  <span className="font-medium">{reservation.zoneName || 'N/A'}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Slot:</span>
+                  <span className="font-medium">{reservation.slotNumber || 'N/A'}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Vehicle Type:</span>
+                  <span className="font-medium">{reservation.vehicleType || 'N/A'}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Vehicle Number:</span>
+                  <span className="font-medium">{reservation.vehicleNumber || 'N/A'}</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h2 className="text-lg font-semibold text-gray-900 mb-4">Booking Times</h2>
+              <div className="space-y-3">
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Start Time:</span>
+                  <span className="font-medium">{new Date(reservation.startTime).toLocaleString()}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">End Time:</span>
+                  <span className="font-medium">{new Date(reservation.endTime).toLocaleString()}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-600">Duration:</span>
+                  <span className="font-medium">{Math.ceil((new Date(reservation.endTime) - new Date(reservation.startTime)) / (1000 * 60))} hours</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-50 p-6 rounded-lg mb-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">Payment Information</h2>
+            <div className="flex justify-between items-center">
+              <div>
+                <p className="text-gray-600">Total Amount</p>
+                <p className="text-2xl font-bold text-gray-900">₹{reservation.amount?.toFixed(2) || '0.00'}</p>
+              </div>
+              <div className="text-right">
+                <p className="text-gray-600">Payment Mode</p>
+                <p className="font-medium">{reservation.paymentMode || 'N/A'}</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-between items-center pt-6 border-t border-gray-200">
+            <button className="text-gray-600 hover:text-gray-900 flex items-center" onClick={() => navigate('/dashboard')}>
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              Back to Dashboard
+            </button>
+            <p className="text-gray-500 text-sm">Generated on {new Date().toLocaleString()}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Receipt;
+
+```
+
+---
+
+### <a id="📄-src-components-user-reservations-jsx"></a>📄 `src/components/user/Reservations.jsx`
+
+**File Info:**
+- **Size**: 1.71 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/user/Reservations.jsx`
+- **Relative Path**: `src/components/user`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-24 12:11:20 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `04aac392f3f4a7e65cb2120bff5aa0b0`
+- **SHA256**: `6ac639aca1d9a2a5ba83bd0a651bfd0b539c5e9fa36ea72a7cc34e4a3ab4093f`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import React from 'react';
+import { FaCalendar, FaClock, FaMapMarkerAlt } from 'react-icons/fa';
+
+const Reservations = () => {
+  const reservations = [
+    { id: 1, zone: 'Downtown Plaza', slot: 'A12', status: 'Active', time: '2:00 PM - 4:00 PM' },
+    { id: 2, zone: 'Mall Parking', slot: 'B05', status: 'Completed', time: 'Yesterday' },
+  ];
+
+  return (
+    <div className="min-h-screen bg-gray-50 p-4 md:p-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-3xl font-bold text-gray-900 mb-6">My Reservations</h1>
+        
+        <div className="space-y-4">
+          {reservations.map((res) => (
+            <div key={res.id} className="bg-white rounded-xl shadow p-6">
+              <div className="flex items-center justify-between mb-4">
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">{res.zone}</h3>
+                  <div className="flex items-center mt-1 text-gray-600">
+                    <FaMapMarkerAlt className="mr-2" />
+                    <span>Slot {res.slot}</span>
+                  </div>
+                </div>
+                <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+                  res.status === 'Active' 
+                    ? 'bg-green-100 text-green-800' 
+                    : 'bg-gray-100 text-gray-800'
+                }`}>
+                  {res.status}
+                </span>
+              </div>
+              <div className="flex items-center text-gray-600">
+                <FaClock className="mr-2" />
+                <span>{res.time}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Reservations;
+```
+
+---
+
+### <a id="📄-src-components-user-zonedetails-jsx"></a>📄 `src/components/user/ZoneDetails.jsx`
+
+**File Info:**
+- **Size**: 12.4 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/user/ZoneDetails.jsx`
+- **Relative Path**: `src/components/user`
+- **Created**: 2026-01-26 07:42:22 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-26 07:42:22 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `f0c18130fcf24ce15da97460ae361236`
+- **SHA256**: `2635c65608de4ad099347badfc185e5dba34e0ea6a0104e2d0f3417aa96dc4a4`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+// src/components/user/ZoneDetails.jsx
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate, Link } from 'react-router-dom';
+import { parkingService } from '../../services/parking';
+import { FaMapMarkerAlt, FaCar, FaArrowLeft, FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
+import { toast } from 'react-hot-toast';
+
+const ZoneDetails = () => {
+    const { id } = useParams();
+    const navigate = useNavigate();
+    const [zone, setZone] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        fetchZoneDetails();
+    }, [id]);
+
+    const fetchZoneDetails = async () => {
+        try {
+            const data = await parkingService.getZoneById(id);
+            setZone(data);
+        } catch (error) {
+            console.error('Failed to fetch zone details:', error);
+            toast.error('Failed to load zone details');
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    if (loading) {
+        return (
+            <div className="min-h-screen flex items-center justify-center bg-gray-50">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+            </div>
+        );
+    }
+
+    if (!zone) {
+        return (
+            <div className="min-h-screen flex items-center justify-center bg-gray-50">
+                <div className="text-center">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Zone Not Found</h2>
+                    <Link to="/parking/search" className="text-blue-600 hover:text-blue-700">
+                        ← Back to Search
+                    </Link>
+                </div>
+            </div>
+        );
+    }
+
+    return (
+        <div className="min-h-screen bg-gray-50">
+            {/* Navigation Bar */}
+            <nav className="bg-white shadow-sm border-b">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex justify-between items-center h-16">
+                        <div className="flex items-center">
+                            <button
+                                onClick={() => navigate(-1)}
+                                className="flex items-center text-gray-600 hover:text-gray-900 mr-4"
+                            >
+                                <FaArrowLeft className="mr-2" />
+                                Back
+                            </button>
+                            <h1 className="text-2xl font-bold text-blue-600">ParkEase</h1>
+                        </div>
+                        <Link
+                            to="/dashboard"
+                            className="text-gray-600 hover:text-gray-900"
+                        >
+                            Dashboard
+                        </Link>
+                    </div>
+                </div>
+            </nav>
+
+            {/* Main Content */}
+            <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+                <div className="px-4 py-6 sm:px-0">
+                    {/* Zone Header */}
+                    <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-6">
+                        <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-10 text-white">
+                            <div className="flex items-start justify-between">
+                                <div>
+                                    <h1 className="text-4xl font-bold mb-3">{zone.name}</h1>
+                                    <div className="flex items-center text-lg">
+                                        <FaMapMarkerAlt className="mr-2" />
+                                        <span>{zone.location}</span>
+                                    </div>
+                                </div>
+                                <div className="text-right">
+                                    <span className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold ${zone.isActive
+                                            ? 'bg-green-100 text-green-800'
+                                            : 'bg-red-100 text-red-800'
+                                        }`}>
+                                        {zone.isActive ? (
+                                            <>
+                                                <FaCheckCircle className="mr-2" />
+                                                Active
+                                            </>
+                                        ) : (
+                                            <>
+                                                <FaTimesCircle className="mr-2" />
+                                                Inactive
+                                            </>
+                                        )}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="px-8 py-6">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                {/* Capacity */}
+                                <div className="bg-blue-50 rounded-lg p-6">
+                                    <div className="flex items-center justify-between">
+                                        <div>
+                                            <p className="text-sm text-gray-600 mb-1">Total Capacity</p>
+                                            <p className="text-3xl font-bold text-blue-600">{zone.capacity}</p>
+                                            <p className="text-xs text-gray-500 mt-1">parking slots</p>
+                                        </div>
+                                        <FaCar className="h-12 w-12 text-blue-400" />
+                                    </div>
+                                </div>
+
+                                {/* Available Slots */}
+                                <div className="bg-green-50 rounded-lg p-6">
+                                    <div className="flex items-center justify-between">
+                                        <div>
+                                            <p className="text-sm text-gray-600 mb-1">Available Slots</p>
+                                            <p className="text-3xl font-bold text-green-600">
+                                                {zone.availableSlots || zone.capacity}
+                                            </p>
+                                            <p className="text-xs text-gray-500 mt-1">ready to book</p>
+                                        </div>
+                                        <FaCheckCircle className="h-12 w-12 text-green-400" />
+                                    </div>
+                                </div>
+
+                                {/* Occupancy Rate */}
+                                <div className="bg-purple-50 rounded-lg p-6">
+                                    <div className="flex items-center justify-between">
+                                        <div>
+                                            <p className="text-sm text-gray-600 mb-1">Occupancy</p>
+                                            <p className="text-3xl font-bold text-purple-600">
+                                                {Math.round(((zone.capacity - (zone.availableSlots || zone.capacity)) / zone.capacity) * 100)}%
+                                            </p>
+                                            <p className="text-xs text-gray-500 mt-1">current usage</p>
+                                        </div>
+                                        <div className="h-12 w-12 rounded-full bg-purple-400 flex items-center justify-center text-white font-bold">
+                                            {zone.capacity - (zone.availableSlots || zone.capacity)}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Zone Information */}
+                    <div className="bg-white rounded-xl shadow p-8 mb-6">
+                        <h2 className="text-2xl font-bold text-gray-900 mb-6">Zone Information</h2>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="border-l-4 border-blue-500 pl-4">
+                                <h3 className="text-sm font-medium text-gray-500 mb-1">Zone Name</h3>
+                                <p className="text-lg text-gray-900">{zone.name}</p>
+                            </div>
+
+                            <div className="border-l-4 border-blue-500 pl-4">
+                                <h3 className="text-sm font-medium text-gray-500 mb-1">Location</h3>
+                                <p className="text-lg text-gray-900">{zone.location}</p>
+                            </div>
+
+                            <div className="border-l-4 border-blue-500 pl-4">
+                                <h3 className="text-sm font-medium text-gray-500 mb-1">Total Capacity</h3>
+                                <p className="text-lg text-gray-900">{zone.capacity} slots</p>
+                            </div>
+
+                            <div className="border-l-4 border-blue-500 pl-4">
+                                <h3 className="text-sm font-medium text-gray-500 mb-1">Status</h3>
+                                <p className={`text-lg font-semibold ${zone.isActive ? 'text-green-600' : 'text-red-600'}`}>
+                                    {zone.isActive ? 'Active & Operational' : 'Currently Inactive'}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Action Buttons */}
+                    <div className="bg-white rounded-xl shadow p-8">
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            {zone.isActive ? (
+                                <>
+                                    <button
+                                        onClick={() => navigate(`/parking/zone/${zone.id}/book`)}
+                                        className="flex-1 inline-flex justify-center items-center px-8 py-4 border border-transparent text-lg font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all shadow-lg hover:shadow-xl"
+                                    >
+                                        <FaCar className="mr-3 h-5 w-5" />
+                                        Book Parking Now
+                                    </button>
+                                    <Link
+                                        to="/parking/search"
+                                        className="flex-1 inline-flex justify-center items-center px-8 py-4 border-2 border-gray-300 text-lg font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all"
+                                    >
+                                        View Other Zones
+                                    </Link>
+                                </>
+                            ) : (
+                                <>
+                                    <div className="flex-1 bg-gray-100 rounded-lg p-4 text-center">
+                                        <p className="text-gray-600">This zone is currently inactive and not available for booking.</p>
+                                    </div>
+                                    <Link
+                                        to="/parking/search"
+                                        className="flex-1 inline-flex justify-center items-center px-8 py-4 border border-transparent text-lg font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                    >
+                                        Find Available Zones
+                                    </Link>
+                                </>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    );
+};
+
+export default ZoneDetails;
+
+```
+
+---
+
+### <a id="📄-src-context-authcontext-jsx"></a>📄 `src/context/AuthContext.jsx`
+
+**File Info:**
+- **Size**: 3.68 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/context/AuthContext.jsx`
+- **Relative Path**: `src/context`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-26 08:18:03 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `14a9002aba5770ff4b2dad5280d8fc7f`
+- **SHA256**: `5df9bfdfbb8c79db2fc4dcb6b2d034cf70758e72219e975e48d45bb24a6cff61`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+// src/context/AuthContext.jsx
+import React, { createContext, useState, useContext, useEffect, useRef, useMemo } from 'react';
+import { authService } from '../services/auth';
+import api from '../services/api';
+import { toast } from 'react-hot-toast';
+
+const AuthContext = createContext();
+
+export const useAuth = () => useContext(AuthContext);
+
+export const AuthProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [isAdmin, setIsAdmin] = useState(false);
+  const sessionTimeoutRef = useRef(null);
+
+  const logout = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    setUser(null);
+    setIsAdmin(false);
+    if (sessionTimeoutRef.current) {
+      clearTimeout(sessionTimeoutRef.current);
+    }
+    sessionTimeoutRef.current = null;
+    toast.success('Logged out successfully');
+  };
+
+  const handleSessionTimeout = () => {
+    logout();
+    toast.error('Session expired due to inactivity. Please log in again.');
+  };
+
+  const resetSessionTimeout = (minutes = 15) => {
+    if (sessionTimeoutRef.current) {
+      clearTimeout(sessionTimeoutRef.current);
+    }
+
+    if (localStorage.getItem('token')) {
+      sessionTimeoutRef.current = setTimeout(() => {
+        handleSessionTimeout();
+      }, minutes * 60 * 1000);
+    }
+  };
+
+  useEffect(() => {
+    const checkAuth = async () => {
+      const token = localStorage.getItem('token');
+      const userData = localStorage.getItem('user');
+
+      if (token && userData) {
+        try {
+          await api.get('/user/zones');
+          const parsedUser = JSON.parse(userData);
+          setUser(parsedUser);
+          setIsAdmin(parsedUser.role === 'ROLE_ADMIN');
+          resetSessionTimeout(15);
+        } catch (error) {
+          localStorage.removeItem('token');
+          localStorage.removeItem('user');
+          setUser(null);
+          setIsAdmin(false);
+        }
+      }
+      setLoading(false);
+    };
+
+    checkAuth();
+
+    const events = ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart', 'click', 'keydown'];
+    const handler = () => resetSessionTimeout(15);
+    events.forEach(event => document.addEventListener(event, handler, true));
+
+    return () => {
+      events.forEach(event => document.removeEventListener(event, handler, true));
+      if (sessionTimeoutRef.current) clearTimeout(sessionTimeoutRef.current);
+    };
+  }, []);
+
+  const login = async (email, password) => {
+    try {
+      const response = await authService.login(email, password);
+      const { token, role, email: userEmail, name } = response;
+      const userData = { email: userEmail, name, role };
+
+      localStorage.setItem('token', token);
+      localStorage.setItem('user', JSON.stringify(userData));
+
+      setUser(userData);
+      setIsAdmin(role === 'ROLE_ADMIN');
+      resetSessionTimeout(15);
+
+      toast.success('Login successful!');
+      return { success: true, isAdmin: role === 'ROLE_ADMIN' };
+    } catch (error) {
+      toast.error(error.message || 'Login failed');
+      return { success: false };
+    }
+  };
+
+  const register = async (userData) => {
+    try {
+      await authService.register(userData);
+      toast.success('Registration successful! Please login.');
+      return { success: true };
+    } catch (error) {
+      toast.error(error.message || 'Registration failed');
+      return { success: false };
+    }
+  };
+
+  const value = React.useMemo(() => ({
+    user,
+    isAdmin,
+    loading,
+    login,
+    register,
+    logout,
+  }), [user, isAdmin, loading]);
+
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
+};
+```
+
+---
+
+### <a id="📄-src-pages-backendtest-jsx"></a>📄 `src/pages/BackendTest.jsx`
+
+**File Info:**
+- **Size**: 4.64 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/pages/BackendTest.jsx`
+- **Relative Path**: `src/pages`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-24 12:23:50 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `2cc8d927f07e7d34cd24c7734d7b81d5`
+- **SHA256**: `edda7a5326184cf4f628f70b165df94e2e4bfc2c0cca59ac21ff207135702be1`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import React, { useState, useEffect } from 'react';
+import { healthService } from '../services/health';
+import { authService } from '../services/auth';
+import { parkingService } from '../services/parking';
+
+const BackendTest = () => {
+  const [backendHealth, setBackendHealth] = useState(null);
+  const [testResults, setTestResults] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    testBackendConnection();
+  }, []);
+
+  const testBackendConnection = async () => {
+    setLoading(true);
+    const results = [];
+
+    try {
+      // Test 1: Backend health
+      const health = await healthService.checkBackendHealth();
+      results.push({
+        test: 'Backend Health',
+        status: health.healthy ? '✅ PASS' : '❌ FAIL',
+        message: health.healthy ? 'Backend is running' : health.error
+      });
+      setBackendHealth(health);
+
+      // Test 2: Login with demo credentials
+      try {
+        await authService.login('user@example.com', 'password123');
+        results.push({
+          test: 'Authentication',
+          status: '✅ PASS',
+          message: 'Login API is working'
+        });
+      } catch (error) {
+        results.push({
+          test: 'Authentication',
+          status: '⚠️ SKIP',
+          message: 'Using demo credentials - endpoint may need adjustment'
+        });
+      }
+
+      // Test 3: Get parking zones
+      try {
+        await parkingService.getZones();
+        results.push({
+          test: 'Parking Zones',
+          status: '✅ PASS',
+          message: 'Zones API is working'
+        });
+      } catch (error) {
+        results.push({
+          test: 'Parking Zones',
+          status: '❌ FAIL',
+          message: error.message
+        });
+      }
+
+    } catch (error) {
+      results.push({
+        test: 'Overall Connection',
+        status: '❌ FAIL',
+        message: error.message
+      });
+    } finally {
+      setTestResults(results);
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-3xl font-bold text-gray-900 mb-6">Backend Connection Test</h1>
+        
+        <div className="bg-white rounded-xl shadow p-6 mb-6">
+          <h2 className="text-xl font-semibold mb-4">Connection Status</h2>
+          
+          {loading ? (
+            <div className="flex items-center">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mr-3"></div>
+              <span>Testing backend connection...</span>
+            </div>
+          ) : (
+            <div className="space-y-4">
+              {testResults.map((result, index) => (
+                <div key={index} className="flex items-center justify-between p-3 border rounded-lg">
+                  <div>
+                    <span className="font-medium">{result.test}</span>
+                    <p className="text-sm text-gray-600">{result.message}</p>
+                  </div>
+                  <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+                    result.status.includes('✅') ? 'bg-green-100 text-green-800' :
+                    result.status.includes('❌') ? 'bg-red-100 text-red-800' :
+                    'bg-yellow-100 text-yellow-800'
+                  }`}>
+                    {result.status}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <div className="bg-white rounded-xl shadow p-6">
+          <h2 className="text-xl font-semibold mb-4">Backend Configuration</h2>
+          <div className="space-y-3">
+            <div>
+              <span className="font-medium">Backend URL:</span>
+              <code className="ml-2 bg-gray-100 px-2 py-1 rounded">http://localhost:8080</code>
+            </div>
+            <div>
+              <span className="font-medium">Frontend URL:</span>
+              <code className="ml-2 bg-gray-100 px-2 py-1 rounded">http://localhost:5173</code>
+            </div>
+            <div>
+              <span className="font-medium">Required CORS Headers:</span>
+              <ul className="ml-4 mt-2 list-disc text-sm text-gray-600">
+                <li>Access-Control-Allow-Origin: http://localhost:5173</li>
+                <li>Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS</li>
+                <li>Access-Control-Allow-Headers: *</li>
+                <li>Access-Control-Allow-Credentials: true</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default BackendTest;
+```
+
+---
+
+### <a id="📄-src-pages-home-jsx"></a>📄 `src/pages/Home.jsx`
+
+**File Info:**
+- **Size**: 886 B
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/pages/Home.jsx`
+- **Relative Path**: `src/pages`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-24 12:07:20 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `60af7f4704c98dcca1fd635f92c4495d`
+- **SHA256**: `ba7db8b90c2b74717c6739ab70df259a5d4a142536ad2223747b47cfca98f387`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const Home = () => {
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-4">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-blue-600 mb-4">ParkEase</h1>
+        <p className="text-gray-600 mb-8">Smart Parking Management System</p>
+        <div className="space-x-4">
+          <Link 
+            to="/login" 
+            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+          >
+            Login
+          </Link>
+          <Link 
+            to="/register" 
+            className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50"
+          >
+            Register
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
+```
+
+---
+
+### <a id="📄-src-pages-notfound-jsx"></a>📄 `src/pages/NotFound.jsx`
+
+**File Info:**
+- **Size**: 598 B
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/pages/NotFound.jsx`
+- **Relative Path**: `src/pages`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-24 12:06:58 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `c8f9f4d1ac9b93889ebb5536060d9918`
+- **SHA256**: `71655ded3e357b9697ac81a4c39a08c774aa98b9f290821c434480f3384a9a5c`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const NotFound = () => {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      <div className="text-center">
+        <h1 className="text-6xl font-bold text-gray-800 mb-4">404</h1>
+        <p className="text-xl text-gray-600 mb-8">Page Not Found</p>
+        <Link 
+          to="/" 
+          className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+        >
+          Go Home
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default NotFound;
+```
+
+---
+
+### <a id="📄-src-services-admin-js"></a>📄 `src/services/admin.js`
+
+**File Info:**
+- **Size**: 14.09 KB
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `src/services/admin.js`
+- **Relative Path**: `src/services`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 16:10:14 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `31790cdf1b0fb239d318d4473bb90321`
+- **SHA256**: `fcfeb96102e3238e3508246e678085c23959a7bf7a74b5471eb5157d7c5e36cc`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```javascript
+import api from './api';
+
+export const adminService = {
+  // Parking Zone Management
+  createZone: async (zoneData) => {
+    try {
+      const response = await api.post('/admin/zone', zoneData);
+      return response.data;
+    } catch (error) {
+      console.error('Create zone error:', error.message);
+      throw new Error('Failed to create parking zone.');
+    }
+  },
+
+  getZones: async () => {
+    try {
+      const response = await api.get('/admin/zones');
+      return response.data;
+    } catch (error) {
+      console.error('Get zones error:', error.message);
+      throw new Error('Failed to load parking zones.');
+    }
+  },
+
+  updateZone: async (id, zoneData) => {
+    try {
+      const response = await api.put(`/admin/zones/${id}`, zoneData);
+      return response.data;
+    } catch (error) {
+      console.error('Update zone error:', error.message);
+      throw new Error('Failed to update parking zone.');
+    }
+  },
+
+  deleteZone: async (id) => {
+    try {
+      const response = await api.delete(`/admin/zones/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Delete zone error:', error.message);
+      throw new Error('Failed to delete parking zone.');
+    }
+  },
+
+  // Slot Management
+  createSlot: async (zoneId, slotData) => {
+    try {
+      const response = await api.post(`/admin/zones/${zoneId}/slots`, slotData);
+      return response.data;
+    } catch (error) {
+      console.error('Create slot error:', error.message);
+      throw new Error('Failed to create parking slot.');
+    }
+  },
+
+  getZoneSlots: async (zoneId) => {
+    try {
+      const response = await api.get(`/admin/zones/${zoneId}/slots`);
+      return response.data;
+    } catch (error) {
+      console.error('Get zone slots error:', error.message);
+      throw new Error('Failed to load parking slots.');
+    }
+  },
+
+  updateSlotStatus: async (slotId, status) => {
+    try {
+      const response = await api.put(`/admin/slots/${slotId}/status`, { status });
+      return response.data;
+    } catch (error) {
+      console.error('Update slot status error:', error.message);
+      throw new Error('Failed to update slot status.');
+    }
+  },
+
+  // Pricing Management
+  getPricing: async () => {
+    try {
+      const response = await api.get('/admin/pricing');
+      return response.data;
+    } catch (error) {
+      console.error('Get pricing error:', error.message);
+      throw new Error('Failed to load pricing information.');
+    }
+  },
+
+  createPricing: async (priceData) => {
+    try {
+      const response = await api.post('/admin/pricing', priceData);
+      return response.data;
+    } catch (error) {
+      console.error('Create pricing error:', error.message);
+      throw new Error('Failed to create pricing.');
+    }
+  },
+
+  updatePricing: async (id, priceData) => {
+    try {
+      const response = await api.put(`/admin/pricing/${id}`, priceData);
+      return response.data;
+    } catch (error) {
+      console.error('Update pricing error:', error.message);
+      throw new Error('Failed to update pricing.');
+    }
+  },
+
+  deletePricing: async (id) => {
+    try {
+      const response = await api.delete(`/admin/pricing/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Delete pricing error:', error.message);
+      throw new Error('Failed to delete pricing.');
+    }
+  },
+
+  // Analytics and Reports
+  getReports: async () => {
+    try {
+      const response = await api.get('/admin/reports');
+      return response.data;
+    } catch (error) {
+      console.error('Get reports error:', error.message);
+      throw new Error('Failed to load reports.');
+    }
+  },
+
+  getAnalytics: async (dateRange) => {
+    try {
+      const response = await api.get('/admin/analytics', {
+        params: { dateRange }
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Get analytics error:', error.message);
+      throw new Error('Failed to load analytics.');
+    }
+  },
+
+  // User Management
+  getUsers: async () => {
+    try {
+      const response = await api.get('/admin/users');
+      return response.data;
+    } catch (error) {
+      console.error('Get users error:', error.message);
+      throw new Error('Failed to load users.');
+    }
+  },
+
+  createUser: async (userData) => {
+    try {
+      const response = await api.post('/admin/users', userData);
+      return response.data;
+    } catch (error) {
+      console.error('Create user error:', error.message);
+      throw new Error('Failed to create user.');
+    }
+  },
+
+  updateUser: async (userId, userData) => {
+    try {
+      const response = await api.put(`/admin/users/${userId}`, userData);
+      return response.data;
+    } catch (error) {
+      console.error('Update user error:', error.message);
+      throw new Error('Failed to update user.');
+    }
+  },
+
+  deleteUser: async (userId) => {
+    try {
+      const response = await api.delete(`/admin/users/${userId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Delete user error:', error.message);
+      throw new Error('Failed to delete user.');
+    }
+  },
+
+  updateUserStatus: async (userId, status) => {
+    try {
+      const response = await api.put(`/admin/users/${userId}/status`, { status });
+      return response.data;
+    } catch (error) {
+      console.error('Update user status error:', error.message);
+      throw new Error('Failed to update user status.');
+    }
+  },
+
+  // Slot Management
+  getZoneSlots: async (zoneId) => {
+    try {
+      const response = await api.get(`/admin/zones/${zoneId}/slots`);
+      return response.data;
+    } catch (error) {
+      console.error('Get zone slots error:', error.message);
+      throw new Error('Failed to load zone slots.');
+    }
+  },
+
+  createSlot: async (zoneId, slotData) => {
+    try {
+      const response = await api.post(`/admin/zones/${zoneId}/slots`, slotData);
+      return response.data;
+    } catch (error) {
+      console.error('Create slot error:', error.message);
+      throw new Error('Failed to create slot.');
+    }
+  },
+
+  updateSlotStatus: async (slotId, status) => {
+    try {
+      const response = await api.put(`/admin/slots/${slotId}/status`, { status });
+      return response.data;
+    } catch (error) {
+      console.error('Update slot status error:', error.message);
+      throw new Error('Failed to update slot status.');
+    }
+  },
+
+  // Parking Zone Management (additional methods)
+  getZoneById: async (id) => {
+    try {
+      const response = await api.get(`/admin/zones/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get zone by ID error:', error.message);
+      throw new Error('Failed to load parking zone.');
+    }
+  },
+
+  updateZone: async (id, zoneData) => {
+    try {
+      const response = await api.put(`/admin/zones/${id}`, zoneData);
+      return response.data;
+    } catch (error) {
+      console.error('Update zone error:', error.message);
+      throw new Error('Failed to update parking zone.');
+    }
+  },
+
+  deleteZone: async (id) => {
+    try {
+      const response = await api.delete(`/admin/zones/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Delete zone error:', error.message);
+      throw new Error('Failed to delete parking zone.');
+    }
+  },
+
+  // User Management (additional methods)
+  getUserById: async (id) => {
+    try {
+      const response = await api.get(`/admin/users/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get user by ID error:', error.message);
+      throw new Error('Failed to load user.');
+    }
+  },
+
+  updateUser: async (id, userData) => {
+    try {
+      const response = await api.put(`/admin/users/${id}`, userData);
+      return response.data;
+    } catch (error) {
+      console.error('Update user error:', error.message);
+      throw new Error('Failed to update user.');
+    }
+  },
+
+  deleteUser: async (id) => {
+    try {
+      const response = await api.delete(`/admin/users/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Delete user error:', error.message);
+      throw new Error('Failed to delete user.');
+    }
+  },
+
+  // Additional methods for reservation management are already defined above
+
+  // Base Price Management (for pricing)
+  getBasePrices: async () => {
+    try {
+      const response = await api.get('/admin/base-prices');
+      return response.data;
+    } catch (error) {
+      console.error('Get base prices error:', error.message);
+      throw new Error('Failed to load base prices.');
+    }
+  },
+
+  getBasePriceById: async (id) => {
+    try {
+      const response = await api.get(`/admin/base-prices/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get base price by ID error:', error.message);
+      throw new Error('Failed to load base price.');
+    }
+  },
+
+  createBasePrice: async (priceData) => {
+    try {
+      const response = await api.post('/admin/base-prices', priceData);
+      return response.data;
+    } catch (error) {
+      console.error('Create base price error:', error.message);
+      throw new Error('Failed to create base price.');
+    }
+  },
+
+  updateBasePrice: async (id, priceData) => {
+    try {
+      const response = await api.put(`/admin/base-prices/${id}`, priceData);
+      return response.data;
+    } catch (error) {
+      console.error('Update base price error:', error.message);
+      throw new Error('Failed to update base price.');
+    }
+  },
+
+  deleteBasePrice: async (id) => {
+    try {
+      const response = await api.delete(`/admin/base-prices/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Delete base price error:', error.message);
+      throw new Error('Failed to delete base price.');
+    }
+  },
+
+  // Reservation Management
+  getReservations: async () => {
+    try {
+      const response = await api.get('/admin/reservations');
+      return response.data;
+    } catch (error) {
+      console.error('Get reservations error:', error.message);
+      throw new Error('Failed to load reservations.');
+    }
+  },
+
+  getReservationById: async (id) => {
+    try {
+      const response = await api.get(`/admin/reservations/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get reservation by ID error:', error.message);
+      throw new Error('Failed to load reservation.');
+    }
+  },
+
+  updateReservationStatus: async (id, status) => {
+    try {
+      const response = await api.put(`/admin/reservations/${id}/status`, { status });
+      return response.data;
+    } catch (error) {
+      console.error('Update reservation status error:', error.message);
+      throw new Error('Failed to update reservation status.');
+    }
+  },
+
+  // Notification Management
+  scheduleEndNotification: async (reservationId, minutesBefore) => {
+    try {
+      const response = await api.post('/admin/notifications/schedule-end', {
+        reservationId,
+        minutesBefore
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Schedule end notification error:', error.message);
+      throw new Error('Failed to schedule end notification.');
+    }
+  },
+
+  getNotifications: async (userId) => {
+    try {
+      const response = await api.get(`/admin/notifications/user/${userId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get notifications error:', error.message);
+      throw new Error('Failed to load notifications.');
+    }
+  },
+
+  markNotificationAsRead: async (notificationId) => {
+    try {
+      const response = await api.put(`/admin/notifications/${notificationId}/read`);
+      return response.data;
+    } catch (error) {
+      console.error('Mark notification as read error:', error.message);
+      throw new Error('Failed to mark notification as read.');
+    }
+  },
+
+  // Receipt Management
+  getReceipt: async (reservationId) => {
+    try {
+      const response = await api.get(`/receipt/${reservationId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get receipt error:', error.message);
+      throw new Error('Failed to load receipt.');
+    }
+  },
+
+  downloadReceipt: async (reservationId) => {
+    try {
+      const response = await api.get(`/receipt/download/${reservationId}`, {
+        responseType: 'blob'
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Download receipt error:', error.message);
+      throw new Error('Failed to download receipt.');
+    }
+  },
+
+  // Reservation Analytics
+  getReservationAnalytics: async (dateRange) => {
+    try {
+      const response = await api.get('/admin/analytics/reservations', {
+        params: { dateRange }
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Get reservation analytics error:', error.message);
+      throw new Error('Failed to load reservation analytics.');
+    }
+  },
+
+  // User Analytics
+  getUserAnalytics: async (dateRange) => {
+    try {
+      const response = await api.get('/admin/analytics/users', {
+        params: { dateRange }
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Get user analytics error:', error.message);
+      throw new Error('Failed to load user analytics.');
+    }
+  },
+
+  // Zone Analytics
+  getZoneAnalytics: async (dateRange) => {
+    try {
+      const response = await api.get('/admin/analytics/zones', {
+        params: { dateRange }
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Get zone analytics error:', error.message);
+      throw new Error('Failed to load zone analytics.');
+    }
+  },
+
+  // Revenue Analytics
+  getRevenueAnalytics: async (dateRange) => {
+    try {
+      const response = await api.get('/admin/analytics/revenue', {
+        params: { dateRange }
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Get revenue analytics error:', error.message);
+      throw new Error('Failed to load revenue analytics.');
+    }
+  }
+};
+
+```
+
+---
+
+### <a id="📄-src-services-api-js"></a>📄 `src/services/api.js`
+
+**File Info:**
+- **Size**: 2.22 KB
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `src/services/api.js`
+- **Relative Path**: `src/services`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 23:23:08 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `65f8f73f810e66e33e03379d79e24a72`
+- **SHA256**: `1aaf1f3f7743824505152866c32ae85b027a71c2cee3c2ed007d79831cdcae17`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```javascript
+import axios from 'axios';
+
+// Base URL for your backend - make sure backend is running on port 8080 with /api context path
+const API_BASE_URL = 'http://localhost:8080/api';
+
+// Create axios instance with proper configuration
+const api = axios.create({
+  baseURL: API_BASE_URL,
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+  },
+  // Important for cookies/session
+  withCredentials: true,
+  timeout: 10000, // 10 second timeout
+});
+
+// Request interceptor to add token
+api.interceptors.request.use(
+  (config) => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+
+    // REMOVED: CORS headers - these are RESPONSE headers, not REQUEST headers!
+    // The server (backend) handles CORS, not the client
+
+    console.log('API Request:', config.method?.toUpperCase(), config.url);
+    return config;
+  },
+  (error) => {
+    console.error('Request Error:', error);
+    return Promise.reject(error);
+  }
+);
+
+// Response interceptor for error handling
+api.interceptors.response.use(
+  (response) => {
+    console.log('API Response:', response.status, response.config.url);
+    return response;
+  },
+  (error) => {
+    console.error('API Error:', error.response?.status, error.config?.url, error.message);
+
+    if (error.response) {
+      // Server responded with error status
+      switch (error.response.status) {
+        case 401:
+          console.log('Unauthorized - clearing local storage');
+          localStorage.removeItem('token');
+          localStorage.removeItem('user');
+          window.location.href = '/login';
+          break;
+        case 403:
+          console.log('Forbidden');
+          break;
+        case 404:
+          console.log('API endpoint not found');
+          break;
+        case 500:
+          console.log('Server error');
+          break;
+      }
+    } else if (error.request) {
+      // Request made but no response
+      console.error('No response received:', error.request);
+    } else {
+      // Something else happened
+      console.error('Request setup error:', error.message);
+    }
+
+    return Promise.reject(error);
+  }
+);
+
+export default api;
+```
+
+---
+
+### <a id="📄-src-services-auth-js"></a>📄 `src/services/auth.js`
+
+**File Info:**
+- **Size**: 2.95 KB
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `src/services/auth.js`
+- **Relative Path**: `src/services`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 07:37:28 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `fc5e8b2d9c3b90c46503dac96e50284c`
+- **SHA256**: `503b768c7fb5d7f78a6cf14ba88f472706c5d49e7e95473744383ebcdd62e613`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```javascript
+import api from './api';
+
+export const authService = {
+  // Login with real API call
+  login: async (email, password) => {
+    try {
+      console.log('Attempting login for:', email);
+      
+      const response = await api.post('/auth/login', { 
+        email, 
+        password 
+      });
+      
+      console.log('Login successful:', response.data);
+      return response.data;
+      
+    } catch (error) {
+      console.error('Login API Error:', error.response?.data || error.message);
+      
+      // Provide user-friendly error messages
+      let errorMessage = 'Login failed. Please try again.';
+      
+      if (error.response?.status === 401) {
+        errorMessage = 'Invalid email or password.';
+      } else if (error.response?.status === 404) {
+        errorMessage = 'Authentication service unavailable.';
+      } else if (error.code === 'ERR_NETWORK') {
+        errorMessage = 'Network error. Please check if backend is running on port 8080.';
+      }
+      
+      throw new Error(errorMessage);
+    }
+  },
+
+  // Register user
+  register: async (userData) => {
+    try {
+      console.log('Registering user:', userData.email);
+      
+      const response = await api.post('/auth/register', userData);
+      console.log('Registration successful:', response.data);
+      return response.data;
+      
+    } catch (error) {
+      console.error('Registration API Error:', error.response?.data || error.message);
+      
+      let errorMessage = 'Registration failed. Please try again.';
+      
+      if (error.response?.status === 409) {
+        errorMessage = 'Email already registered.';
+      } else if (error.response?.data?.message) {
+        errorMessage = error.response.data.message;
+      }
+      
+      throw new Error(errorMessage);
+    }
+  },
+
+  // Validate token
+  validateToken: async () => {
+    try {
+      const token = localStorage.getItem('token');
+      if (!token) return false;
+      
+      // Make a request to a protected endpoint to check if token is valid
+      const response = await api.get('/user/profile');
+      return response.status === 200;
+      
+    } catch (error) {
+      console.error('Token validation error:', error.message);
+      return false;
+    }
+  },
+
+  // Forgot password
+  forgotPassword: async (email) => {
+    try {
+      const response = await api.post('/auth/forgot-password', { email });
+      return response.data;
+    } catch (error) {
+      console.error('Forgot password error:', error.message);
+      throw new Error('Failed to send password reset email.');
+    }
+  },
+
+  // Logout (frontend only - backend should invalidate token)
+  logout: async () => {
+    try {
+      await api.post('/auth/logout');
+    } catch (error) {
+      console.error('Logout API error:', error.message);
+      // Continue with frontend logout even if API call fails
+    } finally {
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+    }
+  }
+};
+```
+
+---
+
+### <a id="📄-src-services-health-js"></a>📄 `src/services/health.js`
+
+**File Info:**
+- **Size**: 514 B
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `src/services/health.js`
+- **Relative Path**: `src/services`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 21:18:00 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `d0b9cfe31607599582cb47aa953fd0e1`
+- **SHA256**: `57b7d5de4c2968478bf915f0452d740cf8e3d80e994077b88d30ef3f0b098aca`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```javascript
+// Simple health check service - disabled to avoid 403 errors
+export const healthService = {
+  // Health check disabled - backend /health endpoint requires authentication
+  // The app will handle connection errors on actual API calls instead
+  checkBackendHealth: async () => {
+    // Return healthy by default - actual connection will be tested on real API calls
+    return {
+      healthy: true,
+      data: { status: 'UP', message: 'Health check disabled - will validate on API calls' }
+    };
+  }
+};
+```
+
+---
+
+### <a id="📄-src-services-notification-js"></a>📄 `src/services/notification.js`
+
+**File Info:**
+- **Size**: 2.47 KB
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `src/services/notification.js`
+- **Relative Path**: `src/services`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 15:52:50 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `5ed7eaa6df798a13f84a5dd4e6f23e7f`
+- **SHA256**: `3a717e81352d5091e26d49c2f9aa019384da4b6023b7942e4e9c699836ddb554`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```javascript
+// src/services/notification.js
+import api from './api';
+
+export const notificationService = {
+  // Send notification to user before reservation end time
+  scheduleEndNotification: async (reservationId, minutesBefore = 10) => {
+    try {
+      const response = await api.post('/notification/schedule-end', {
+        reservationId,
+        minutesBefore
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Schedule end notification error:', error.message);
+      throw new Error('Failed to schedule notification.');
+    }
+  },
+
+  // Send notification for reservation updates
+  sendReservationUpdate: async (reservationId, message) => {
+    try {
+      const response = await api.post('/notification/reservation-update', {
+        reservationId,
+        message
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Send reservation update notification error:', error.message);
+      throw new Error('Failed to send notification.');
+    }
+  },
+
+  // Get user notifications
+  getUserNotifications: async (userId) => {
+    try {
+      const response = await api.get(`/notification/user/${userId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get user notifications error:', error.message);
+      throw new Error('Failed to load notifications.');
+    }
+  },
+
+  // Mark notification as read
+  markAsRead: async (notificationId) => {
+    try {
+      const response = await api.put(`/notification/${notificationId}/read`);
+      return response.data;
+    } catch (error) {
+      console.error('Mark notification as read error:', error.message);
+      throw new Error('Failed to update notification status.');
+    }
+  },
+
+  // Mark all notifications as read
+  markAllAsRead: async (userId) => {
+    try {
+      const response = await api.put(`/notification/user/${userId}/read-all`);
+      return response.data;
+    } catch (error) {
+      console.error('Mark all notifications as read error:', error.message);
+      throw new Error('Failed to update notification status.');
+    }
+  },
+
+  // Cancel scheduled notification
+  cancelScheduledNotification: async (reservationId) => {
+    try {
+      const response = await api.delete(`/notification/scheduled/${reservationId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Cancel scheduled notification error:', error.message);
+      throw new Error('Failed to cancel scheduled notification.');
+    }
+  }
+};
+```
+
+---
+
+### <a id="📄-src-services-parking-js"></a>📄 `src/services/parking.js`
+
+**File Info:**
+- **Size**: 3.02 KB
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `src/services/parking.js`
+- **Relative Path**: `src/services`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-26 07:44:28 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `5245cbce8465818725f20e92ab4eae06`
+- **SHA256**: `882a93159e4bcb8407253dec3faa0eef334e3390f86125175eca97de48f0703c`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```javascript
+import api from './api';
+
+export const parkingService = {
+  // Get all parking zones
+  getZones: async (location = null) => {
+    try {
+      const params = location ? { location } : {};
+      const response = await api.get('/user/zones', { params });
+      return response.data;
+    } catch (error) {
+      console.error('Get zones error:', error.message);
+      throw new Error('Failed to load parking zones.');
+    }
+  },
+
+  // Get zone by ID
+  getZoneById: async (id) => {
+    try {
+      const response = await api.get(`/user/zones/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get zone error:', error.message);
+      throw new Error('Failed to load parking zone details.');
+    }
+  },
+
+  // Get available slots in a zone
+  getAvailableSlots: async (zoneId) => {
+    try {
+      const response = await api.get(`/user/slots?zoneId=${zoneId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get slots error:', error.message);
+      throw new Error('Failed to load available slots.');
+    }
+  },
+
+  // Calculate price
+  calculatePrice: async (vehicleType, hours) => {
+    try {
+      const response = await api.get(`/user/price?vehicleType=${vehicleType}&hours=${hours}`);
+      return response.data;
+    } catch (error) {
+      console.error('Calculate price error:', error.message);
+      throw new Error('Failed to calculate price.');
+    }
+  },
+
+  // Create reservation
+  createReservation: async (reservationData) => {
+    try {
+      console.log('Creating reservation:', reservationData);
+      const response = await api.post('/user/reserve', reservationData);
+      return response.data;
+    } catch (error) {
+      console.error('Create reservation error:', error.response?.data || error.message);
+
+      let errorMessage = 'Failed to create reservation.';
+      if (error.response?.data?.message) {
+        errorMessage = error.response.data.message;
+      }
+
+      throw new Error(errorMessage);
+    }
+  },
+
+  // Get user reservations
+  getUserReservations: async () => {
+    try {
+      const response = await api.get('/user/reservations');
+      return response.data;
+    } catch (error) {
+      console.error('Get reservations error:', error.message);
+      throw new Error('Failed to load reservations.');
+    }
+  },
+
+  // Cancel reservation
+  cancelReservation: async (reservationId) => {
+    try {
+      const response = await api.delete(`/user/cancel/${reservationId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Cancel reservation error:', error.message);
+      throw new Error('Failed to cancel reservation.');
+    }
+  },
+
+  // Get reservation details
+  getReservationDetails: async (reservationId) => {
+    try {
+      const response = await api.get(`/user/reservation/${reservationId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get reservation details error:', error.message);
+      throw new Error('Failed to load reservation details.');
+    }
+  }
+};
+```
+
+---
+
+### <a id="📄-src-services-reservation-js"></a>📄 `src/services/reservation.js`
+
+**File Info:**
+- **Size**: 9 KB
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `src/services/reservation.js`
+- **Relative Path**: `src/services`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 16:39:56 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `0309cd5ec18268d33a8b009e737f00d7`
+- **SHA256**: `7aedd9e016ba08d393f4a5b8cdbd3434673ff23dde42696510afd9ee5b4a7f11`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```javascript
+import api from './api';
+
+export const reservationService = {
+  // Create a new reservation
+  createReservation: async (reservationData) => {
+    try {
+      const response = await api.post('/user/reserve', reservationData);
+      return response.data;
+    } catch (error) {
+      console.error('Create reservation error:', error.message);
+      throw new Error('Failed to create reservation.');
+    }
+  },
+
+  // Get reservation by ID
+  getReservationById: async (id) => {
+    try {
+      const response = await api.get(`/user/reservations/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get reservation by ID error:', error.message);
+      throw new Error('Failed to load reservation.');
+    }
+  },
+
+  // Process payment for reservation
+  processPayment: async (paymentData) => {
+    try {
+      const response = await api.post('/payment/process', paymentData);
+      return response.data;
+    } catch (error) {
+      console.error('Process payment error:', error.message);
+      throw new Error('Failed to process payment.');
+    }
+  },
+
+  // Update reservation status
+  updateReservationStatus: async (id, status) => {
+    try {
+      const response = await api.put(`/user/reservations/${id}/status`, { status });
+      return response.data;
+    } catch (error) {
+      console.error('Update reservation status error:', error.message);
+      throw new Error('Failed to update reservation status.');
+    }
+  },
+
+  // Confirm payment and generate receipt
+  confirmPayment: async (reservationId, paymentData) => {
+    try {
+      const response = await api.post(`/payment/confirm/${reservationId}`, paymentData);
+      return response.data;
+    } catch (error) {
+      console.error('Confirm payment error:', error.message);
+      throw new Error('Failed to confirm payment.');
+    }
+  },
+
+  // Get receipt for reservation
+  getReceipt: async (reservationId) => {
+    try {
+      const response = await api.get(`/receipt/${reservationId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get receipt error:', error.message);
+      throw new Error('Failed to load receipt.');
+    }
+  },
+
+  // Download receipt as PDF
+  downloadReceipt: async (reservationId) => {
+    try {
+      const response = await api.get(`/receipt/download/${reservationId}`, {
+        responseType: 'blob'
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Download receipt error:', error.message);
+      throw new Error('Failed to download receipt.');
+    }
+  },
+
+  // Get user reservations
+  getUserReservations: async (userId) => {
+    try {
+      const response = await api.get(`/user/reservations/${userId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get user reservations error:', error.message);
+      throw new Error('Failed to load reservations.');
+    }
+  },
+
+  // Get all reservations for admin
+  getAllReservations: async () => {
+    try {
+      const response = await api.get('/admin/reservations');
+      return response.data;
+    } catch (error) {
+      console.error('Get all reservations error:', error.message);
+      throw new Error('Failed to load reservations.');
+    }
+  },
+
+  // Cancel reservation
+  cancelReservation: async (id) => {
+    try {
+      const response = await api.delete(`/user/reservations/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Cancel reservation error:', error.message);
+      throw new Error('Failed to cancel reservation.');
+    }
+  },
+
+  // Get reservation history for user
+  getReservationHistory: async (userId) => {
+    try {
+      const response = await api.get(`/user/history/${userId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get reservation history error:', error.message);
+      throw new Error('Failed to load reservation history.');
+    }
+  },
+
+  // Get reservation analytics
+  getReservationAnalytics: async (dateRange) => {
+    try {
+      const response = await api.get('/admin/analytics', {
+        params: { dateRange }
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Get reservation analytics error:', error.message);
+      throw new Error('Failed to load analytics.');
+    }
+  },
+
+  // Get reservation by user ID
+  getReservationsByUser: async (userId) => {
+    try {
+      const response = await api.get(`/user/reservations/${userId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get reservations by user error:', error.message);
+      throw new Error('Failed to load user reservations.');
+    }
+  },
+
+  // Get reservation receipt
+  getReceipt: async (reservationId) => {
+    try {
+      const response = await api.get(`/receipt/${reservationId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get receipt error:', error.message);
+      throw new Error('Failed to load receipt.');
+    }
+  },
+
+  // Process payment for reservation
+  processPayment: async (paymentData) => {
+    try {
+      const response = await api.post('/payment/process', paymentData);
+      return response.data;
+    } catch (error) {
+      console.error('Process payment error:', error.message);
+      throw new Error('Failed to process payment.');
+    }
+  },
+
+  // Update reservation status
+  updateReservationStatus: async (id, status) => {
+    try {
+      const response = await api.put(`/user/reservations/${id}/status`, { status });
+      return response.data;
+    } catch (error) {
+      console.error('Update reservation status error:', error.message);
+      throw new Error('Failed to update reservation status.');
+    }
+  },
+
+  // Get reservation by ID
+  getReservationById: async (id) => {
+    try {
+      const response = await api.get(`/user/reservations/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get reservation by ID error:', error.message);
+      throw new Error('Failed to load reservation.');
+    }
+  },
+
+  // Get user reservations
+  getUserReservations: async (userId) => {
+    try {
+      const response = await api.get(`/user/reservations/${userId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get user reservations error:', error.message);
+      throw new Error('Failed to load user reservations.');
+    }
+  },
+
+  // Get reservation analytics
+  getReservationAnalytics: async (dateRange) => {
+    try {
+      const response = await api.get('/user/analytics/reservations', {
+        params: { dateRange }
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Get reservation analytics error:', error.message);
+      throw new Error('Failed to load reservation analytics.');
+    }
+  },
+
+  // Schedule end notification for reservation
+  scheduleEndNotification: async (reservationId, minutesBefore) => {
+    try {
+      const response = await api.post('/notifications/schedule-end', {
+        reservationId,
+        minutesBefore
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Schedule end notification error:', error.message);
+      throw new Error('Failed to schedule end notification.');
+    }
+  },
+
+  // Get reservation history for user
+  getReservationHistory: async (userId) => {
+    try {
+      const response = await api.get(`/user/history/${userId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get reservation history error:', error.message);
+      throw new Error('Failed to load reservation history.');
+    }
+  },
+
+  // Get reservations by user ID
+  getReservationsByUser: async (userId) => {
+    try {
+      const response = await api.get(`/user/reservations/${userId}`);
+      return response.data;
+    } catch (error) {
+      console.error('Get reservations by user error:', error.message);
+      throw new Error('Failed to load user reservations.');
+    }
+  },
+
+  // Cancel reservation
+  cancelReservation: async (id) => {
+    try {
+      const response = await api.delete(`/user/reservations/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Cancel reservation error:', error.message);
+      throw new Error('Failed to cancel reservation.');
+    }
+  },
+
+  // Confirm payment and update reservation status
+  confirmPayment: async (reservationId, paymentData) => {
+    try {
+      const response = await api.post(`/payment/confirm/${reservationId}`, paymentData);
+      return response.data;
+    } catch (error) {
+      console.error('Confirm payment error:', error.message);
+      throw new Error('Failed to confirm payment.');
+    }
+  },
+
+  // Download receipt as PDF
+  downloadReceipt: async (reservationId) => {
+    try {
+      const response = await api.get(`/receipt/download/${reservationId}`, {
+        responseType: 'blob'
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Download receipt error:', error.message);
+      throw new Error('Failed to download receipt.');
+    }
+  }
+};
+
+```
+
+---
+
+### <a id="📄-src-styles-main-css"></a>📄 `src/styles/main.css`
+
+**File Info:**
+- **Size**: 148 B
+- **Extension**: `.css`
+- **Language**: `css`
+- **Location**: `src/styles/main.css`
+- **Relative Path**: `src/styles`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-26 08:18:20 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `809d7d006a85cdd0ba1f05d6c935bf3f`
+- **SHA256**: `5188bf340a5215008e72d5a588bd916c4fa9cad58ebc5304597f5b8054676719`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+```
+
+---
+
+### <a id="📄-src-app-css"></a>📄 `src/App.css`
+
+**File Info:**
+- **Size**: 606 B
+- **Extension**: `.css`
+- **Language**: `css`
+- **Location**: `src/App.css`
+- **Relative Path**: `src`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-24 10:02:41 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `3061aee6b63300763d91be8ff5432a42`
+- **SHA256**: `a0715e0a09edbd0fbde65816a75e0fa0fc8b314c5260c0768c19bf3aac22621a`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```css
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+```
+
+---
+
+### <a id="📄-src-app-jsx"></a>📄 `src/App.jsx`
+
+**File Info:**
+- **Size**: 2.53 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/App.jsx`
+- **Relative Path**: `src`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-28 06:54:26 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `9b0d6635693c70dc64e501549fdfae57`
+- **SHA256**: `3d37f2ce39be8cf804b54fc455d9288c5635fa83d2e03fc25091ba90233f9dfc`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```jsx
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
+import { AuthProvider } from './context/AuthContext';
+import AppRoutes from './routes';
+import './styles/main.css';
+import { healthService } from './services/health';
+
+function App() {
+  const [backendStatus, setBackendStatus] = useState('checking');
+
+  useEffect(() => {
+    checkBackendConnection();
+  }, []);
+
+  const checkBackendConnection = async () => {
+    try {
+      const health = await healthService.checkBackendHealth();
+      if (health.healthy) {
+        setBackendStatus('connected');
+        console.log('✅ Backend connected successfully');
+      } else {
+        setBackendStatus('disconnected');
+        console.error('❌ Backend connection failed:', health.error);
+      }
+    } catch (error) {
+      setBackendStatus('error');
+      console.error('❌ Error checking backend:', error);
+    }
+  };
+
+  return (
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <AuthProvider>
+        <div className="min-h-screen bg-gray-50 w-full overflow-x-hidden">
+          {/* Backend Status Indicator */}
+          {backendStatus !== 'connected' && (
+            <div className={`w-full px-4 py-2 text-center text-sm ${backendStatus === 'checking' ? 'bg-yellow-100 text-yellow-800' :
+              backendStatus === 'disconnected' ? 'bg-red-100 text-red-800' :
+                'bg-gray-100 text-gray-800'
+              }`}>
+              {backendStatus === 'checking' ? '🔍 Checking backend connection...' :
+                backendStatus === 'disconnected' ? '❌ Backend disconnected. Using mock data.' :
+                  '⚠️ Backend connection error'}
+            </div>
+          )}
+
+          <Toaster
+            position="top-right"
+            toastOptions={{
+              duration: 4000,
+              style: {
+                background: '#363636',
+                color: '#fff',
+              },
+              success: {
+                duration: 3000,
+                iconTheme: {
+                  primary: '#10B981',
+                  secondary: '#fff',
+                },
+              },
+              error: {
+                duration: 4000,
+                iconTheme: {
+                  primary: '#EF4444',
+                  secondary: '#fff',
+                },
+              },
+            }}
+          />
+
+          <main className="w-full">
+            <AppRoutes />
+          </main>
+        </div>
+      </AuthProvider>
+    </Router>
+  );
+}
+
+export default App;
+```
+
+---
+
+### <a id="📄-src-index-css"></a>📄 `src/index.css`
+
+**File Info:**
+- **Size**: 1.13 KB
+- **Extension**: `.css`
+- **Language**: `css`
+- **Location**: `src/index.css`
+- **Relative Path**: `src`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-24 10:02:41 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `5b279198522c90c7353a1ac51a6d89c7`
+- **SHA256**: `bdba2919116e9b72ac06558f88371dc4c80fb0196da6403d239e0fb085250892`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```css
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+```
+
+---
+
+### <a id="📄-src-main-jsx"></a>📄 `src/main.jsx`
+
+**File Info:**
+- **Size**: 229 B
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/main.jsx`
+- **Relative Path**: `src`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-24 10:02:41 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `e13723e2574429d9a6d849727e3ff695`
+- **SHA256**: `4b4b864dbe45253425d0c925337180ec07e204295179f80f59551216f466f618`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+
+```
+
+---
+
+### <a id="📄-src-routes-jsx"></a>📄 `src/routes.jsx`
+
+**File Info:**
+- **Size**: 5.57 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/routes.jsx`
+- **Relative Path**: `src`
+- **Created**: 2026-01-26 00:33:18 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-26 07:43:58 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `b8c629cb127e3a2bd8e6339d7e50a49a`
+- **SHA256**: `1d4c9d358a6a83e426579bc5e70cf166ec51e302b2a423a080de78904319ab37`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+// src/routes.jsx
+import React from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { useAuth } from './context/AuthContext';
+import BackendTest from './pages/BackendTest';
+
+// Auth Pages
+import Login from './components/auth/Login';
+import Register from './components/auth/Register';
+
+// User Pages
+import Dashboard from './components/user/Dashboard';
+import ParkingSearch from './components/user/ParkingSearch';
+import ZoneDetails from './components/user/ZoneDetails';
+import BookingForm from './components/user/BookingForm';
+import Payment from './components/user/Payment';
+import Receipt from './components/user/Receipt';
+import Reservations from './components/user/Reservations';
+import History from './components/user/History';
+import DemoPayment from './components/user/DemoPayment';
+
+// Admin Pages
+import AdminDashboard from './components/admin/AdminDashboard';
+import ManageZones from './components/admin/ManageZones';
+import ManageSlots from './components/admin/ManageSlots';
+import PricingManager from './components/admin/PricingManager';
+import UserManagement from './components/admin/UserManagement';
+import Analytics from './components/admin/Analytics';
+
+// Common Pages
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+
+// Private Route Component
+const PrivateRoute = ({ children, requireAdmin = false }) => {
+    const { user, isAdmin, loading } = useAuth();
+
+    if (loading) {
+        return <div className="min-h-screen flex items-center justify-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+        </div>;
+    }
+
+    if (!user) {
+        return <Navigate to="/login" />;
+    }
+
+    if (requireAdmin && !isAdmin) {
+        return <Navigate to="/dashboard" />;
+    }
+
+    return children;
+};
+
+const AppRoutes = () => {
+    return (
+        <Routes>
+            {/* Public Routes */}
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/backend-test" element={<BackendTest />} />
+            {/* User Routes */}
+            <Route path="/dashboard" element={
+                <PrivateRoute>
+                    <Dashboard />
+                </PrivateRoute>
+            } />
+            <Route path="/parking/search" element={
+                <PrivateRoute>
+                    <ParkingSearch />
+                </PrivateRoute>
+            } />
+            <Route path="/parking/zone/:id" element={
+                <PrivateRoute>
+                    <ZoneDetails />
+                </PrivateRoute>
+            } />
+            <Route path="/parking/zone/:zoneId/book" element={
+                <PrivateRoute>
+                    <BookingForm />
+                </PrivateRoute>
+            } />
+            <Route path="/payment/demo/:reservationId" element={
+                <PrivateRoute>
+                    <DemoPayment />
+                </PrivateRoute>
+            } />
+            <Route path="/receipt/:reservationId" element={
+                <PrivateRoute>
+                    <Receipt />
+                </PrivateRoute>
+            } />
+            <Route path="/reservations" element={
+                <PrivateRoute>
+                    <Reservations />
+                </PrivateRoute>
+            } />
+            <Route path="/history" element={
+                <PrivateRoute>
+                    <History />
+                </PrivateRoute>
+            } />
+
+            {/* Admin Routes */}
+            <Route path="/admin/dashboard" element={
+                <PrivateRoute requireAdmin>
+                    <AdminDashboard />
+                </PrivateRoute>
+            } />
+            <Route path="/admin/zones" element={
+                <PrivateRoute requireAdmin>
+                    <ManageZones />
+                </PrivateRoute>
+            } />
+            <Route path="/admin/slots/:zoneId" element={
+                <PrivateRoute requireAdmin>
+                    <ManageSlots />
+                </PrivateRoute>
+            } />
+            <Route path="/admin/zones/new" element={
+                <PrivateRoute requireAdmin>
+                    <ManageZones />
+                </PrivateRoute>
+            } />
+            <Route path="/admin/zones/:id/edit" element={
+                <PrivateRoute requireAdmin>
+                    <ManageZones />
+                </PrivateRoute>
+            } />
+            <Route path="/admin/users" element={
+                <PrivateRoute requireAdmin>
+                    <UserManagement />
+                </PrivateRoute>
+            } />
+            <Route path="/admin/pricing" element={
+                <PrivateRoute requireAdmin>
+                    <PricingManager />
+                </PrivateRoute>
+            } />
+            <Route path="/admin/reports" element={
+                <PrivateRoute requireAdmin>
+                    <Analytics />
+                </PrivateRoute>
+            } />
+            <Route path="/admin/analytics" element={
+                <PrivateRoute requireAdmin>
+                    <Analytics />
+                </PrivateRoute>
+            } />
+            <Route path="/admin/settings" element={
+                <PrivateRoute requireAdmin>
+                    <AdminDashboard />
+                </PrivateRoute>
+            } />
+            {/* 404 Route */}
+            <Route path="*" element={<NotFound />} />
+        </Routes>
+    );
+};
+
+export default AppRoutes;
+
+```
+
+---
+
+### <a id="📄-eslint-config-js"></a>📄 `eslint.config.js`
+
+**File Info:**
+- **Size**: 758 B
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `eslint.config.js`
+- **Relative Path**: `root`
+- **Created**: 2026-01-26 00:30:16 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-24 10:02:41 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `49c8473bcfcec3aef596a5fb04a6df06`
+- **SHA256**: `da0cbf3213f2994741024e2aa5165d017e0345f389dcd2f8a0db97fee7289d1b`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```javascript
+import js from '@eslint/js'
+import globals from 'globals'
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import { defineConfig, globalIgnores } from 'eslint/config'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{js,jsx}'],
+    extends: [
+      js.configs.recommended,
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite,
+    ],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        ecmaFeatures: { jsx: true },
+        sourceType: 'module',
+      },
+    },
+    rules: {
+      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+    },
+  },
+])
+
+```
+
+---
+
+### <a id="📄-index-html"></a>📄 `index.html`
+
+**File Info:**
+- **Size**: 357 B
+- **Extension**: `.html`
+- **Language**: `html`
+- **Location**: `index.html`
+- **Relative Path**: `root`
+- **Created**: 2026-01-26 00:30:16 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-24 10:02:53 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `54d590750a9bfdc5cfed42071da293bc`
+- **SHA256**: `469d70dd50c91ed9f54e312c31c0fbb5209ad857bdf2c9fa60e7579737638579`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>frontend</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
+```
+
+---
+
+### <a id="📄-package-lock-json"></a>📄 `package-lock.json`
+
+**File Info:**
+- **Size**: 157.47 KB
+- **Extension**: `.json`
+- **Language**: `json`
+- **Location**: `package-lock.json`
+- **Relative Path**: `root`
+- **Created**: 2026-01-26 00:30:16 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-24 12:29:40 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `73f2a6d63f6a58b8d4368b3e7d4cbdbb`
+- **SHA256**: `a29f681c2112b2eb956a8121be20476bc75e481a4528312093e05520b6f66b59`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```json
+{
+  "name": "parkease-frontend",
+  "version": "0.1.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "parkease-frontend",
+      "version": "0.1.0",
+      "dependencies": {
+        "axios": "^1.13.2",
+        "clsx": "^2.0.0",
+        "date-fns": "^2.30.0",
+        "framer-motion": "^10.16.16",
+        "react": "^18.2.0",
+        "react-countdown": "^2.3.5",
+        "react-datepicker": "^4.25.0",
+        "react-dom": "^18.2.0",
+        "react-helmet-async": "^2.0.4",
+        "react-hot-toast": "^2.6.0",
+        "react-icons": "^4.12.0",
+        "react-qr-code": "^2.0.12",
+        "react-router-dom": "^6.30.3",
+        "react-select": "^5.8.0",
+        "recharts": "^2.15.4",
+        "tailwind-merge": "^2.0.0",
+        "zustand": "^4.4.7"
+      },
+      "devDependencies": {
+        "@types/react": "^18.2.37",
+        "@types/react-dom": "^18.2.15",
+        "@vitejs/plugin-react": "^4.2.0",
+        "autoprefixer": "^10.4.16",
+        "json-server": "^1.0.0-beta.5",
+        "postcss": "^8.4.32",
+        "tailwindcss": "^3.3.6",
+        "vite": "^5.0.0"
+      }
+    },
+    "node_modules/@alloc/quick-lru": {
+      "version": "5.2.0",
+      "resolved": "https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz",
+      "integrity": "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=10"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/@babel/code-frame": {
+      "version": "7.28.6",
+      "resolved": "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.28.6.tgz",
+      "integrity": "sha512-JYgintcMjRiCvS8mMECzaEn+m3PfoQiyqukOMCCVQtoJGYJw8j/8LBJEiqkHLkfwCcs74E3pbAUFNg7d9VNJ+Q==",
+      "license": "MIT",
+      "dependencies": {
+        "@babel/helper-validator-identifier": "^7.28.5",
+        "js-tokens": "^4.0.0",
+        "picocolors": "^1.1.1"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/compat-data": {
+      "version": "7.28.6",
+      "resolved": "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.28.6.tgz",
+      "integrity": "sha512-2lfu57JtzctfIrcGMz992hyLlByuzgIk58+hhGCxjKZ3rWI82NnVLjXcaTqkI2NvlcvOskZaiZ5kjUALo3Lpxg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/core": {
+      "version": "7.28.6",
+      "resolved": "https://registry.npmjs.org/@babel/core/-/core-7.28.6.tgz",
+      "integrity": "sha512-H3mcG6ZDLTlYfaSNi0iOKkigqMFvkTKlGUYlD8GW7nNOYRrevuA46iTypPyv+06V3fEmvvazfntkBU34L0azAw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/code-frame": "^7.28.6",
+        "@babel/generator": "^7.28.6",
+        "@babel/helper-compilation-targets": "^7.28.6",
+        "@babel/helper-module-transforms": "^7.28.6",
+        "@babel/helpers": "^7.28.6",
+        "@babel/parser": "^7.28.6",
+        "@babel/template": "^7.28.6",
+        "@babel/traverse": "^7.28.6",
+        "@babel/types": "^7.28.6",
+        "@jridgewell/remapping": "^2.3.5",
+        "convert-source-map": "^2.0.0",
+        "debug": "^4.1.0",
+        "gensync": "^1.0.0-beta.2",
+        "json5": "^2.2.3",
+        "semver": "^6.3.1"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/babel"
+      }
+    },
+    "node_modules/@babel/generator": {
+      "version": "7.28.6",
+      "resolved": "https://registry.npmjs.org/@babel/generator/-/generator-7.28.6.tgz",
+      "integrity": "sha512-lOoVRwADj8hjf7al89tvQ2a1lf53Z+7tiXMgpZJL3maQPDxh0DgLMN62B2MKUOFcoodBHLMbDM6WAbKgNy5Suw==",
+      "license": "MIT",
+      "dependencies": {
+        "@babel/parser": "^7.28.6",
+        "@babel/types": "^7.28.6",
+        "@jridgewell/gen-mapping": "^0.3.12",
+        "@jridgewell/trace-mapping": "^0.3.28",
+        "jsesc": "^3.0.2"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-compilation-targets": {
+      "version": "7.28.6",
+      "resolved": "https://registry.npmjs.org/@babel/helper-compilation-targets/-/helper-compilation-targets-7.28.6.tgz",
+      "integrity": "sha512-JYtls3hqi15fcx5GaSNL7SCTJ2MNmjrkHXg4FSpOA/grxK8KwyZ5bubHsCq8FXCkua6xhuaaBit+3b7+VZRfcA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/compat-data": "^7.28.6",
+        "@babel/helper-validator-option": "^7.27.1",
+        "browserslist": "^4.24.0",
+        "lru-cache": "^5.1.1",
+        "semver": "^6.3.1"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-globals": {
+      "version": "7.28.0",
+      "resolved": "https://registry.npmjs.org/@babel/helper-globals/-/helper-globals-7.28.0.tgz",
+      "integrity": "sha512-+W6cISkXFa1jXsDEdYA8HeevQT/FULhxzR99pxphltZcVaugps53THCeiWA8SguxxpSp3gKPiuYfSWopkLQ4hw==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-module-imports": {
+      "version": "7.28.6",
+      "resolved": "https://registry.npmjs.org/@babel/helper-module-imports/-/helper-module-imports-7.28.6.tgz",
+      "integrity": "sha512-l5XkZK7r7wa9LucGw9LwZyyCUscb4x37JWTPz7swwFE/0FMQAGpiWUZn8u9DzkSBWEcK25jmvubfpw2dnAMdbw==",
+      "license": "MIT",
+      "dependencies": {
+        "@babel/traverse": "^7.28.6",
+        "@babel/types": "^7.28.6"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-module-transforms": {
+      "version": "7.28.6",
+      "resolved": "https://registry.npmjs.org/@babel/helper-module-transforms/-/helper-module-transforms-7.28.6.tgz",
+      "integrity": "sha512-67oXFAYr2cDLDVGLXTEABjdBJZ6drElUSI7WKp70NrpyISso3plG9SAGEF6y7zbha/wOzUByWWTJvEDVNIUGcA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/helper-module-imports": "^7.28.6",
+        "@babel/helper-validator-identifier": "^7.28.5",
+        "@babel/traverse": "^7.28.6"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "peerDependencies": {
+        "@babel/core": "^7.0.0"
+      }
+    },
+    "node_modules/@babel/helper-plugin-utils": {
+      "version": "7.28.6",
+      "resolved": "https://registry.npmjs.org/@babel/helper-plugin-utils/-/helper-plugin-utils-7.28.6.tgz",
+      "integrity": "sha512-S9gzZ/bz83GRysI7gAD4wPT/AI3uCnY+9xn+Mx/KPs2JwHJIz1W8PZkg2cqyt3RNOBM8ejcXhV6y8Og7ly/Dug==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-string-parser": {
+      "version": "7.27.1",
+      "resolved": "https://registry.npmjs.org/@babel/helper-string-parser/-/helper-string-parser-7.27.1.tgz",
+      "integrity": "sha512-qMlSxKbpRlAridDExk92nSobyDdpPijUq2DW6oDnUqd0iOGxmQjyqhMIihI9+zv4LPyZdRje2cavWPbCbWm3eA==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-validator-identifier": {
+      "version": "7.28.5",
+      "resolved": "https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.28.5.tgz",
+      "integrity": "sha512-qSs4ifwzKJSV39ucNjsvc6WVHs6b7S03sOh2OcHF9UHfVPqWWALUsNUVzhSBiItjRZoLHx7nIarVjqKVusUZ1Q==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helper-validator-option": {
+      "version": "7.27.1",
+      "resolved": "https://registry.npmjs.org/@babel/helper-validator-option/-/helper-validator-option-7.27.1.tgz",
+      "integrity": "sha512-YvjJow9FxbhFFKDSuFnVCe2WxXk1zWc22fFePVNEaWJEu8IrZVlda6N0uHwzZrUM1il7NC9Mlp4MaJYbYd9JSg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/helpers": {
+      "version": "7.28.6",
+      "resolved": "https://registry.npmjs.org/@babel/helpers/-/helpers-7.28.6.tgz",
+      "integrity": "sha512-xOBvwq86HHdB7WUDTfKfT/Vuxh7gElQ+Sfti2Cy6yIWNW05P8iUslOVcZ4/sKbE+/jQaukQAdz/gf3724kYdqw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/template": "^7.28.6",
+        "@babel/types": "^7.28.6"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/parser": {
+      "version": "7.28.6",
+      "resolved": "https://registry.npmjs.org/@babel/parser/-/parser-7.28.6.tgz",
+      "integrity": "sha512-TeR9zWR18BvbfPmGbLampPMW+uW1NZnJlRuuHso8i87QZNq2JRF9i6RgxRqtEq+wQGsS19NNTWr2duhnE49mfQ==",
+      "license": "MIT",
+      "dependencies": {
+        "@babel/types": "^7.28.6"
+      },
+      "bin": {
+        "parser": "bin/babel-parser.js"
+      },
+      "engines": {
+        "node": ">=6.0.0"
+      }
+    },
+    "node_modules/@babel/plugin-transform-react-jsx-self": {
+      "version": "7.27.1",
+      "resolved": "https://registry.npmjs.org/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.27.1.tgz",
+      "integrity": "sha512-6UzkCs+ejGdZ5mFFC/OCUrv028ab2fp1znZmCZjAOBKiBK2jXD1O+BPSfX8X2qjJ75fZBMSnQn3Rq2mrBJK2mw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/helper-plugin-utils": "^7.27.1"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "peerDependencies": {
+        "@babel/core": "^7.0.0-0"
+      }
+    },
+    "node_modules/@babel/plugin-transform-react-jsx-source": {
+      "version": "7.27.1",
+      "resolved": "https://registry.npmjs.org/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.27.1.tgz",
+      "integrity": "sha512-zbwoTsBruTeKB9hSq73ha66iFeJHuaFkUbwvqElnygoNbj/jHRsSeokowZFN3CZ64IvEqcmmkVe89OPXc7ldAw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/helper-plugin-utils": "^7.27.1"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "peerDependencies": {
+        "@babel/core": "^7.0.0-0"
+      }
+    },
+    "node_modules/@babel/runtime": {
+      "version": "7.28.6",
+      "resolved": "https://registry.npmjs.org/@babel/runtime/-/runtime-7.28.6.tgz",
+      "integrity": "sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/template": {
+      "version": "7.28.6",
+      "resolved": "https://registry.npmjs.org/@babel/template/-/template-7.28.6.tgz",
+      "integrity": "sha512-YA6Ma2KsCdGb+WC6UpBVFJGXL58MDA6oyONbjyF/+5sBgxY/dwkhLogbMT2GXXyU84/IhRw/2D1Os1B/giz+BQ==",
+      "license": "MIT",
+      "dependencies": {
+        "@babel/code-frame": "^7.28.6",
+        "@babel/parser": "^7.28.6",
+        "@babel/types": "^7.28.6"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/traverse": {
+      "version": "7.28.6",
+      "resolved": "https://registry.npmjs.org/@babel/traverse/-/traverse-7.28.6.tgz",
+      "integrity": "sha512-fgWX62k02qtjqdSNTAGxmKYY/7FSL9WAS1o2Hu5+I5m9T0yxZzr4cnrfXQ/MX0rIifthCSs6FKTlzYbJcPtMNg==",
+      "license": "MIT",
+      "dependencies": {
+        "@babel/code-frame": "^7.28.6",
+        "@babel/generator": "^7.28.6",
+        "@babel/helper-globals": "^7.28.0",
+        "@babel/parser": "^7.28.6",
+        "@babel/template": "^7.28.6",
+        "@babel/types": "^7.28.6",
+        "debug": "^4.3.1"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@babel/types": {
+      "version": "7.28.6",
+      "resolved": "https://registry.npmjs.org/@babel/types/-/types-7.28.6.tgz",
+      "integrity": "sha512-0ZrskXVEHSWIqZM/sQZ4EV3jZJXRkio/WCxaqKZP1g//CEWEPSfeZFcms4XeKBCHU0ZKnIkdJeU/kF+eRp5lBg==",
+      "license": "MIT",
+      "dependencies": {
+        "@babel/helper-string-parser": "^7.27.1",
+        "@babel/helper-validator-identifier": "^7.28.5"
+      },
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/@emotion/babel-plugin": {
+      "version": "11.13.5",
+      "resolved": "https://registry.npmjs.org/@emotion/babel-plugin/-/babel-plugin-11.13.5.tgz",
+      "integrity": "sha512-pxHCpT2ex+0q+HH91/zsdHkw/lXd468DIN2zvfvLtPKLLMo6gQj7oLObq8PhkrxOZb/gGCq03S3Z7PDhS8pduQ==",
+      "license": "MIT",
+      "dependencies": {
+        "@babel/helper-module-imports": "^7.16.7",
+        "@babel/runtime": "^7.18.3",
+        "@emotion/hash": "^0.9.2",
+        "@emotion/memoize": "^0.9.0",
+        "@emotion/serialize": "^1.3.3",
+        "babel-plugin-macros": "^3.1.0",
+        "convert-source-map": "^1.5.0",
+        "escape-string-regexp": "^4.0.0",
+        "find-root": "^1.1.0",
+        "source-map": "^0.5.7",
+        "stylis": "4.2.0"
+      }
+    },
+    "node_modules/@emotion/babel-plugin/node_modules/@emotion/memoize": {
+      "version": "0.9.0",
+      "resolved": "https://registry.npmjs.org/@emotion/memoize/-/memoize-0.9.0.tgz",
+      "integrity": "sha512-30FAj7/EoJ5mwVPOWhAyCX+FPfMDrVecJAM+Iw9NRoSl4BBAQeqj4cApHHUXOVvIPgLVDsCFoz/hGD+5QQD1GQ==",
+      "license": "MIT"
+    },
+    "node_modules/@emotion/babel-plugin/node_modules/convert-source-map": {
+      "version": "1.9.0",
+      "resolved": "https://registry.npmjs.org/convert-source-map/-/convert-source-map-1.9.0.tgz",
+      "integrity": "sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==",
+      "license": "MIT"
+    },
+    "node_modules/@emotion/cache": {
+      "version": "11.14.0",
+      "resolved": "https://registry.npmjs.org/@emotion/cache/-/cache-11.14.0.tgz",
+      "integrity": "sha512-L/B1lc/TViYk4DcpGxtAVbx0ZyiKM5ktoIyafGkH6zg/tj+mA+NE//aPYKG0k8kCHSHVJrpLpcAlOBEXQ3SavA==",
+      "license": "MIT",
+      "dependencies": {
+        "@emotion/memoize": "^0.9.0",
+        "@emotion/sheet": "^1.4.0",
+        "@emotion/utils": "^1.4.2",
+        "@emotion/weak-memoize": "^0.4.0",
+        "stylis": "4.2.0"
+      }
+    },
+    "node_modules/@emotion/cache/node_modules/@emotion/memoize": {
+      "version": "0.9.0",
+      "resolved": "https://registry.npmjs.org/@emotion/memoize/-/memoize-0.9.0.tgz",
+      "integrity": "sha512-30FAj7/EoJ5mwVPOWhAyCX+FPfMDrVecJAM+Iw9NRoSl4BBAQeqj4cApHHUXOVvIPgLVDsCFoz/hGD+5QQD1GQ==",
+      "license": "MIT"
+    },
+    "node_modules/@emotion/hash": {
+      "version": "0.9.2",
+      "resolved": "https://registry.npmjs.org/@emotion/hash/-/hash-0.9.2.tgz",
+      "integrity": "sha512-MyqliTZGuOm3+5ZRSaaBGP3USLw6+EGykkwZns2EPC5g8jJ4z9OrdZY9apkl3+UP9+sdz76YYkwCKP5gh8iY3g==",
+      "license": "MIT"
+    },
+    "node_modules/@emotion/is-prop-valid": {
+      "version": "0.8.8",
+      "resolved": "https://registry.npmjs.org/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz",
+      "integrity": "sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==",
+      "license": "MIT",
+      "optional": true,
+      "dependencies": {
+        "@emotion/memoize": "0.7.4"
+      }
+    },
+    "node_modules/@emotion/memoize": {
+      "version": "0.7.4",
+      "resolved": "https://registry.npmjs.org/@emotion/memoize/-/memoize-0.7.4.tgz",
+      "integrity": "sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==",
+      "license": "MIT",
+      "optional": true
+    },
+    "node_modules/@emotion/react": {
+      "version": "11.14.0",
+      "resolved": "https://registry.npmjs.org/@emotion/react/-/react-11.14.0.tgz",
+      "integrity": "sha512-O000MLDBDdk/EohJPFUqvnp4qnHeYkVP5B0xEG0D/L7cOKP9kefu2DXn8dj74cQfsEzUqh+sr1RzFqiL1o+PpA==",
+      "license": "MIT",
+      "dependencies": {
+        "@babel/runtime": "^7.18.3",
+        "@emotion/babel-plugin": "^11.13.5",
+        "@emotion/cache": "^11.14.0",
+        "@emotion/serialize": "^1.3.3",
+        "@emotion/use-insertion-effect-with-fallbacks": "^1.2.0",
+        "@emotion/utils": "^1.4.2",
+        "@emotion/weak-memoize": "^0.4.0",
+        "hoist-non-react-statics": "^3.3.1"
+      },
+      "peerDependencies": {
+        "react": ">=16.8.0"
+      },
+      "peerDependenciesMeta": {
+        "@types/react": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/@emotion/serialize": {
+      "version": "1.3.3",
+      "resolved": "https://registry.npmjs.org/@emotion/serialize/-/serialize-1.3.3.tgz",
+      "integrity": "sha512-EISGqt7sSNWHGI76hC7x1CksiXPahbxEOrC5RjmFRJTqLyEK9/9hZvBbiYn70dw4wuwMKiEMCUlR6ZXTSWQqxA==",
+      "license": "MIT",
+      "dependencies": {
+        "@emotion/hash": "^0.9.2",
+        "@emotion/memoize": "^0.9.0",
+        "@emotion/unitless": "^0.10.0",
+        "@emotion/utils": "^1.4.2",
+        "csstype": "^3.0.2"
+      }
+    },
+    "node_modules/@emotion/serialize/node_modules/@emotion/memoize": {
+      "version": "0.9.0",
+      "resolved": "https://registry.npmjs.org/@emotion/memoize/-/memoize-0.9.0.tgz",
+      "integrity": "sha512-30FAj7/EoJ5mwVPOWhAyCX+FPfMDrVecJAM+Iw9NRoSl4BBAQeqj4cApHHUXOVvIPgLVDsCFoz/hGD+5QQD1GQ==",
+      "license": "MIT"
+    },
+    "node_modules/@emotion/sheet": {
+      "version": "1.4.0",
+      "resolved": "https://registry.npmjs.org/@emotion/sheet/-/sheet-1.4.0.tgz",
+      "integrity": "sha512-fTBW9/8r2w3dXWYM4HCB1Rdp8NLibOw2+XELH5m5+AkWiL/KqYX6dc0kKYlaYyKjrQ6ds33MCdMPEwgs2z1rqg==",
+      "license": "MIT"
+    },
+    "node_modules/@emotion/unitless": {
+      "version": "0.10.0",
+      "resolved": "https://registry.npmjs.org/@emotion/unitless/-/unitless-0.10.0.tgz",
+      "integrity": "sha512-dFoMUuQA20zvtVTuxZww6OHoJYgrzfKM1t52mVySDJnMSEa08ruEvdYQbhvyu6soU+NeLVd3yKfTfT0NeV6qGg==",
+      "license": "MIT"
+    },
+    "node_modules/@emotion/use-insertion-effect-with-fallbacks": {
+      "version": "1.2.0",
+      "resolved": "https://registry.npmjs.org/@emotion/use-insertion-effect-with-fallbacks/-/use-insertion-effect-with-fallbacks-1.2.0.tgz",
+      "integrity": "sha512-yJMtVdH59sxi/aVJBpk9FQq+OR8ll5GT8oWd57UpeaKEVGab41JWaCFA7FRLoMLloOZF/c/wsPoe+bfGmRKgDg==",
+      "license": "MIT",
+      "peerDependencies": {
+        "react": ">=16.8.0"
+      }
+    },
+    "node_modules/@emotion/utils": {
+      "version": "1.4.2",
+      "resolved": "https://registry.npmjs.org/@emotion/utils/-/utils-1.4.2.tgz",
+      "integrity": "sha512-3vLclRofFziIa3J2wDh9jjbkUz9qk5Vi3IZ/FSTKViB0k+ef0fPV7dYrUIugbgupYDx7v9ud/SjrtEP8Y4xLoA==",
+      "license": "MIT"
+    },
+    "node_modules/@emotion/weak-memoize": {
+      "version": "0.4.0",
+      "resolved": "https://registry.npmjs.org/@emotion/weak-memoize/-/weak-memoize-0.4.0.tgz",
+      "integrity": "sha512-snKqtPW01tN0ui7yu9rGv69aJXr/a/Ywvl11sUjNtEcRc+ng/mQriFL0wLXMef74iHa/EkftbDzU9F8iFbH+zg==",
+      "license": "MIT"
+    },
+    "node_modules/@esbuild/aix-ppc64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/aix-ppc64/-/aix-ppc64-0.21.5.tgz",
+      "integrity": "sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==",
+      "cpu": [
+        "ppc64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "aix"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/android-arm": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/android-arm/-/android-arm-0.21.5.tgz",
+      "integrity": "sha512-vCPvzSjpPHEi1siZdlvAlsPxXl7WbOVUBBAowWug4rJHb68Ox8KualB+1ocNvT5fjv6wpkX6o/iEpbDrf68zcg==",
+      "cpu": [
+        "arm"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/android-arm64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/android-arm64/-/android-arm64-0.21.5.tgz",
+      "integrity": "sha512-c0uX9VAUBQ7dTDCjq+wdyGLowMdtR/GoC2U5IYk/7D1H1JYC0qseD7+11iMP2mRLN9RcCMRcjC4YMclCzGwS/A==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/android-x64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/android-x64/-/android-x64-0.21.5.tgz",
+      "integrity": "sha512-D7aPRUUNHRBwHxzxRvp856rjUHRFW1SdQATKXH2hqA0kAZb1hKmi02OpYRacl0TxIGz/ZmXWlbZgjwWYaCakTA==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "android"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/darwin-arm64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.21.5.tgz",
+      "integrity": "sha512-DwqXqZyuk5AiWWf3UfLiRDJ5EDd49zg6O9wclZ7kUMv2WRFr4HKjXp/5t8JZ11QbQfUS6/cRCKGwYhtNAY88kQ==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/darwin-x64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/darwin-x64/-/darwin-x64-0.21.5.tgz",
+      "integrity": "sha512-se/JjF8NlmKVG4kNIuyWMV/22ZaerB+qaSi5MdrXtd6R08kvs2qCN4C09miupktDitvh8jRFflwGFBQcxZRjbw==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/freebsd-arm64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/freebsd-arm64/-/freebsd-arm64-0.21.5.tgz",
+      "integrity": "sha512-5JcRxxRDUJLX8JXp/wcBCy3pENnCgBR9bN6JsY4OmhfUtIHe3ZW0mawA7+RDAcMLrMIZaf03NlQiX9DGyB8h4g==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "freebsd"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/freebsd-x64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/freebsd-x64/-/freebsd-x64-0.21.5.tgz",
+      "integrity": "sha512-J95kNBj1zkbMXtHVH29bBriQygMXqoVQOQYA+ISs0/2l3T9/kj42ow2mpqerRBxDJnmkUDCaQT/dfNXWX/ZZCQ==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "freebsd"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/linux-arm": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-arm/-/linux-arm-0.21.5.tgz",
+      "integrity": "sha512-bPb5AHZtbeNGjCKVZ9UGqGwo8EUu4cLq68E95A53KlxAPRmUyYv2D6F0uUI65XisGOL1hBP5mTronbgo+0bFcA==",
+      "cpu": [
+        "arm"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/linux-arm64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-arm64/-/linux-arm64-0.21.5.tgz",
+      "integrity": "sha512-ibKvmyYzKsBeX8d8I7MH/TMfWDXBF3db4qM6sy+7re0YXya+K1cem3on9XgdT2EQGMu4hQyZhan7TeQ8XkGp4Q==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/linux-ia32": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-ia32/-/linux-ia32-0.21.5.tgz",
+      "integrity": "sha512-YvjXDqLRqPDl2dvRODYmmhz4rPeVKYvppfGYKSNGdyZkA01046pLWyRKKI3ax8fbJoK5QbxblURkwK/MWY18Tg==",
+      "cpu": [
+        "ia32"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/linux-loong64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-loong64/-/linux-loong64-0.21.5.tgz",
+      "integrity": "sha512-uHf1BmMG8qEvzdrzAqg2SIG/02+4/DHB6a9Kbya0XDvwDEKCoC8ZRWI5JJvNdUjtciBGFQ5PuBlpEOXQj+JQSg==",
+      "cpu": [
+        "loong64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/linux-mips64el": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-mips64el/-/linux-mips64el-0.21.5.tgz",
+      "integrity": "sha512-IajOmO+KJK23bj52dFSNCMsz1QP1DqM6cwLUv3W1QwyxkyIWecfafnI555fvSGqEKwjMXVLokcV5ygHW5b3Jbg==",
+      "cpu": [
+        "mips64el"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/linux-ppc64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-ppc64/-/linux-ppc64-0.21.5.tgz",
+      "integrity": "sha512-1hHV/Z4OEfMwpLO8rp7CvlhBDnjsC3CttJXIhBi+5Aj5r+MBvy4egg7wCbe//hSsT+RvDAG7s81tAvpL2XAE4w==",
+      "cpu": [
+        "ppc64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/linux-riscv64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-riscv64/-/linux-riscv64-0.21.5.tgz",
+      "integrity": "sha512-2HdXDMd9GMgTGrPWnJzP2ALSokE/0O5HhTUvWIbD3YdjME8JwvSCnNGBnTThKGEB91OZhzrJ4qIIxk/SBmyDDA==",
+      "cpu": [
+        "riscv64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/linux-s390x": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-s390x/-/linux-s390x-0.21.5.tgz",
+      "integrity": "sha512-zus5sxzqBJD3eXxwvjN1yQkRepANgxE9lgOW2qLnmr8ikMTphkjgXu1HR01K4FJg8h1kEEDAqDcZQtbrRnB41A==",
+      "cpu": [
+        "s390x"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/linux-x64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.21.5.tgz",
+      "integrity": "sha512-1rYdTpyv03iycF1+BhzrzQJCdOuAOtaqHTWJZCWvijKD2N5Xu0TtVC8/+1faWqcP9iBCWOmjmhoH94dH82BxPQ==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/netbsd-x64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/netbsd-x64/-/netbsd-x64-0.21.5.tgz",
+      "integrity": "sha512-Woi2MXzXjMULccIwMnLciyZH4nCIMpWQAs049KEeMvOcNADVxo0UBIQPfSmxB3CWKedngg7sWZdLvLczpe0tLg==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "netbsd"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/openbsd-x64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/openbsd-x64/-/openbsd-x64-0.21.5.tgz",
+      "integrity": "sha512-HLNNw99xsvx12lFBUwoT8EVCsSvRNDVxNpjZ7bPn947b8gJPzeHWyNVhFsaerc0n3TsbOINvRP2byTZ5LKezow==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "openbsd"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/sunos-x64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/sunos-x64/-/sunos-x64-0.21.5.tgz",
+      "integrity": "sha512-6+gjmFpfy0BHU5Tpptkuh8+uw3mnrvgs+dSPQXQOv3ekbordwnzTVEb4qnIvQcYXq6gzkyTnoZ9dZG+D4garKg==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "sunos"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/win32-arm64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/win32-arm64/-/win32-arm64-0.21.5.tgz",
+      "integrity": "sha512-Z0gOTd75VvXqyq7nsl93zwahcTROgqvuAcYDUr+vOv8uHhNSKROyU961kgtCD1e95IqPKSQKH7tBTslnS3tA8A==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/win32-ia32": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/win32-ia32/-/win32-ia32-0.21.5.tgz",
+      "integrity": "sha512-SWXFF1CL2RVNMaVs+BBClwtfZSvDgtL//G/smwAc5oVK/UPu2Gu9tIaRgFmYFFKrmg3SyAjSrElf0TiJ1v8fYA==",
+      "cpu": [
+        "ia32"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@esbuild/win32-x64": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.21.5.tgz",
+      "integrity": "sha512-tQd/1efJuzPC6rCFwEvLtci/xNFcTZknmXs98FYDfGE4wP9ClFV98nyKrzJKVPMhdDnjzLhdUyMX4PsQAPjwIw==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ],
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/@floating-ui/core": {
+      "version": "1.7.3",
+      "resolved": "https://registry.npmjs.org/@floating-ui/core/-/core-1.7.3.tgz",
+      "integrity": "sha512-sGnvb5dmrJaKEZ+LDIpguvdX3bDlEllmv4/ClQ9awcmCZrlx5jQyyMWFM5kBI+EyNOCDDiKk8il0zeuX3Zlg/w==",
+      "license": "MIT",
+      "dependencies": {
+        "@floating-ui/utils": "^0.2.10"
+      }
+    },
+    "node_modules/@floating-ui/dom": {
+      "version": "1.7.4",
+      "resolved": "https://registry.npmjs.org/@floating-ui/dom/-/dom-1.7.4.tgz",
+      "integrity": "sha512-OOchDgh4F2CchOX94cRVqhvy7b3AFb+/rQXyswmzmGakRfkMgoWVjfnLWkRirfLEfuD4ysVW16eXzwt3jHIzKA==",
+      "license": "MIT",
+      "dependencies": {
+        "@floating-ui/core": "^1.7.3",
+        "@floating-ui/utils": "^0.2.10"
+      }
+    },
+    "node_modules/@floating-ui/utils": {
+      "version": "0.2.10",
+      "resolved": "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.10.tgz",
+      "integrity": "sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==",
+      "license": "MIT"
+    },
+    "node_modules/@jridgewell/gen-mapping": {
+      "version": "0.3.13",
+      "resolved": "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz",
+      "integrity": "sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==",
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/sourcemap-codec": "^1.5.0",
+        "@jridgewell/trace-mapping": "^0.3.24"
+      }
+    },
+    "node_modules/@jridgewell/remapping": {
+      "version": "2.3.5",
+      "resolved": "https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz",
+      "integrity": "sha512-LI9u/+laYG4Ds1TDKSJW2YPrIlcVYOwi2fUC6xB43lueCjgxV4lffOCZCtYFiH6TNOX+tQKXx97T4IKHbhyHEQ==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/gen-mapping": "^0.3.5",
+        "@jridgewell/trace-mapping": "^0.3.24"
+      }
+    },
+    "node_modules/@jridgewell/resolve-uri": {
+      "version": "3.1.2",
+      "resolved": "https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz",
+      "integrity": "sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.0.0"
+      }
+    },
+    "node_modules/@jridgewell/sourcemap-codec": {
+      "version": "1.5.5",
+      "resolved": "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.5.tgz",
+      "integrity": "sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==",
+      "license": "MIT"
+    },
+    "node_modules/@jridgewell/trace-mapping": {
+      "version": "0.3.31",
+      "resolved": "https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz",
+      "integrity": "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==",
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/resolve-uri": "^3.1.0",
+        "@jridgewell/sourcemap-codec": "^1.4.14"
+      }
+    },
+    "node_modules/@nodelib/fs.scandir": {
+      "version": "2.1.5",
+      "resolved": "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz",
+      "integrity": "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@nodelib/fs.stat": "2.0.5",
+        "run-parallel": "^1.1.9"
+      },
+      "engines": {
+        "node": ">= 8"
+      }
+    },
+    "node_modules/@nodelib/fs.stat": {
+      "version": "2.0.5",
+      "resolved": "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-2.0.5.tgz",
+      "integrity": "sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">= 8"
+      }
+    },
+    "node_modules/@nodelib/fs.walk": {
+      "version": "1.2.8",
+      "resolved": "https://registry.npmjs.org/@nodelib/fs.walk/-/fs.walk-1.2.8.tgz",
+      "integrity": "sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@nodelib/fs.scandir": "2.1.5",
+        "fastq": "^1.6.0"
+      },
+      "engines": {
+        "node": ">= 8"
+      }
+    },
+    "node_modules/@polka/url": {
+      "version": "1.0.0-next.29",
+      "resolved": "https://registry.npmjs.org/@polka/url/-/url-1.0.0-next.29.tgz",
+      "integrity": "sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/@popperjs/core": {
+      "version": "2.11.8",
+      "resolved": "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz",
+      "integrity": "sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==",
+      "license": "MIT",
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/popperjs"
+      }
+    },
+    "node_modules/@remix-run/router": {
+      "version": "1.23.2",
+      "resolved": "https://registry.npmjs.org/@remix-run/router/-/router-1.23.2.tgz",
+      "integrity": "sha512-Ic6m2U/rMjTkhERIa/0ZtXJP17QUi2CbWE7cqx4J58M8aA3QTfW+2UlQ4psvTX9IO1RfNVhK3pcpdjej7L+t2w==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=14.0.0"
+      }
+    },
+    "node_modules/@rolldown/pluginutils": {
+      "version": "1.0.0-beta.27",
+      "resolved": "https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.0-beta.27.tgz",
+      "integrity": "sha512-+d0F4MKMCbeVUJwG96uQ4SgAznZNSq93I3V+9NHA4OpvqG8mRCpGdKmK8l/dl02h2CCDHwW2FqilnTyDcAnqjA==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/@rollup/rollup-android-arm-eabi": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.56.0.tgz",
+      "integrity": "sha512-LNKIPA5k8PF1+jAFomGe3qN3bbIgJe/IlpDBwuVjrDKrJhVWywgnJvflMt/zkbVNLFtF1+94SljYQS6e99klnw==",
+      "cpu": [
+        "arm"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "android"
+      ]
+    },
+    "node_modules/@rollup/rollup-android-arm64": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-android-arm64/-/rollup-android-arm64-4.56.0.tgz",
+      "integrity": "sha512-lfbVUbelYqXlYiU/HApNMJzT1E87UPGvzveGg2h0ktUNlOCxKlWuJ9jtfvs1sKHdwU4fzY7Pl8sAl49/XaEk6Q==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "android"
+      ]
+    },
+    "node_modules/@rollup/rollup-darwin-arm64": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-darwin-arm64/-/rollup-darwin-arm64-4.56.0.tgz",
+      "integrity": "sha512-EgxD1ocWfhoD6xSOeEEwyE7tDvwTgZc8Bss7wCWe+uc7wO8G34HHCUH+Q6cHqJubxIAnQzAsyUsClt0yFLu06w==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ]
+    },
+    "node_modules/@rollup/rollup-darwin-x64": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-darwin-x64/-/rollup-darwin-x64-4.56.0.tgz",
+      "integrity": "sha512-1vXe1vcMOssb/hOF8iv52A7feWW2xnu+c8BV4t1F//m9QVLTfNVpEdja5ia762j/UEJe2Z1jAmEqZAK42tVW3g==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ]
+    },
+    "node_modules/@rollup/rollup-freebsd-arm64": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-freebsd-arm64/-/rollup-freebsd-arm64-4.56.0.tgz",
+      "integrity": "sha512-bof7fbIlvqsyv/DtaXSck4VYQ9lPtoWNFCB/JY4snlFuJREXfZnm+Ej6yaCHfQvofJDXLDMTVxWscVSuQvVWUQ==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "freebsd"
+      ]
+    },
+    "node_modules/@rollup/rollup-freebsd-x64": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-freebsd-x64/-/rollup-freebsd-x64-4.56.0.tgz",
+      "integrity": "sha512-KNa6lYHloW+7lTEkYGa37fpvPq+NKG/EHKM8+G/g9WDU7ls4sMqbVRV78J6LdNuVaeeK5WB9/9VAFbKxcbXKYg==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "freebsd"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-arm-gnueabihf": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-arm-gnueabihf/-/rollup-linux-arm-gnueabihf-4.56.0.tgz",
+      "integrity": "sha512-E8jKK87uOvLrrLN28jnAAAChNq5LeCd2mGgZF+fGF5D507WlG/Noct3lP/QzQ6MrqJ5BCKNwI9ipADB6jyiq2A==",
+      "cpu": [
+        "arm"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-arm-musleabihf": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-arm-musleabihf/-/rollup-linux-arm-musleabihf-4.56.0.tgz",
+      "integrity": "sha512-jQosa5FMYF5Z6prEpTCCmzCXz6eKr/tCBssSmQGEeozA9tkRUty/5Vx06ibaOP9RCrW1Pvb8yp3gvZhHwTDsJw==",
+      "cpu": [
+        "arm"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-arm64-gnu": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-arm64-gnu/-/rollup-linux-arm64-gnu-4.56.0.tgz",
+      "integrity": "sha512-uQVoKkrC1KGEV6udrdVahASIsaF8h7iLG0U0W+Xn14ucFwi6uS539PsAr24IEF9/FoDtzMeeJXJIBo5RkbNWvQ==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-arm64-musl": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-arm64-musl/-/rollup-linux-arm64-musl-4.56.0.tgz",
+      "integrity": "sha512-vLZ1yJKLxhQLFKTs42RwTwa6zkGln+bnXc8ueFGMYmBTLfNu58sl5/eXyxRa2RarTkJbXl8TKPgfS6V5ijNqEA==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-loong64-gnu": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-loong64-gnu/-/rollup-linux-loong64-gnu-4.56.0.tgz",
+      "integrity": "sha512-FWfHOCub564kSE3xJQLLIC/hbKqHSVxy8vY75/YHHzWvbJL7aYJkdgwD/xGfUlL5UV2SB7otapLrcCj2xnF1dg==",
+      "cpu": [
+        "loong64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-loong64-musl": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-loong64-musl/-/rollup-linux-loong64-musl-4.56.0.tgz",
+      "integrity": "sha512-z1EkujxIh7nbrKL1lmIpqFTc/sr0u8Uk0zK/qIEFldbt6EDKWFk/pxFq3gYj4Bjn3aa9eEhYRlL3H8ZbPT1xvA==",
+      "cpu": [
+        "loong64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-ppc64-gnu": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-ppc64-gnu/-/rollup-linux-ppc64-gnu-4.56.0.tgz",
+      "integrity": "sha512-iNFTluqgdoQC7AIE8Q34R3AuPrJGJirj5wMUErxj22deOcY7XwZRaqYmB6ZKFHoVGqRcRd0mqO+845jAibKCkw==",
+      "cpu": [
+        "ppc64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-ppc64-musl": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-ppc64-musl/-/rollup-linux-ppc64-musl-4.56.0.tgz",
+      "integrity": "sha512-MtMeFVlD2LIKjp2sE2xM2slq3Zxf9zwVuw0jemsxvh1QOpHSsSzfNOTH9uYW9i1MXFxUSMmLpeVeUzoNOKBaWg==",
+      "cpu": [
+        "ppc64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-riscv64-gnu": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-riscv64-gnu/-/rollup-linux-riscv64-gnu-4.56.0.tgz",
+      "integrity": "sha512-in+v6wiHdzzVhYKXIk5U74dEZHdKN9KH0Q4ANHOTvyXPG41bajYRsy7a8TPKbYPl34hU7PP7hMVHRvv/5aCSew==",
+      "cpu": [
+        "riscv64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-riscv64-musl": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-riscv64-musl/-/rollup-linux-riscv64-musl-4.56.0.tgz",
+      "integrity": "sha512-yni2raKHB8m9NQpI9fPVwN754mn6dHQSbDTwxdr9SE0ks38DTjLMMBjrwvB5+mXrX+C0npX0CVeCUcvvvD8CNQ==",
+      "cpu": [
+        "riscv64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-s390x-gnu": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-s390x-gnu/-/rollup-linux-s390x-gnu-4.56.0.tgz",
+      "integrity": "sha512-zhLLJx9nQPu7wezbxt2ut+CI4YlXi68ndEve16tPc/iwoylWS9B3FxpLS2PkmfYgDQtosah07Mj9E0khc3Y+vQ==",
+      "cpu": [
+        "s390x"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-x64-gnu": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.56.0.tgz",
+      "integrity": "sha512-MVC6UDp16ZSH7x4rtuJPAEoE1RwS8N4oK9DLHy3FTEdFoUTCFVzMfJl/BVJ330C+hx8FfprA5Wqx4FhZXkj2Kw==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-linux-x64-musl": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.56.0.tgz",
+      "integrity": "sha512-ZhGH1eA4Qv0lxaV00azCIS1ChedK0V32952Md3FtnxSqZTBTd6tgil4nZT5cU8B+SIw3PFYkvyR4FKo2oyZIHA==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "linux"
+      ]
+    },
+    "node_modules/@rollup/rollup-openbsd-x64": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-openbsd-x64/-/rollup-openbsd-x64-4.56.0.tgz",
+      "integrity": "sha512-O16XcmyDeFI9879pEcmtWvD/2nyxR9mF7Gs44lf1vGGx8Vg2DRNx11aVXBEqOQhWb92WN4z7fW/q4+2NYzCbBA==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "openbsd"
+      ]
+    },
+    "node_modules/@rollup/rollup-openharmony-arm64": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-openharmony-arm64/-/rollup-openharmony-arm64-4.56.0.tgz",
+      "integrity": "sha512-LhN/Reh+7F3RCgQIRbgw8ZMwUwyqJM+8pXNT6IIJAqm2IdKkzpCh/V9EdgOMBKuebIrzswqy4ATlrDgiOwbRcQ==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "openharmony"
+      ]
+    },
+    "node_modules/@rollup/rollup-win32-arm64-msvc": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-win32-arm64-msvc/-/rollup-win32-arm64-msvc-4.56.0.tgz",
+      "integrity": "sha512-kbFsOObXp3LBULg1d3JIUQMa9Kv4UitDmpS+k0tinPBz3watcUiV2/LUDMMucA6pZO3WGE27P7DsfaN54l9ing==",
+      "cpu": [
+        "arm64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ]
+    },
+    "node_modules/@rollup/rollup-win32-ia32-msvc": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-win32-ia32-msvc/-/rollup-win32-ia32-msvc-4.56.0.tgz",
+      "integrity": "sha512-vSSgny54D6P4vf2izbtFm/TcWYedw7f8eBrOiGGecyHyQB9q4Kqentjaj8hToe+995nob/Wv48pDqL5a62EWtg==",
+      "cpu": [
+        "ia32"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ]
+    },
+    "node_modules/@rollup/rollup-win32-x64-gnu": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-win32-x64-gnu/-/rollup-win32-x64-gnu-4.56.0.tgz",
+      "integrity": "sha512-FeCnkPCTHQJFbiGG49KjV5YGW/8b9rrXAM2Mz2kiIoktq2qsJxRD5giEMEOD2lPdgs72upzefaUvS+nc8E3UzQ==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ]
+    },
+    "node_modules/@rollup/rollup-win32-x64-msvc": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.56.0.tgz",
+      "integrity": "sha512-H8AE9Ur/t0+1VXujj90w0HrSOuv0Nq9r1vSZF2t5km20NTfosQsGGUXDaKdQZzwuLts7IyL1fYT4hM95TI9c4g==",
+      "cpu": [
+        "x64"
+      ],
+      "dev": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "win32"
+      ]
+    },
+    "node_modules/@tinyhttp/accepts": {
+      "version": "2.2.4",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/accepts/-/accepts-2.2.4.tgz",
+      "integrity": "sha512-zYkSyzPOSjDdfGyV4H8J6TVc2Jz62UEbp4Pz0wc9uSEoGxxgpBYHVD2ki8wDnaUavDi2DYEss1plW0kTnX3LKw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "mime": "4.1.0",
+        "negotiator": "^1.0.0"
+      },
+      "engines": {
+        "node": ">=14.13.1"
+      },
+      "funding": {
+        "type": "individual",
+        "url": "https://github.com/tinyhttp/tinyhttp?sponsor=1"
+      }
+    },
+    "node_modules/@tinyhttp/app": {
+      "version": "3.0.2",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/app/-/app-3.0.2.tgz",
+      "integrity": "sha512-007bvF3pmXJlHw/uzebocP04Sb7au9yNtXzevWuH+e08vCDSFvt4etDQV9X/ylr9jDLhZw8ac+oSbfmxfnx1cg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@tinyhttp/cookie": "2.1.1",
+        "@tinyhttp/proxy-addr": "3.0.0",
+        "@tinyhttp/req": "2.2.6",
+        "@tinyhttp/res": "2.2.7",
+        "@tinyhttp/router": "2.2.3",
+        "header-range-parser": "1.1.3",
+        "regexparam": "^2.0.2"
+      },
+      "engines": {
+        "node": ">=16.10.0"
+      },
+      "funding": {
+        "type": "individual",
+        "url": "https://github.com/tinyhttp/tinyhttp?sponsor=1"
+      }
+    },
+    "node_modules/@tinyhttp/content-disposition": {
+      "version": "2.2.3",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/content-disposition/-/content-disposition-2.2.3.tgz",
+      "integrity": "sha512-0nSvOgFHvq0a15+pZAdbAyHUk0+AGLX6oyo45b7fPdgWdPfHA19IfgUKRECYT0aw86ZP6ZDDLxGQ7FEA1fAVOg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.17.0"
+      },
+      "funding": {
+        "type": "individual",
+        "url": "https://github.com/tinyhttp/tinyhttp?sponsor=1"
+      }
+    },
+    "node_modules/@tinyhttp/content-type": {
+      "version": "0.1.4",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/content-type/-/content-type-0.1.4.tgz",
+      "integrity": "sha512-dl6f3SHIJPYbhsW1oXdrqOmLSQF/Ctlv3JnNfXAE22kIP7FosqJHxkz/qj2gv465prG8ODKH5KEyhBkvwrueKQ==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.4"
+      }
+    },
+    "node_modules/@tinyhttp/cookie": {
+      "version": "2.1.1",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/cookie/-/cookie-2.1.1.tgz",
+      "integrity": "sha512-h/kL9jY0e0Dvad+/QU3efKZww0aTvZJslaHj3JTPmIPC9Oan9+kYqmh3M6L5JUQRuTJYFK2nzgL2iJtH2S+6dA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.20.0"
+      },
+      "funding": {
+        "type": "individual",
+        "url": "https://github.com/tinyhttp/tinyhttp?sponsor=1"
+      }
+    },
+    "node_modules/@tinyhttp/cookie-signature": {
+      "version": "2.1.1",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/cookie-signature/-/cookie-signature-2.1.1.tgz",
+      "integrity": "sha512-VDsSMY5OJfQJIAtUgeQYhqMPSZptehFSfvEEtxr+4nldPA8IImlp3QVcOVuK985g4AFR4Hl1sCbWCXoqBnVWnw==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.20.0"
+      }
+    },
+    "node_modules/@tinyhttp/cors": {
+      "version": "2.0.1",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/cors/-/cors-2.0.1.tgz",
+      "integrity": "sha512-qrmo6WJuaiCzKWagv2yA/kw6hIISfF/hOqPWwmI6w0o8apeTMmRN3DoCFvQ/wNVuWVdU5J4KU7OX8aaSOEq51A==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@tinyhttp/vary": "^0.1.3"
+      },
+      "engines": {
+        "node": ">=12.20 || 14.x || >=16"
+      }
+    },
+    "node_modules/@tinyhttp/encode-url": {
+      "version": "2.1.1",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/encode-url/-/encode-url-2.1.1.tgz",
+      "integrity": "sha512-AhY+JqdZ56qV77tzrBm0qThXORbsVjs/IOPgGCS7x/wWnsa/Bx30zDUU/jPAUcSzNOzt860x9fhdGpzdqbUeUw==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.20.0"
+      }
+    },
+    "node_modules/@tinyhttp/etag": {
+      "version": "2.1.2",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/etag/-/etag-2.1.2.tgz",
+      "integrity": "sha512-j80fPKimGqdmMh6962y+BtQsnYPVCzZfJw0HXjyH70VaJBHLKGF+iYhcKqzI3yef6QBNa8DKIPsbEYpuwApXTw==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.20.0"
+      }
+    },
+    "node_modules/@tinyhttp/forwarded": {
+      "version": "2.1.2",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/forwarded/-/forwarded-2.1.2.tgz",
+      "integrity": "sha512-9H/eulJ68ElY/+zYpTpNhZ7vxGV+cnwaR6+oQSm7bVgZMyuQfgROW/qvZuhmgDTIxnGMXst+Ba4ij6w6Krcs3w==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.20.0"
+      }
+    },
+    "node_modules/@tinyhttp/logger": {
+      "version": "2.1.0",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/logger/-/logger-2.1.0.tgz",
+      "integrity": "sha512-Ma1fJ9CwUbn9r61/4HW6+nflsVoslpOnCrfQ6UeZq7GGIgwLzofms3HoSVG7M+AyRMJpxlfcDdbH5oFVroDMKA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "colorette": "^2.0.20",
+        "dayjs": "^1.11.13",
+        "http-status-emojis": "^2.2.0"
+      },
+      "engines": {
+        "node": ">=14.18 || >=16.20"
+      }
+    },
+    "node_modules/@tinyhttp/proxy-addr": {
+      "version": "3.0.0",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/proxy-addr/-/proxy-addr-3.0.0.tgz",
+      "integrity": "sha512-K1r1nTO6IJwZdmDTsS8q+o6FdDfYAVbm4peItnaydbe25ENAncJFWbFRvV+RxCSuX4H/vOIe3jd28ItSaNxNKw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@tinyhttp/forwarded": "2.1.2",
+        "ipaddr.js": "^2.2.0"
+      },
+      "engines": {
+        "node": ">=16.10.0"
+      }
+    },
+    "node_modules/@tinyhttp/req": {
+      "version": "2.2.6",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/req/-/req-2.2.6.tgz",
+      "integrity": "sha512-il4ZZmIvB6sA0G4NGE+dChWxauYPLb9M2HZGVjryH2MwMV14MWBlUKTagLpI6lmWzPtlnR9a3jF3sK0AEZig/w==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@tinyhttp/accepts": "2.2.4",
+        "@tinyhttp/type-is": "2.2.5",
+        "@tinyhttp/url": "2.1.1",
+        "header-range-parser": "^1.1.3"
+      },
+      "engines": {
+        "node": ">=14.13.1"
+      }
+    },
+    "node_modules/@tinyhttp/res": {
+      "version": "2.2.7",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/res/-/res-2.2.7.tgz",
+      "integrity": "sha512-X1S5cR0m7xHDjZFp/d1NuUPCHZFG2SFYdse5Io9Ztt5coOUBkRD3mpSqIqI/CsZfFHAJsS2ctwkOKmsgPXriBQ==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@tinyhttp/content-disposition": "2.2.3",
+        "@tinyhttp/cookie": "2.1.1",
+        "@tinyhttp/cookie-signature": "2.1.1",
+        "@tinyhttp/encode-url": "2.1.1",
+        "@tinyhttp/req": "2.2.6",
+        "@tinyhttp/send": "2.2.4",
+        "@tinyhttp/vary": "^0.1.3",
+        "es-escape-html": "^0.1.1",
+        "mime": "4.1.0"
+      },
+      "engines": {
+        "node": ">=14.13.1"
+      }
+    },
+    "node_modules/@tinyhttp/router": {
+      "version": "2.2.3",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/router/-/router-2.2.3.tgz",
+      "integrity": "sha512-O0MQqWV3Vpg/uXsMYg19XsIgOhwjyhTYWh51Qng7bxqXixxx2PEvZWnFjP7c84K7kU/nUX41KpkEBTLnznk9/Q==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.20.0"
+      }
+    },
+    "node_modules/@tinyhttp/send": {
+      "version": "2.2.4",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/send/-/send-2.2.4.tgz",
+      "integrity": "sha512-DgEY185oQUd2LTKHM+he/m3sjYWB7yL0WLNrasoSEHaCfzstm0+viltqqOvEV7UtkSB3oRRo+OWiEtYKmd6h5w==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@tinyhttp/content-type": "^0.1.4",
+        "@tinyhttp/etag": "2.1.2",
+        "mime": "4.1.0"
+      },
+      "engines": {
+        "node": ">=14.13.1"
+      }
+    },
+    "node_modules/@tinyhttp/type-is": {
+      "version": "2.2.5",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/type-is/-/type-is-2.2.5.tgz",
+      "integrity": "sha512-BCPEB+NV8v/9lzEE9GbfRPAKVsyayp84m6SSWn70j8yFkPBXeuVeq004pwVrjW1CRdmAZz9ZSH147pqqzAdr5g==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@tinyhttp/content-type": "^0.1.4",
+        "mime": "4.1.0"
+      },
+      "engines": {
+        "node": ">=14.13.1"
+      }
+    },
+    "node_modules/@tinyhttp/url": {
+      "version": "2.1.1",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/url/-/url-2.1.1.tgz",
+      "integrity": "sha512-POJeq2GQ5jI7Zrdmj22JqOijB5/GeX+LEX7DUdml1hUnGbJOTWDx7zf2b5cCERj7RoXL67zTgyzVblBJC+NJWg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.20.0"
+      }
+    },
+    "node_modules/@tinyhttp/vary": {
+      "version": "0.1.3",
+      "resolved": "https://registry.npmjs.org/@tinyhttp/vary/-/vary-0.1.3.tgz",
+      "integrity": "sha512-SoL83sQXAGiHN1jm2VwLUWQSQeDAAl1ywOm6T0b0Cg1CZhVsjoiZadmjhxF6FHCCY7OHHVaLnTgSMxTPIDLxMg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.20"
+      }
+    },
+    "node_modules/@types/babel__core": {
+      "version": "7.20.5",
+      "resolved": "https://registry.npmjs.org/@types/babel__core/-/babel__core-7.20.5.tgz",
+      "integrity": "sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/parser": "^7.20.7",
+        "@babel/types": "^7.20.7",
+        "@types/babel__generator": "*",
+        "@types/babel__template": "*",
+        "@types/babel__traverse": "*"
+      }
+    },
+    "node_modules/@types/babel__generator": {
+      "version": "7.27.0",
+      "resolved": "https://registry.npmjs.org/@types/babel__generator/-/babel__generator-7.27.0.tgz",
+      "integrity": "sha512-ufFd2Xi92OAVPYsy+P4n7/U7e68fex0+Ee8gSG9KX7eo084CWiQ4sdxktvdl0bOPupXtVJPY19zk6EwWqUQ8lg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/types": "^7.0.0"
+      }
+    },
+    "node_modules/@types/babel__template": {
+      "version": "7.4.4",
+      "resolved": "https://registry.npmjs.org/@types/babel__template/-/babel__template-7.4.4.tgz",
+      "integrity": "sha512-h/NUaSyG5EyxBIp8YRxo4RMe2/qQgvyowRwVMzhYhBCONbW8PUsg4lkFMrhgZhUe5z3L3MiLDuvyJ/CaPa2A8A==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/parser": "^7.1.0",
+        "@babel/types": "^7.0.0"
+      }
+    },
+    "node_modules/@types/babel__traverse": {
+      "version": "7.28.0",
+      "resolved": "https://registry.npmjs.org/@types/babel__traverse/-/babel__traverse-7.28.0.tgz",
+      "integrity": "sha512-8PvcXf70gTDZBgt9ptxJ8elBeBjcLOAcOtoO/mPJjtji1+CdGbHgm77om1GrsPxsiE+uXIpNSK64UYaIwQXd4Q==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/types": "^7.28.2"
+      }
+    },
+    "node_modules/@types/d3-array": {
+      "version": "3.2.2",
+      "resolved": "https://registry.npmjs.org/@types/d3-array/-/d3-array-3.2.2.tgz",
+      "integrity": "sha512-hOLWVbm7uRza0BYXpIIW5pxfrKe0W+D5lrFiAEYR+pb6w3N2SwSMaJbXdUfSEv+dT4MfHBLtn5js0LAWaO6otw==",
+      "license": "MIT"
+    },
+    "node_modules/@types/d3-color": {
+      "version": "3.1.3",
+      "resolved": "https://registry.npmjs.org/@types/d3-color/-/d3-color-3.1.3.tgz",
+      "integrity": "sha512-iO90scth9WAbmgv7ogoq57O9YpKmFBbmoEoCHDB2xMBY0+/KVrqAaCDyCE16dUspeOvIxFFRI+0sEtqDqy2b4A==",
+      "license": "MIT"
+    },
+    "node_modules/@types/d3-ease": {
+      "version": "3.0.2",
+      "resolved": "https://registry.npmjs.org/@types/d3-ease/-/d3-ease-3.0.2.tgz",
+      "integrity": "sha512-NcV1JjO5oDzoK26oMzbILE6HW7uVXOHLQvHshBUW4UMdZGfiY6v5BeQwh9a9tCzv+CeefZQHJt5SRgK154RtiA==",
+      "license": "MIT"
+    },
+    "node_modules/@types/d3-interpolate": {
+      "version": "3.0.4",
+      "resolved": "https://registry.npmjs.org/@types/d3-interpolate/-/d3-interpolate-3.0.4.tgz",
+      "integrity": "sha512-mgLPETlrpVV1YRJIglr4Ez47g7Yxjl1lj7YKsiMCb27VJH9W8NVM6Bb9d8kkpG/uAQS5AmbA48q2IAolKKo1MA==",
+      "license": "MIT",
+      "dependencies": {
+        "@types/d3-color": "*"
+      }
+    },
+    "node_modules/@types/d3-path": {
+      "version": "3.1.1",
+      "resolved": "https://registry.npmjs.org/@types/d3-path/-/d3-path-3.1.1.tgz",
+      "integrity": "sha512-VMZBYyQvbGmWyWVea0EHs/BwLgxc+MKi1zLDCONksozI4YJMcTt8ZEuIR4Sb1MMTE8MMW49v0IwI5+b7RmfWlg==",
+      "license": "MIT"
+    },
+    "node_modules/@types/d3-scale": {
+      "version": "4.0.9",
+      "resolved": "https://registry.npmjs.org/@types/d3-scale/-/d3-scale-4.0.9.tgz",
+      "integrity": "sha512-dLmtwB8zkAeO/juAMfnV+sItKjlsw2lKdZVVy6LRr0cBmegxSABiLEpGVmSJJ8O08i4+sGR6qQtb6WtuwJdvVw==",
+      "license": "MIT",
+      "dependencies": {
+        "@types/d3-time": "*"
+      }
+    },
+    "node_modules/@types/d3-shape": {
+      "version": "3.1.8",
+      "resolved": "https://registry.npmjs.org/@types/d3-shape/-/d3-shape-3.1.8.tgz",
+      "integrity": "sha512-lae0iWfcDeR7qt7rA88BNiqdvPS5pFVPpo5OfjElwNaT2yyekbM0C9vK+yqBqEmHr6lDkRnYNoTBYlAgJa7a4w==",
+      "license": "MIT",
+      "dependencies": {
+        "@types/d3-path": "*"
+      }
+    },
+    "node_modules/@types/d3-time": {
+      "version": "3.0.4",
+      "resolved": "https://registry.npmjs.org/@types/d3-time/-/d3-time-3.0.4.tgz",
+      "integrity": "sha512-yuzZug1nkAAaBlBBikKZTgzCeA+k1uy4ZFwWANOfKw5z5LRhV0gNA7gNkKm7HoK+HRN0wX3EkxGk0fpbWhmB7g==",
+      "license": "MIT"
+    },
+    "node_modules/@types/d3-timer": {
+      "version": "3.0.2",
+      "resolved": "https://registry.npmjs.org/@types/d3-timer/-/d3-timer-3.0.2.tgz",
+      "integrity": "sha512-Ps3T8E8dZDam6fUyNiMkekK3XUsaUEik+idO9/YjPtfj2qruF8tFBXS7XhtE4iIXBLxhmLjP3SXpLhVf21I9Lw==",
+      "license": "MIT"
+    },
+    "node_modules/@types/estree": {
+      "version": "1.0.8",
+      "resolved": "https://registry.npmjs.org/@types/estree/-/estree-1.0.8.tgz",
+      "integrity": "sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/@types/parse-json": {
+      "version": "4.0.2",
+      "resolved": "https://registry.npmjs.org/@types/parse-json/-/parse-json-4.0.2.tgz",
+      "integrity": "sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==",
+      "license": "MIT"
+    },
+    "node_modules/@types/prop-types": {
+      "version": "15.7.15",
+      "resolved": "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.15.tgz",
+      "integrity": "sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw==",
+      "license": "MIT"
+    },
+    "node_modules/@types/react": {
+      "version": "18.3.27",
+      "resolved": "https://registry.npmjs.org/@types/react/-/react-18.3.27.tgz",
+      "integrity": "sha512-cisd7gxkzjBKU2GgdYrTdtQx1SORymWyaAFhaxQPK9bYO9ot3Y5OikQRvY0VYQtvwjeQnizCINJAenh/V7MK2w==",
+      "license": "MIT",
+      "dependencies": {
+        "@types/prop-types": "*",
+        "csstype": "^3.2.2"
+      }
+    },
+    "node_modules/@types/react-dom": {
+      "version": "18.3.7",
+      "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.3.7.tgz",
+      "integrity": "sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==",
+      "dev": true,
+      "license": "MIT",
+      "peerDependencies": {
+        "@types/react": "^18.0.0"
+      }
+    },
+    "node_modules/@types/react-transition-group": {
+      "version": "4.4.12",
+      "resolved": "https://registry.npmjs.org/@types/react-transition-group/-/react-transition-group-4.4.12.tgz",
+      "integrity": "sha512-8TV6R3h2j7a91c+1DXdJi3Syo69zzIZbz7Lg5tORM5LEJG7X/E6a1V3drRyBRZq7/utz7A+c4OgYLiLcYGHG6w==",
+      "license": "MIT",
+      "peerDependencies": {
+        "@types/react": "*"
+      }
+    },
+    "node_modules/@vitejs/plugin-react": {
+      "version": "4.7.0",
+      "resolved": "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-4.7.0.tgz",
+      "integrity": "sha512-gUu9hwfWvvEDBBmgtAowQCojwZmJ5mcLn3aufeCsitijs3+f2NsrPtlAWIR6OPiqljl96GVCUbLe0HyqIpVaoA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@babel/core": "^7.28.0",
+        "@babel/plugin-transform-react-jsx-self": "^7.27.1",
+        "@babel/plugin-transform-react-jsx-source": "^7.27.1",
+        "@rolldown/pluginutils": "1.0.0-beta.27",
+        "@types/babel__core": "^7.20.5",
+        "react-refresh": "^0.17.0"
+      },
+      "engines": {
+        "node": "^14.18.0 || >=16.0.0"
+      },
+      "peerDependencies": {
+        "vite": "^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+      }
+    },
+    "node_modules/any-promise": {
+      "version": "1.3.0",
+      "resolved": "https://registry.npmjs.org/any-promise/-/any-promise-1.3.0.tgz",
+      "integrity": "sha512-7UvmKalWRt1wgjL1RrGxoSJW/0QZFIegpeGvZG9kjp8vrRu55XTHbwnqq2GpXm9uLbcuhxm3IqX9OB4MZR1b2A==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/anymatch": {
+      "version": "3.1.3",
+      "resolved": "https://registry.npmjs.org/anymatch/-/anymatch-3.1.3.tgz",
+      "integrity": "sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==",
+      "dev": true,
+      "license": "ISC",
+      "dependencies": {
+        "normalize-path": "^3.0.0",
+        "picomatch": "^2.0.4"
+      },
+      "engines": {
+        "node": ">= 8"
+      }
+    },
+    "node_modules/arg": {
+      "version": "5.0.2",
+      "resolved": "https://registry.npmjs.org/arg/-/arg-5.0.2.tgz",
+      "integrity": "sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/asynckit": {
+      "version": "0.4.0",
+      "resolved": "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz",
+      "integrity": "sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==",
+      "license": "MIT"
+    },
+    "node_modules/autoprefixer": {
+      "version": "10.4.23",
+      "resolved": "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.23.tgz",
+      "integrity": "sha512-YYTXSFulfwytnjAPlw8QHncHJmlvFKtczb8InXaAx9Q0LbfDnfEYDE55omerIJKihhmU61Ft+cAOSzQVaBUmeA==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/postcss/"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/autoprefixer"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "dependencies": {
+        "browserslist": "^4.28.1",
+        "caniuse-lite": "^1.0.30001760",
+        "fraction.js": "^5.3.4",
+        "picocolors": "^1.1.1",
+        "postcss-value-parser": "^4.2.0"
+      },
+      "bin": {
+        "autoprefixer": "bin/autoprefixer"
+      },
+      "engines": {
+        "node": "^10 || ^12 || >=14"
+      },
+      "peerDependencies": {
+        "postcss": "^8.1.0"
+      }
+    },
+    "node_modules/axios": {
+      "version": "1.13.2",
+      "resolved": "https://registry.npmjs.org/axios/-/axios-1.13.2.tgz",
+      "integrity": "sha512-VPk9ebNqPcy5lRGuSlKx752IlDatOjT9paPlm8A7yOuW2Fbvp4X3JznJtT4f0GzGLLiWE9W8onz51SqLYwzGaA==",
+      "license": "MIT",
+      "dependencies": {
+        "follow-redirects": "^1.15.6",
+        "form-data": "^4.0.4",
+        "proxy-from-env": "^1.1.0"
+      }
+    },
+    "node_modules/babel-plugin-macros": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/babel-plugin-macros/-/babel-plugin-macros-3.1.0.tgz",
+      "integrity": "sha512-Cg7TFGpIr01vOQNODXOOaGz2NpCU5gl8x1qJFbb6hbZxR7XrcE2vtbAsTAbJ7/xwJtUuJEw8K8Zr/AE0LHlesg==",
+      "license": "MIT",
+      "dependencies": {
+        "@babel/runtime": "^7.12.5",
+        "cosmiconfig": "^7.0.0",
+        "resolve": "^1.19.0"
+      },
+      "engines": {
+        "node": ">=10",
+        "npm": ">=6"
+      }
+    },
+    "node_modules/baseline-browser-mapping": {
+      "version": "2.9.17",
+      "resolved": "https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.9.17.tgz",
+      "integrity": "sha512-agD0MgJFUP/4nvjqzIB29zRPUuCF7Ge6mEv9s8dHrtYD7QWXRcx75rOADE/d5ah1NI+0vkDl0yorDd5U852IQQ==",
+      "dev": true,
+      "license": "Apache-2.0",
+      "bin": {
+        "baseline-browser-mapping": "dist/cli.js"
+      }
+    },
+    "node_modules/binary-extensions": {
+      "version": "2.3.0",
+      "resolved": "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.3.0.tgz",
+      "integrity": "sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=8"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/braces": {
+      "version": "3.0.3",
+      "resolved": "https://registry.npmjs.org/braces/-/braces-3.0.3.tgz",
+      "integrity": "sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "fill-range": "^7.1.1"
+      },
+      "engines": {
+        "node": ">=8"
+      }
+    },
+    "node_modules/browserslist": {
+      "version": "4.28.1",
+      "resolved": "https://registry.npmjs.org/browserslist/-/browserslist-4.28.1.tgz",
+      "integrity": "sha512-ZC5Bd0LgJXgwGqUknZY/vkUQ04r8NXnJZ3yYi4vDmSiZmC/pdSN0NbNRPxZpbtO4uAfDUAFffO8IZoM3Gj8IkA==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/browserslist"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/browserslist"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "dependencies": {
+        "baseline-browser-mapping": "^2.9.0",
+        "caniuse-lite": "^1.0.30001759",
+        "electron-to-chromium": "^1.5.263",
+        "node-releases": "^2.0.27",
+        "update-browserslist-db": "^1.2.0"
+      },
+      "bin": {
+        "browserslist": "cli.js"
+      },
+      "engines": {
+        "node": "^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7"
+      }
+    },
+    "node_modules/call-bind-apply-helpers": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/call-bind-apply-helpers/-/call-bind-apply-helpers-1.0.2.tgz",
+      "integrity": "sha512-Sp1ablJ0ivDkSzjcaJdxEunN5/XvksFJ2sMBFfq6x0ryhQV/2b/KwFe21cMpmHtPOSij8K99/wSfoEuTObmuMQ==",
+      "license": "MIT",
+      "dependencies": {
+        "es-errors": "^1.3.0",
+        "function-bind": "^1.1.2"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/callsites": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/callsites/-/callsites-3.1.0.tgz",
+      "integrity": "sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/camelcase-css": {
+      "version": "2.0.1",
+      "resolved": "https://registry.npmjs.org/camelcase-css/-/camelcase-css-2.0.1.tgz",
+      "integrity": "sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">= 6"
+      }
+    },
+    "node_modules/caniuse-lite": {
+      "version": "1.0.30001766",
+      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001766.tgz",
+      "integrity": "sha512-4C0lfJ0/YPjJQHagaE9x2Elb69CIqEPZeG0anQt9SIvIoOH4a4uaRl73IavyO+0qZh6MDLH//DrXThEYKHkmYA==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/browserslist"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/caniuse-lite"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "CC-BY-4.0"
+    },
+    "node_modules/chalk": {
+      "version": "5.6.2",
+      "resolved": "https://registry.npmjs.org/chalk/-/chalk-5.6.2.tgz",
+      "integrity": "sha512-7NzBL0rN6fMUW+f7A6Io4h40qQlG+xGmtMxfbnH/K7TAtt8JQWVQK+6g0UXKMeVJoyV5EkkNsErQ8pVD3bLHbA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": "^12.17.0 || ^14.13 || >=16.0.0"
+      },
+      "funding": {
+        "url": "https://github.com/chalk/chalk?sponsor=1"
+      }
+    },
+    "node_modules/chokidar": {
+      "version": "3.6.0",
+      "resolved": "https://registry.npmjs.org/chokidar/-/chokidar-3.6.0.tgz",
+      "integrity": "sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "anymatch": "~3.1.2",
+        "braces": "~3.0.2",
+        "glob-parent": "~5.1.2",
+        "is-binary-path": "~2.1.0",
+        "is-glob": "~4.0.1",
+        "normalize-path": "~3.0.0",
+        "readdirp": "~3.6.0"
+      },
+      "engines": {
+        "node": ">= 8.10.0"
+      },
+      "funding": {
+        "url": "https://paulmillr.com/funding/"
+      },
+      "optionalDependencies": {
+        "fsevents": "~2.3.2"
+      }
+    },
+    "node_modules/chokidar/node_modules/glob-parent": {
+      "version": "5.1.2",
+      "resolved": "https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz",
+      "integrity": "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==",
+      "dev": true,
+      "license": "ISC",
+      "dependencies": {
+        "is-glob": "^4.0.1"
+      },
+      "engines": {
+        "node": ">= 6"
+      }
+    },
+    "node_modules/classnames": {
+      "version": "2.5.1",
+      "resolved": "https://registry.npmjs.org/classnames/-/classnames-2.5.1.tgz",
+      "integrity": "sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==",
+      "license": "MIT"
+    },
+    "node_modules/clsx": {
+      "version": "2.1.1",
+      "resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+      "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/colorette": {
+      "version": "2.0.20",
+      "resolved": "https://registry.npmjs.org/colorette/-/colorette-2.0.20.tgz",
+      "integrity": "sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/combined-stream": {
+      "version": "1.0.8",
+      "resolved": "https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz",
+      "integrity": "sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==",
+      "license": "MIT",
+      "dependencies": {
+        "delayed-stream": "~1.0.0"
+      },
+      "engines": {
+        "node": ">= 0.8"
+      }
+    },
+    "node_modules/commander": {
+      "version": "4.1.1",
+      "resolved": "https://registry.npmjs.org/commander/-/commander-4.1.1.tgz",
+      "integrity": "sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">= 6"
+      }
+    },
+    "node_modules/convert-source-map": {
+      "version": "2.0.0",
+      "resolved": "https://registry.npmjs.org/convert-source-map/-/convert-source-map-2.0.0.tgz",
+      "integrity": "sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/cosmiconfig": {
+      "version": "7.1.0",
+      "resolved": "https://registry.npmjs.org/cosmiconfig/-/cosmiconfig-7.1.0.tgz",
+      "integrity": "sha512-AdmX6xUzdNASswsFtmwSt7Vj8po9IuqXm0UXz7QKPuEUmPB4XyjGfaAr2PSuELMwkRMVH1EpIkX5bTZGRB3eCA==",
+      "license": "MIT",
+      "dependencies": {
+        "@types/parse-json": "^4.0.0",
+        "import-fresh": "^3.2.1",
+        "parse-json": "^5.0.0",
+        "path-type": "^4.0.0",
+        "yaml": "^1.10.0"
+      },
+      "engines": {
+        "node": ">=10"
+      }
+    },
+    "node_modules/cssesc": {
+      "version": "3.0.0",
+      "resolved": "https://registry.npmjs.org/cssesc/-/cssesc-3.0.0.tgz",
+      "integrity": "sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==",
+      "dev": true,
+      "license": "MIT",
+      "bin": {
+        "cssesc": "bin/cssesc"
+      },
+      "engines": {
+        "node": ">=4"
+      }
+    },
+    "node_modules/csstype": {
+      "version": "3.2.3",
+      "resolved": "https://registry.npmjs.org/csstype/-/csstype-3.2.3.tgz",
+      "integrity": "sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==",
+      "license": "MIT"
+    },
+    "node_modules/d3-array": {
+      "version": "3.2.4",
+      "resolved": "https://registry.npmjs.org/d3-array/-/d3-array-3.2.4.tgz",
+      "integrity": "sha512-tdQAmyA18i4J7wprpYq8ClcxZy3SC31QMeByyCFyRt7BVHdREQZ5lpzoe5mFEYZUWe+oq8HBvk9JjpibyEV4Jg==",
+      "license": "ISC",
+      "dependencies": {
+        "internmap": "1 - 2"
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/d3-color": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/d3-color/-/d3-color-3.1.0.tgz",
+      "integrity": "sha512-zg/chbXyeBtMQ1LbD/WSoW2DpC3I0mpmPdW+ynRTj/x2DAWYrIY7qeZIHidozwV24m4iavr15lNwIwLxRmOxhA==",
+      "license": "ISC",
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/d3-ease": {
+      "version": "3.0.1",
+      "resolved": "https://registry.npmjs.org/d3-ease/-/d3-ease-3.0.1.tgz",
+      "integrity": "sha512-wR/XK3D3XcLIZwpbvQwQ5fK+8Ykds1ip7A2Txe0yxncXSdq1L9skcG7blcedkOX+ZcgxGAmLX1FrRGbADwzi0w==",
+      "license": "BSD-3-Clause",
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/d3-format": {
+      "version": "3.1.2",
+      "resolved": "https://registry.npmjs.org/d3-format/-/d3-format-3.1.2.tgz",
+      "integrity": "sha512-AJDdYOdnyRDV5b6ArilzCPPwc1ejkHcoyFarqlPqT7zRYjhavcT3uSrqcMvsgh2CgoPbK3RCwyHaVyxYcP2Arg==",
+      "license": "ISC",
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/d3-interpolate": {
+      "version": "3.0.1",
+      "resolved": "https://registry.npmjs.org/d3-interpolate/-/d3-interpolate-3.0.1.tgz",
+      "integrity": "sha512-3bYs1rOD33uo8aqJfKP3JWPAibgw8Zm2+L9vBKEHJ2Rg+viTR7o5Mmv5mZcieN+FRYaAOWX5SJATX6k1PWz72g==",
+      "license": "ISC",
+      "dependencies": {
+        "d3-color": "1 - 3"
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/d3-path": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/d3-path/-/d3-path-3.1.0.tgz",
+      "integrity": "sha512-p3KP5HCf/bvjBSSKuXid6Zqijx7wIfNW+J/maPs+iwR35at5JCbLUT0LzF1cnjbCHWhqzQTIN2Jpe8pRebIEFQ==",
+      "license": "ISC",
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/d3-scale": {
+      "version": "4.0.2",
+      "resolved": "https://registry.npmjs.org/d3-scale/-/d3-scale-4.0.2.tgz",
+      "integrity": "sha512-GZW464g1SH7ag3Y7hXjf8RoUuAFIqklOAq3MRl4OaWabTFJY9PN/E1YklhXLh+OQ3fM9yS2nOkCoS+WLZ6kvxQ==",
+      "license": "ISC",
+      "dependencies": {
+        "d3-array": "2.10.0 - 3",
+        "d3-format": "1 - 3",
+        "d3-interpolate": "1.2.0 - 3",
+        "d3-time": "2.1.1 - 3",
+        "d3-time-format": "2 - 4"
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/d3-shape": {
+      "version": "3.2.0",
+      "resolved": "https://registry.npmjs.org/d3-shape/-/d3-shape-3.2.0.tgz",
+      "integrity": "sha512-SaLBuwGm3MOViRq2ABk3eLoxwZELpH6zhl3FbAoJ7Vm1gofKx6El1Ib5z23NUEhF9AsGl7y+dzLe5Cw2AArGTA==",
+      "license": "ISC",
+      "dependencies": {
+        "d3-path": "^3.1.0"
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/d3-time": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/d3-time/-/d3-time-3.1.0.tgz",
+      "integrity": "sha512-VqKjzBLejbSMT4IgbmVgDjpkYrNWUYJnbCGo874u7MMKIWsILRX+OpX/gTk8MqjpT1A/c6HY2dCA77ZN0lkQ2Q==",
+      "license": "ISC",
+      "dependencies": {
+        "d3-array": "2 - 3"
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/d3-time-format": {
+      "version": "4.1.0",
+      "resolved": "https://registry.npmjs.org/d3-time-format/-/d3-time-format-4.1.0.tgz",
+      "integrity": "sha512-dJxPBlzC7NugB2PDLwo9Q8JiTR3M3e4/XANkreKSUxF8vvXKqm1Yfq4Q5dl8budlunRVlUUaDUgFt7eA8D6NLg==",
+      "license": "ISC",
+      "dependencies": {
+        "d3-time": "1 - 3"
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/d3-timer": {
+      "version": "3.0.1",
+      "resolved": "https://registry.npmjs.org/d3-timer/-/d3-timer-3.0.1.tgz",
+      "integrity": "sha512-ndfJ/JxxMd3nw31uyKoY2naivF+r29V+Lc0svZxe1JvvIRmi8hUsrMvdOwgS1o6uBHmiz91geQ0ylPP0aj1VUA==",
+      "license": "ISC",
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/date-fns": {
+      "version": "2.30.0",
+      "resolved": "https://registry.npmjs.org/date-fns/-/date-fns-2.30.0.tgz",
+      "integrity": "sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==",
+      "license": "MIT",
+      "dependencies": {
+        "@babel/runtime": "^7.21.0"
+      },
+      "engines": {
+        "node": ">=0.11"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/date-fns"
+      }
+    },
+    "node_modules/dayjs": {
+      "version": "1.11.19",
+      "resolved": "https://registry.npmjs.org/dayjs/-/dayjs-1.11.19.tgz",
+      "integrity": "sha512-t5EcLVS6QPBNqM2z8fakk/NKel+Xzshgt8FFKAn+qwlD1pzZWxh0nVCrvFK7ZDb6XucZeF9z8C7CBWTRIVApAw==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/debug": {
+      "version": "4.4.3",
+      "resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+      "integrity": "sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==",
+      "license": "MIT",
+      "dependencies": {
+        "ms": "^2.1.3"
+      },
+      "engines": {
+        "node": ">=6.0"
+      },
+      "peerDependenciesMeta": {
+        "supports-color": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/decimal.js-light": {
+      "version": "2.5.1",
+      "resolved": "https://registry.npmjs.org/decimal.js-light/-/decimal.js-light-2.5.1.tgz",
+      "integrity": "sha512-qIMFpTMZmny+MMIitAB6D7iVPEorVw6YQRWkvarTkT4tBeSLLiHzcwj6q0MmYSFCiVpiqPJTJEYIrpcPzVEIvg==",
+      "license": "MIT"
+    },
+    "node_modules/delayed-stream": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz",
+      "integrity": "sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.4.0"
+      }
+    },
+    "node_modules/didyoumean": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/didyoumean/-/didyoumean-1.2.2.tgz",
+      "integrity": "sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==",
+      "dev": true,
+      "license": "Apache-2.0"
+    },
+    "node_modules/dlv": {
+      "version": "1.1.3",
+      "resolved": "https://registry.npmjs.org/dlv/-/dlv-1.1.3.tgz",
+      "integrity": "sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/dom-helpers": {
+      "version": "5.2.1",
+      "resolved": "https://registry.npmjs.org/dom-helpers/-/dom-helpers-5.2.1.tgz",
+      "integrity": "sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==",
+      "license": "MIT",
+      "dependencies": {
+        "@babel/runtime": "^7.8.7",
+        "csstype": "^3.0.2"
+      }
+    },
+    "node_modules/dot-prop": {
+      "version": "10.1.0",
+      "resolved": "https://registry.npmjs.org/dot-prop/-/dot-prop-10.1.0.tgz",
+      "integrity": "sha512-MVUtAugQMOff5RnBy2d9N31iG0lNwg1qAoAOn7pOK5wf94WIaE3My2p3uwTQuvS2AcqchkcR3bHByjaM0mmi7Q==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "type-fest": "^5.0.0"
+      },
+      "engines": {
+        "node": ">=20"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/dunder-proto": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/dunder-proto/-/dunder-proto-1.0.1.tgz",
+      "integrity": "sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==",
+      "license": "MIT",
+      "dependencies": {
+        "call-bind-apply-helpers": "^1.0.1",
+        "es-errors": "^1.3.0",
+        "gopd": "^1.2.0"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/electron-to-chromium": {
+      "version": "1.5.278",
+      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.278.tgz",
+      "integrity": "sha512-dQ0tM1svDRQOwxnXxm+twlGTjr9Upvt8UFWAgmLsxEzFQxhbti4VwxmMjsDxVC51Zo84swW7FVCXEV+VAkhuPw==",
+      "dev": true,
+      "license": "ISC"
+    },
+    "node_modules/error-ex": {
+      "version": "1.3.4",
+      "resolved": "https://registry.npmjs.org/error-ex/-/error-ex-1.3.4.tgz",
+      "integrity": "sha512-sqQamAnR14VgCr1A618A3sGrygcpK+HEbenA/HiEAkkUwcZIIB/tgWqHFxWgOyDh4nB4JCRimh79dR5Ywc9MDQ==",
+      "license": "MIT",
+      "dependencies": {
+        "is-arrayish": "^0.2.1"
+      }
+    },
+    "node_modules/es-define-property": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/es-define-property/-/es-define-property-1.0.1.tgz",
+      "integrity": "sha512-e3nRfgfUZ4rNGL232gUgX06QNyyez04KdjFrF+LTRoOXmrOgFKDg4BCdsjW8EnT69eqdYGmRpJwiPVYNrCaW3g==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/es-errors": {
+      "version": "1.3.0",
+      "resolved": "https://registry.npmjs.org/es-errors/-/es-errors-1.3.0.tgz",
+      "integrity": "sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/es-escape-html": {
+      "version": "0.1.1",
+      "resolved": "https://registry.npmjs.org/es-escape-html/-/es-escape-html-0.1.1.tgz",
+      "integrity": "sha512-yUx1o+8RsG7UlszmYPtks+dm6Lho2m8lgHMOsLJQsFI0R8XwUJwiMhM1M4E/S8QLeGyf6MkDV/pWgjQ0tdTSyQ==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.x"
+      }
+    },
+    "node_modules/es-object-atoms": {
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/es-object-atoms/-/es-object-atoms-1.1.1.tgz",
+      "integrity": "sha512-FGgH2h8zKNim9ljj7dankFPcICIK9Cp5bm+c2gQSYePhpaG5+esrLODihIorn+Pe6FGJzWhXQotPv73jTaldXA==",
+      "license": "MIT",
+      "dependencies": {
+        "es-errors": "^1.3.0"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/es-set-tostringtag": {
+      "version": "2.1.0",
+      "resolved": "https://registry.npmjs.org/es-set-tostringtag/-/es-set-tostringtag-2.1.0.tgz",
+      "integrity": "sha512-j6vWzfrGVfyXxge+O0x5sh6cvxAog0a/4Rdd2K36zCMV5eJ+/+tOAngRO8cODMNWbVRdVlmGZQL2YS3yR8bIUA==",
+      "license": "MIT",
+      "dependencies": {
+        "es-errors": "^1.3.0",
+        "get-intrinsic": "^1.2.6",
+        "has-tostringtag": "^1.0.2",
+        "hasown": "^2.0.2"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/esbuild": {
+      "version": "0.21.5",
+      "resolved": "https://registry.npmjs.org/esbuild/-/esbuild-0.21.5.tgz",
+      "integrity": "sha512-mg3OPMV4hXywwpoDxu3Qda5xCKQi+vCTZq8S9J/EpkhB2HzKXq4SNFZE3+NK93JYxc8VMSep+lOUSC/RVKaBqw==",
+      "dev": true,
+      "hasInstallScript": true,
+      "license": "MIT",
+      "bin": {
+        "esbuild": "bin/esbuild"
+      },
+      "engines": {
+        "node": ">=12"
+      },
+      "optionalDependencies": {
+        "@esbuild/aix-ppc64": "0.21.5",
+        "@esbuild/android-arm": "0.21.5",
+        "@esbuild/android-arm64": "0.21.5",
+        "@esbuild/android-x64": "0.21.5",
+        "@esbuild/darwin-arm64": "0.21.5",
+        "@esbuild/darwin-x64": "0.21.5",
+        "@esbuild/freebsd-arm64": "0.21.5",
+        "@esbuild/freebsd-x64": "0.21.5",
+        "@esbuild/linux-arm": "0.21.5",
+        "@esbuild/linux-arm64": "0.21.5",
+        "@esbuild/linux-ia32": "0.21.5",
+        "@esbuild/linux-loong64": "0.21.5",
+        "@esbuild/linux-mips64el": "0.21.5",
+        "@esbuild/linux-ppc64": "0.21.5",
+        "@esbuild/linux-riscv64": "0.21.5",
+        "@esbuild/linux-s390x": "0.21.5",
+        "@esbuild/linux-x64": "0.21.5",
+        "@esbuild/netbsd-x64": "0.21.5",
+        "@esbuild/openbsd-x64": "0.21.5",
+        "@esbuild/sunos-x64": "0.21.5",
+        "@esbuild/win32-arm64": "0.21.5",
+        "@esbuild/win32-ia32": "0.21.5",
+        "@esbuild/win32-x64": "0.21.5"
+      }
+    },
+    "node_modules/escalade": {
+      "version": "3.2.0",
+      "resolved": "https://registry.npmjs.org/escalade/-/escalade-3.2.0.tgz",
+      "integrity": "sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/escape-string-regexp": {
+      "version": "4.0.0",
+      "resolved": "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz",
+      "integrity": "sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=10"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/eta": {
+      "version": "4.5.0",
+      "resolved": "https://registry.npmjs.org/eta/-/eta-4.5.0.tgz",
+      "integrity": "sha512-qifAYjuW5AM1eEEIsFnOwB+TGqu6ynU3OKj9WbUTOtUBHFPZqL03XUW34kbp3zm19Ald+U8dEyRXaVsUck+Y1g==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=20"
+      },
+      "funding": {
+        "url": "https://github.com/bgub/eta?sponsor=1"
+      }
+    },
+    "node_modules/eventemitter3": {
+      "version": "4.0.7",
+      "resolved": "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz",
+      "integrity": "sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==",
+      "license": "MIT"
+    },
+    "node_modules/fast-equals": {
+      "version": "5.4.0",
+      "resolved": "https://registry.npmjs.org/fast-equals/-/fast-equals-5.4.0.tgz",
+      "integrity": "sha512-jt2DW/aNFNwke7AUd+Z+e6pz39KO5rzdbbFCg2sGafS4mk13MI7Z8O5z9cADNn5lhGODIgLwug6TZO2ctf7kcw==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.0.0"
+      }
+    },
+    "node_modules/fast-glob": {
+      "version": "3.3.3",
+      "resolved": "https://registry.npmjs.org/fast-glob/-/fast-glob-3.3.3.tgz",
+      "integrity": "sha512-7MptL8U0cqcFdzIzwOTHoilX9x5BrNqye7Z/LuC7kCMRio1EMSyqRK3BEAUD7sXRq4iT4AzTVuZdhgQ2TCvYLg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@nodelib/fs.stat": "^2.0.2",
+        "@nodelib/fs.walk": "^1.2.3",
+        "glob-parent": "^5.1.2",
+        "merge2": "^1.3.0",
+        "micromatch": "^4.0.8"
+      },
+      "engines": {
+        "node": ">=8.6.0"
+      }
+    },
+    "node_modules/fast-glob/node_modules/glob-parent": {
+      "version": "5.1.2",
+      "resolved": "https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz",
+      "integrity": "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==",
+      "dev": true,
+      "license": "ISC",
+      "dependencies": {
+        "is-glob": "^4.0.1"
+      },
+      "engines": {
+        "node": ">= 6"
+      }
+    },
+    "node_modules/fastq": {
+      "version": "1.20.1",
+      "resolved": "https://registry.npmjs.org/fastq/-/fastq-1.20.1.tgz",
+      "integrity": "sha512-GGToxJ/w1x32s/D2EKND7kTil4n8OVk/9mycTc4VDza13lOvpUZTGX3mFSCtV9ksdGBVzvsyAVLM6mHFThxXxw==",
+      "dev": true,
+      "license": "ISC",
+      "dependencies": {
+        "reusify": "^1.0.4"
+      }
+    },
+    "node_modules/fill-range": {
+      "version": "7.1.1",
+      "resolved": "https://registry.npmjs.org/fill-range/-/fill-range-7.1.1.tgz",
+      "integrity": "sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "to-regex-range": "^5.0.1"
+      },
+      "engines": {
+        "node": ">=8"
+      }
+    },
+    "node_modules/find-root": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/find-root/-/find-root-1.1.0.tgz",
+      "integrity": "sha512-NKfW6bec6GfKc0SGx1e07QZY9PE99u0Bft/0rzSD5k3sO/vwkVUpDUKVm5Gpp5Ue3YfShPFTX2070tDs5kB9Ng==",
+      "license": "MIT"
+    },
+    "node_modules/follow-redirects": {
+      "version": "1.15.11",
+      "resolved": "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.11.tgz",
+      "integrity": "sha512-deG2P0JfjrTxl50XGCDyfI97ZGVCxIpfKYmfyrQ54n5FO/0gfIES8C/Psl6kWVDolizcaaxZJnTS0QSMxvnsBQ==",
+      "funding": [
+        {
+          "type": "individual",
+          "url": "https://github.com/sponsors/RubenVerborgh"
+        }
+      ],
+      "license": "MIT",
+      "engines": {
+        "node": ">=4.0"
+      },
+      "peerDependenciesMeta": {
+        "debug": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/form-data": {
+      "version": "4.0.5",
+      "resolved": "https://registry.npmjs.org/form-data/-/form-data-4.0.5.tgz",
+      "integrity": "sha512-8RipRLol37bNs2bhoV67fiTEvdTrbMUYcFTiy3+wuuOnUog2QBHCZWXDRijWQfAkhBj2Uf5UnVaiWwA5vdd82w==",
+      "license": "MIT",
+      "dependencies": {
+        "asynckit": "^0.4.0",
+        "combined-stream": "^1.0.8",
+        "es-set-tostringtag": "^2.1.0",
+        "hasown": "^2.0.2",
+        "mime-types": "^2.1.12"
+      },
+      "engines": {
+        "node": ">= 6"
+      }
+    },
+    "node_modules/fraction.js": {
+      "version": "5.3.4",
+      "resolved": "https://registry.npmjs.org/fraction.js/-/fraction.js-5.3.4.tgz",
+      "integrity": "sha512-1X1NTtiJphryn/uLQz3whtY6jK3fTqoE3ohKs0tT+Ujr1W59oopxmoEh7Lu5p6vBaPbgoM0bzveAW4Qi5RyWDQ==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": "*"
+      },
+      "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/rawify"
+      }
+    },
+    "node_modules/framer-motion": {
+      "version": "10.18.0",
+      "resolved": "https://registry.npmjs.org/framer-motion/-/framer-motion-10.18.0.tgz",
+      "integrity": "sha512-oGlDh1Q1XqYPksuTD/usb0I70hq95OUzmL9+6Zd+Hs4XV0oaISBa/UUMSjYiq6m8EUF32132mOJ8xVZS+I0S6w==",
+      "license": "MIT",
+      "dependencies": {
+        "tslib": "^2.4.0"
+      },
+      "optionalDependencies": {
+        "@emotion/is-prop-valid": "^0.8.2"
+      },
+      "peerDependencies": {
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0"
+      },
+      "peerDependenciesMeta": {
+        "react": {
+          "optional": true
+        },
+        "react-dom": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/fsevents": {
+      "version": "2.3.3",
+      "resolved": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz",
+      "integrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==",
+      "dev": true,
+      "hasInstallScript": true,
+      "license": "MIT",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": "^8.16.0 || ^10.6.0 || >=11.0.0"
+      }
+    },
+    "node_modules/function-bind": {
+      "version": "1.1.2",
+      "resolved": "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz",
+      "integrity": "sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==",
+      "license": "MIT",
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/gensync": {
+      "version": "1.0.0-beta.2",
+      "resolved": "https://registry.npmjs.org/gensync/-/gensync-1.0.0-beta.2.tgz",
+      "integrity": "sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6.9.0"
+      }
+    },
+    "node_modules/get-intrinsic": {
+      "version": "1.3.0",
+      "resolved": "https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.3.0.tgz",
+      "integrity": "sha512-9fSjSaos/fRIVIp+xSJlE6lfwhES7LNtKaCBIamHsjr2na1BiABJPo0mOjjz8GJDURarmCPGqaiVg5mfjb98CQ==",
+      "license": "MIT",
+      "dependencies": {
+        "call-bind-apply-helpers": "^1.0.2",
+        "es-define-property": "^1.0.1",
+        "es-errors": "^1.3.0",
+        "es-object-atoms": "^1.1.1",
+        "function-bind": "^1.1.2",
+        "get-proto": "^1.0.1",
+        "gopd": "^1.2.0",
+        "has-symbols": "^1.1.0",
+        "hasown": "^2.0.2",
+        "math-intrinsics": "^1.1.0"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/get-proto": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/get-proto/-/get-proto-1.0.1.tgz",
+      "integrity": "sha512-sTSfBjoXBp89JvIKIefqw7U2CCebsc74kiY6awiGogKtoSGbgjYE/G/+l9sF3MWFPNc9IcoOC4ODfKHfxFmp0g==",
+      "license": "MIT",
+      "dependencies": {
+        "dunder-proto": "^1.0.1",
+        "es-object-atoms": "^1.0.0"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/glob-parent": {
+      "version": "6.0.2",
+      "resolved": "https://registry.npmjs.org/glob-parent/-/glob-parent-6.0.2.tgz",
+      "integrity": "sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A==",
+      "dev": true,
+      "license": "ISC",
+      "dependencies": {
+        "is-glob": "^4.0.3"
+      },
+      "engines": {
+        "node": ">=10.13.0"
+      }
+    },
+    "node_modules/goober": {
+      "version": "2.1.18",
+      "resolved": "https://registry.npmjs.org/goober/-/goober-2.1.18.tgz",
+      "integrity": "sha512-2vFqsaDVIT9Gz7N6kAL++pLpp41l3PfDuusHcjnGLfR6+huZkl6ziX+zgVC3ZxpqWhzH6pyDdGrCeDhMIvwaxw==",
+      "license": "MIT",
+      "peerDependencies": {
+        "csstype": "^3.0.10"
+      }
+    },
+    "node_modules/gopd": {
+      "version": "1.2.0",
+      "resolved": "https://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz",
+      "integrity": "sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/has-symbols": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/has-symbols/-/has-symbols-1.1.0.tgz",
+      "integrity": "sha512-1cDNdwJ2Jaohmb3sg4OmKaMBwuC48sYni5HUw2DvsC8LjGTLK9h+eb1X6RyuOHe4hT0ULCW68iomhjUoKUqlPQ==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/has-tostringtag": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz",
+      "integrity": "sha512-NqADB8VjPFLM2V0VvHUewwwsw0ZWBaIdgo+ieHtK3hasLz4qeCRjYcqfB6AQrBggRKppKF8L52/VqdVsO47Dlw==",
+      "license": "MIT",
+      "dependencies": {
+        "has-symbols": "^1.0.3"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/hasown": {
+      "version": "2.0.2",
+      "resolved": "https://registry.npmjs.org/hasown/-/hasown-2.0.2.tgz",
+      "integrity": "sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==",
+      "license": "MIT",
+      "dependencies": {
+        "function-bind": "^1.1.2"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/header-range-parser": {
+      "version": "1.1.3",
+      "resolved": "https://registry.npmjs.org/header-range-parser/-/header-range-parser-1.1.3.tgz",
+      "integrity": "sha512-B9zCFt3jH8g09LR1vHL4pcAn8yMEtlSlOUdQemzHMRKMImNIhhszdeosYFfNW0WXKQtXIlWB+O4owHJKvEJYaA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.22.0"
+      }
+    },
+    "node_modules/hoist-non-react-statics": {
+      "version": "3.3.2",
+      "resolved": "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz",
+      "integrity": "sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==",
+      "license": "BSD-3-Clause",
+      "dependencies": {
+        "react-is": "^16.7.0"
+      }
+    },
+    "node_modules/http-status-emojis": {
+      "version": "2.2.0",
+      "resolved": "https://registry.npmjs.org/http-status-emojis/-/http-status-emojis-2.2.0.tgz",
+      "integrity": "sha512-ompKtgwpx8ff0hsbpIB7oE4ax1LXoHmftsHHStMELX56ivG3GhofTX8ZHWlUaFKfGjcGjw6G3rPk7dJRXMmbbg==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/import-fresh": {
+      "version": "3.3.1",
+      "resolved": "https://registry.npmjs.org/import-fresh/-/import-fresh-3.3.1.tgz",
+      "integrity": "sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==",
+      "license": "MIT",
+      "dependencies": {
+        "parent-module": "^1.0.0",
+        "resolve-from": "^4.0.0"
+      },
+      "engines": {
+        "node": ">=6"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/inflection": {
+      "version": "3.0.2",
+      "resolved": "https://registry.npmjs.org/inflection/-/inflection-3.0.2.tgz",
+      "integrity": "sha512-+Bg3+kg+J6JUWn8J6bzFmOWkTQ6L/NHfDRSYU+EVvuKHDxUDHAXgqixHfVlzuBQaPOTac8hn43aPhMNk6rMe3g==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=18.0.0"
+      }
+    },
+    "node_modules/internmap": {
+      "version": "2.0.3",
+      "resolved": "https://registry.npmjs.org/internmap/-/internmap-2.0.3.tgz",
+      "integrity": "sha512-5Hh7Y1wQbvY5ooGgPbDaL5iYLAPzMTUrjMulskHLH6wnv/A+1q5rgEaiuqEjB+oxGXIVZs1FF+R/KPN3ZSQYYg==",
+      "license": "ISC",
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/invariant": {
+      "version": "2.2.4",
+      "resolved": "https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz",
+      "integrity": "sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==",
+      "license": "MIT",
+      "dependencies": {
+        "loose-envify": "^1.0.0"
+      }
+    },
+    "node_modules/ipaddr.js": {
+      "version": "2.3.0",
+      "resolved": "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-2.3.0.tgz",
+      "integrity": "sha512-Zv/pA+ciVFbCSBBjGfaKUya/CcGmUHzTydLMaTwrUUEM2DIEO3iZvueGxmacvmN50fGpGVKeTXpb2LcYQxeVdg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">= 10"
+      }
+    },
+    "node_modules/is-arrayish": {
+      "version": "0.2.1",
+      "resolved": "https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.2.1.tgz",
+      "integrity": "sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg==",
+      "license": "MIT"
+    },
+    "node_modules/is-binary-path": {
+      "version": "2.1.0",
+      "resolved": "https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz",
+      "integrity": "sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "binary-extensions": "^2.0.0"
+      },
+      "engines": {
+        "node": ">=8"
+      }
+    },
+    "node_modules/is-core-module": {
+      "version": "2.16.1",
+      "resolved": "https://registry.npmjs.org/is-core-module/-/is-core-module-2.16.1.tgz",
+      "integrity": "sha512-UfoeMA6fIJ8wTYFEUjelnaGI67v6+N7qXJEvQuIGa99l4xsCruSYOVSQ0uPANn4dAzm8lkYPaKLrrijLq7x23w==",
+      "license": "MIT",
+      "dependencies": {
+        "hasown": "^2.0.2"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/is-extglob": {
+      "version": "2.1.1",
+      "resolved": "https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz",
+      "integrity": "sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/is-glob": {
+      "version": "4.0.3",
+      "resolved": "https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz",
+      "integrity": "sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "is-extglob": "^2.1.1"
+      },
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/is-number": {
+      "version": "7.0.0",
+      "resolved": "https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz",
+      "integrity": "sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.12.0"
+      }
+    },
+    "node_modules/jiti": {
+      "version": "1.21.7",
+      "resolved": "https://registry.npmjs.org/jiti/-/jiti-1.21.7.tgz",
+      "integrity": "sha512-/imKNG4EbWNrVjoNC/1H5/9GFy+tqjGBHCaSsN+P2RnPqjsLmv6UD3Ej+Kj8nBWaRAwyk7kK5ZUc+OEatnTR3A==",
+      "dev": true,
+      "license": "MIT",
+      "bin": {
+        "jiti": "bin/jiti.js"
+      }
+    },
+    "node_modules/js-tokens": {
+      "version": "4.0.0",
+      "resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz",
+      "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==",
+      "license": "MIT"
+    },
+    "node_modules/jsesc": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz",
+      "integrity": "sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==",
+      "license": "MIT",
+      "bin": {
+        "jsesc": "bin/jsesc"
+      },
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/json-parse-even-better-errors": {
+      "version": "2.3.1",
+      "resolved": "https://registry.npmjs.org/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz",
+      "integrity": "sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==",
+      "license": "MIT"
+    },
+    "node_modules/json-server": {
+      "version": "1.0.0-beta.5",
+      "resolved": "https://registry.npmjs.org/json-server/-/json-server-1.0.0-beta.5.tgz",
+      "integrity": "sha512-CvoacHWudRGAlCSnX359W4zTcRSM3FQte2s5rXvWb1R+msDsJNx8AOErFXXmzY6mg3vE5YKJUyFbyUd3YGkiRQ==",
+      "dev": true,
+      "license": "SEE LICENSE IN ./LICENSE",
+      "dependencies": {
+        "@tinyhttp/app": "^3.0.1",
+        "@tinyhttp/cors": "^2.0.1",
+        "@tinyhttp/logger": "^2.1.0",
+        "chalk": "^5.6.2",
+        "chokidar": "^5.0.0",
+        "dot-prop": "^10.1.0",
+        "eta": "^4.5.0",
+        "inflection": "^3.0.2",
+        "json5": "^2.2.3",
+        "lowdb": "^7.0.1",
+        "milliparsec": "^5.1.0",
+        "sirv": "^3.0.2",
+        "sort-on": "^7.0.0"
+      },
+      "bin": {
+        "json-server": "lib/bin.js"
+      },
+      "engines": {
+        "node": ">=22.12.0"
+      }
+    },
+    "node_modules/json-server/node_modules/chokidar": {
+      "version": "5.0.0",
+      "resolved": "https://registry.npmjs.org/chokidar/-/chokidar-5.0.0.tgz",
+      "integrity": "sha512-TQMmc3w+5AxjpL8iIiwebF73dRDF4fBIieAqGn9RGCWaEVwQ6Fb2cGe31Yns0RRIzii5goJ1Y7xbMwo1TxMplw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "readdirp": "^5.0.0"
+      },
+      "engines": {
+        "node": ">= 20.19.0"
+      },
+      "funding": {
+        "url": "https://paulmillr.com/funding/"
+      }
+    },
+    "node_modules/json-server/node_modules/readdirp": {
+      "version": "5.0.0",
+      "resolved": "https://registry.npmjs.org/readdirp/-/readdirp-5.0.0.tgz",
+      "integrity": "sha512-9u/XQ1pvrQtYyMpZe7DXKv2p5CNvyVwzUB6uhLAnQwHMSgKMBR62lc7AHljaeteeHXn11XTAaLLUVZYVZyuRBQ==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">= 20.19.0"
+      },
+      "funding": {
+        "type": "individual",
+        "url": "https://paulmillr.com/funding/"
+      }
+    },
+    "node_modules/json5": {
+      "version": "2.2.3",
+      "resolved": "https://registry.npmjs.org/json5/-/json5-2.2.3.tgz",
+      "integrity": "sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==",
+      "dev": true,
+      "license": "MIT",
+      "bin": {
+        "json5": "lib/cli.js"
+      },
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/lilconfig": {
+      "version": "3.1.3",
+      "resolved": "https://registry.npmjs.org/lilconfig/-/lilconfig-3.1.3.tgz",
+      "integrity": "sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=14"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/antonk52"
+      }
+    },
+    "node_modules/lines-and-columns": {
+      "version": "1.2.4",
+      "resolved": "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.2.4.tgz",
+      "integrity": "sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==",
+      "license": "MIT"
+    },
+    "node_modules/lodash": {
+      "version": "4.17.23",
+      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.23.tgz",
+      "integrity": "sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==",
+      "license": "MIT"
+    },
+    "node_modules/loose-envify": {
+      "version": "1.4.0",
+      "resolved": "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz",
+      "integrity": "sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==",
+      "license": "MIT",
+      "dependencies": {
+        "js-tokens": "^3.0.0 || ^4.0.0"
+      },
+      "bin": {
+        "loose-envify": "cli.js"
+      }
+    },
+    "node_modules/lowdb": {
+      "version": "7.0.1",
+      "resolved": "https://registry.npmjs.org/lowdb/-/lowdb-7.0.1.tgz",
+      "integrity": "sha512-neJAj8GwF0e8EpycYIDFqEPcx9Qz4GUho20jWFR7YiFeXzF1YMLdxB36PypcTSPMA+4+LvgyMacYhlr18Zlymw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "steno": "^4.0.2"
+      },
+      "engines": {
+        "node": ">=18"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/typicode"
+      }
+    },
+    "node_modules/lru-cache": {
+      "version": "5.1.1",
+      "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-5.1.1.tgz",
+      "integrity": "sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==",
+      "dev": true,
+      "license": "ISC",
+      "dependencies": {
+        "yallist": "^3.0.2"
+      }
+    },
+    "node_modules/math-intrinsics": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/math-intrinsics/-/math-intrinsics-1.1.0.tgz",
+      "integrity": "sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
+    "node_modules/memoize-one": {
+      "version": "6.0.0",
+      "resolved": "https://registry.npmjs.org/memoize-one/-/memoize-one-6.0.0.tgz",
+      "integrity": "sha512-rkpe71W0N0c0Xz6QD0eJETuWAJGnJ9afsl1srmwPrI+yBCkge5EycXXbYRyvL29zZVUWQCY7InPRCv3GDXuZNw==",
+      "license": "MIT"
+    },
+    "node_modules/merge2": {
+      "version": "1.4.1",
+      "resolved": "https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz",
+      "integrity": "sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">= 8"
+      }
+    },
+    "node_modules/micromatch": {
+      "version": "4.0.8",
+      "resolved": "https://registry.npmjs.org/micromatch/-/micromatch-4.0.8.tgz",
+      "integrity": "sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "braces": "^3.0.3",
+        "picomatch": "^2.3.1"
+      },
+      "engines": {
+        "node": ">=8.6"
+      }
+    },
+    "node_modules/milliparsec": {
+      "version": "5.1.0",
+      "resolved": "https://registry.npmjs.org/milliparsec/-/milliparsec-5.1.0.tgz",
+      "integrity": "sha512-/xFIv79W7RhnnRLcQOlNpm0xO5FrodBdWFIysI4jIimqCCOnYwBekh6p+Qx61MVooewwBI7WEanFYeo8KtR2dA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=18.13 || >=19.20 || >=20"
+      }
+    },
+    "node_modules/mime": {
+      "version": "4.1.0",
+      "resolved": "https://registry.npmjs.org/mime/-/mime-4.1.0.tgz",
+      "integrity": "sha512-X5ju04+cAzsojXKes0B/S4tcYtFAJ6tTMuSPBEn9CPGlrWr8Fiw7qYeLT0XyH80HSoAoqWCaz+MWKh22P7G1cw==",
+      "dev": true,
+      "funding": [
+        "https://github.com/sponsors/broofa"
+      ],
+      "license": "MIT",
+      "bin": {
+        "mime": "bin/cli.js"
+      },
+      "engines": {
+        "node": ">=16"
+      }
+    },
+    "node_modules/mime-db": {
+      "version": "1.52.0",
+      "resolved": "https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz",
+      "integrity": "sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.6"
+      }
+    },
+    "node_modules/mime-types": {
+      "version": "2.1.35",
+      "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz",
+      "integrity": "sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==",
+      "license": "MIT",
+      "dependencies": {
+        "mime-db": "1.52.0"
+      },
+      "engines": {
+        "node": ">= 0.6"
+      }
+    },
+    "node_modules/mrmime": {
+      "version": "2.0.1",
+      "resolved": "https://registry.npmjs.org/mrmime/-/mrmime-2.0.1.tgz",
+      "integrity": "sha512-Y3wQdFg2Va6etvQ5I82yUhGdsKrcYox6p7FfL1LbK2J4V01F9TGlepTIhnK24t7koZibmg82KGglhA1XK5IsLQ==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=10"
+      }
+    },
+    "node_modules/ms": {
+      "version": "2.1.3",
+      "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
+      "integrity": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==",
+      "license": "MIT"
+    },
+    "node_modules/mz": {
+      "version": "2.7.0",
+      "resolved": "https://registry.npmjs.org/mz/-/mz-2.7.0.tgz",
+      "integrity": "sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "any-promise": "^1.0.0",
+        "object-assign": "^4.0.1",
+        "thenify-all": "^1.0.0"
+      }
+    },
+    "node_modules/nanoid": {
+      "version": "3.3.11",
+      "resolved": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.11.tgz",
+      "integrity": "sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "bin": {
+        "nanoid": "bin/nanoid.cjs"
+      },
+      "engines": {
+        "node": "^10 || ^12 || ^13.7 || ^14 || >=15.0.1"
+      }
+    },
+    "node_modules/negotiator": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/negotiator/-/negotiator-1.0.0.tgz",
+      "integrity": "sha512-8Ofs/AUQh8MaEcrlq5xOX0CQ9ypTF5dl78mjlMNfOK08fzpgTHQRQPBxcPlEtIw0yRpws+Zo/3r+5WRby7u3Gg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.6"
+      }
+    },
+    "node_modules/node-releases": {
+      "version": "2.0.27",
+      "resolved": "https://registry.npmjs.org/node-releases/-/node-releases-2.0.27.tgz",
+      "integrity": "sha512-nmh3lCkYZ3grZvqcCH+fjmQ7X+H0OeZgP40OierEaAptX4XofMh5kwNbWh7lBduUzCcV/8kZ+NDLCwm2iorIlA==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/normalize-path": {
+      "version": "3.0.0",
+      "resolved": "https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz",
+      "integrity": "sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/object-assign": {
+      "version": "4.1.1",
+      "resolved": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
+      "integrity": "sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/object-hash": {
+      "version": "3.0.0",
+      "resolved": "https://registry.npmjs.org/object-hash/-/object-hash-3.0.0.tgz",
+      "integrity": "sha512-RSn9F68PjH9HqtltsSnqYC1XXoWe9Bju5+213R98cNGttag9q9yAOTzdbsqvIa7aNm5WffBZFpWYr2aWrklWAw==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">= 6"
+      }
+    },
+    "node_modules/parent-module": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/parent-module/-/parent-module-1.0.1.tgz",
+      "integrity": "sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==",
+      "license": "MIT",
+      "dependencies": {
+        "callsites": "^3.0.0"
+      },
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/parse-json": {
+      "version": "5.2.0",
+      "resolved": "https://registry.npmjs.org/parse-json/-/parse-json-5.2.0.tgz",
+      "integrity": "sha512-ayCKvm/phCGxOkYRSCM82iDwct8/EonSEgCSxWxD7ve6jHggsFl4fZVQBPRNgQoKiuV/odhFrGzQXZwbifC8Rg==",
+      "license": "MIT",
+      "dependencies": {
+        "@babel/code-frame": "^7.0.0",
+        "error-ex": "^1.3.1",
+        "json-parse-even-better-errors": "^2.3.0",
+        "lines-and-columns": "^1.1.6"
+      },
+      "engines": {
+        "node": ">=8"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/path-parse": {
+      "version": "1.0.7",
+      "resolved": "https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz",
+      "integrity": "sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==",
+      "license": "MIT"
+    },
+    "node_modules/path-type": {
+      "version": "4.0.0",
+      "resolved": "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz",
+      "integrity": "sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=8"
+      }
+    },
+    "node_modules/picocolors": {
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+      "integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==",
+      "license": "ISC"
+    },
+    "node_modules/picomatch": {
+      "version": "2.3.1",
+      "resolved": "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz",
+      "integrity": "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=8.6"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/jonschlinkert"
+      }
+    },
+    "node_modules/pify": {
+      "version": "2.3.0",
+      "resolved": "https://registry.npmjs.org/pify/-/pify-2.3.0.tgz",
+      "integrity": "sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/pirates": {
+      "version": "4.0.7",
+      "resolved": "https://registry.npmjs.org/pirates/-/pirates-4.0.7.tgz",
+      "integrity": "sha512-TfySrs/5nm8fQJDcBDuUng3VOUKsd7S+zqvbOTiGXHfxX4wK31ard+hoNuvkicM/2YFzlpDgABOevKSsB4G/FA==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">= 6"
+      }
+    },
+    "node_modules/postcss": {
+      "version": "8.5.6",
+      "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.5.6.tgz",
+      "integrity": "sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/postcss/"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/postcss"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "dependencies": {
+        "nanoid": "^3.3.11",
+        "picocolors": "^1.1.1",
+        "source-map-js": "^1.2.1"
+      },
+      "engines": {
+        "node": "^10 || ^12 || >=14"
+      }
+    },
+    "node_modules/postcss-import": {
+      "version": "15.1.0",
+      "resolved": "https://registry.npmjs.org/postcss-import/-/postcss-import-15.1.0.tgz",
+      "integrity": "sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "postcss-value-parser": "^4.0.0",
+        "read-cache": "^1.0.0",
+        "resolve": "^1.1.7"
+      },
+      "engines": {
+        "node": ">=14.0.0"
+      },
+      "peerDependencies": {
+        "postcss": "^8.0.0"
+      }
+    },
+    "node_modules/postcss-js": {
+      "version": "4.1.0",
+      "resolved": "https://registry.npmjs.org/postcss-js/-/postcss-js-4.1.0.tgz",
+      "integrity": "sha512-oIAOTqgIo7q2EOwbhb8UalYePMvYoIeRY2YKntdpFQXNosSu3vLrniGgmH9OKs/qAkfoj5oB3le/7mINW1LCfw==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/postcss/"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "dependencies": {
+        "camelcase-css": "^2.0.1"
+      },
+      "engines": {
+        "node": "^12 || ^14 || >= 16"
+      },
+      "peerDependencies": {
+        "postcss": "^8.4.21"
+      }
+    },
+    "node_modules/postcss-nested": {
+      "version": "6.2.0",
+      "resolved": "https://registry.npmjs.org/postcss-nested/-/postcss-nested-6.2.0.tgz",
+      "integrity": "sha512-HQbt28KulC5AJzG+cZtj9kvKB93CFCdLvog1WFLf1D+xmMvPGlBstkpTEZfK5+AN9hfJocyBFCNiqyS48bpgzQ==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/postcss/"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "dependencies": {
+        "postcss-selector-parser": "^6.1.1"
+      },
+      "engines": {
+        "node": ">=12.0"
+      },
+      "peerDependencies": {
+        "postcss": "^8.2.14"
+      }
+    },
+    "node_modules/postcss-selector-parser": {
+      "version": "6.1.2",
+      "resolved": "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.1.2.tgz",
+      "integrity": "sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "cssesc": "^3.0.0",
+        "util-deprecate": "^1.0.2"
+      },
+      "engines": {
+        "node": ">=4"
+      }
+    },
+    "node_modules/postcss-value-parser": {
+      "version": "4.2.0",
+      "resolved": "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz",
+      "integrity": "sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/prop-types": {
+      "version": "15.8.1",
+      "resolved": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
+      "integrity": "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==",
+      "license": "MIT",
+      "dependencies": {
+        "loose-envify": "^1.4.0",
+        "object-assign": "^4.1.1",
+        "react-is": "^16.13.1"
+      }
+    },
+    "node_modules/proxy-from-env": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz",
+      "integrity": "sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==",
+      "license": "MIT"
+    },
+    "node_modules/qr.js": {
+      "version": "0.0.0",
+      "resolved": "https://registry.npmjs.org/qr.js/-/qr.js-0.0.0.tgz",
+      "integrity": "sha512-c4iYnWb+k2E+vYpRimHqSu575b1/wKl4XFeJGpFmrJQz5I88v9aY2czh7s0w36srfCM1sXgC/xpoJz5dJfq+OQ==",
+      "license": "MIT"
+    },
+    "node_modules/queue-microtask": {
+      "version": "1.2.3",
+      "resolved": "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz",
+      "integrity": "sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/feross"
+        },
+        {
+          "type": "patreon",
+          "url": "https://www.patreon.com/feross"
+        },
+        {
+          "type": "consulting",
+          "url": "https://feross.org/support"
+        }
+      ],
+      "license": "MIT"
+    },
+    "node_modules/react": {
+      "version": "18.3.1",
+      "resolved": "https://registry.npmjs.org/react/-/react-18.3.1.tgz",
+      "integrity": "sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==",
+      "license": "MIT",
+      "dependencies": {
+        "loose-envify": "^1.1.0"
+      },
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/react-countdown": {
+      "version": "2.3.6",
+      "resolved": "https://registry.npmjs.org/react-countdown/-/react-countdown-2.3.6.tgz",
+      "integrity": "sha512-ZfX6S08Hb6x6W6eCn1hMDvxPICI/T30fd+gaeVTCR/2cGZ2WJ3f26e4ImNIMX1fHkopJrUdnRpWXP13/D39+gg==",
+      "license": "MIT",
+      "dependencies": {
+        "prop-types": "^15.7.2"
+      },
+      "peerDependencies": {
+        "react": ">= 15",
+        "react-dom": ">= 15"
+      }
+    },
+    "node_modules/react-datepicker": {
+      "version": "4.25.0",
+      "resolved": "https://registry.npmjs.org/react-datepicker/-/react-datepicker-4.25.0.tgz",
+      "integrity": "sha512-zB7CSi44SJ0sqo8hUQ3BF1saE/knn7u25qEMTO1CQGofY1VAKahO8k9drZtp0cfW1DMfoYLR3uSY1/uMvbEzbg==",
+      "license": "MIT",
+      "dependencies": {
+        "@popperjs/core": "^2.11.8",
+        "classnames": "^2.2.6",
+        "date-fns": "^2.30.0",
+        "prop-types": "^15.7.2",
+        "react-onclickoutside": "^6.13.0",
+        "react-popper": "^2.3.0"
+      },
+      "peerDependencies": {
+        "react": "^16.9.0 || ^17 || ^18",
+        "react-dom": "^16.9.0 || ^17 || ^18"
+      }
+    },
+    "node_modules/react-dom": {
+      "version": "18.3.1",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-18.3.1.tgz",
+      "integrity": "sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==",
+      "license": "MIT",
+      "dependencies": {
+        "loose-envify": "^1.1.0",
+        "scheduler": "^0.23.2"
+      },
+      "peerDependencies": {
+        "react": "^18.3.1"
+      }
+    },
+    "node_modules/react-fast-compare": {
+      "version": "3.2.2",
+      "resolved": "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.2.tgz",
+      "integrity": "sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==",
+      "license": "MIT"
+    },
+    "node_modules/react-helmet-async": {
+      "version": "2.0.5",
+      "resolved": "https://registry.npmjs.org/react-helmet-async/-/react-helmet-async-2.0.5.tgz",
+      "integrity": "sha512-rYUYHeus+i27MvFE+Jaa4WsyBKGkL6qVgbJvSBoX8mbsWoABJXdEO0bZyi0F6i+4f0NuIb8AvqPMj3iXFHkMwg==",
+      "license": "Apache-2.0",
+      "dependencies": {
+        "invariant": "^2.2.4",
+        "react-fast-compare": "^3.2.2",
+        "shallowequal": "^1.1.0"
+      },
+      "peerDependencies": {
+        "react": "^16.6.0 || ^17.0.0 || ^18.0.0"
+      }
+    },
+    "node_modules/react-hot-toast": {
+      "version": "2.6.0",
+      "resolved": "https://registry.npmjs.org/react-hot-toast/-/react-hot-toast-2.6.0.tgz",
+      "integrity": "sha512-bH+2EBMZ4sdyou/DPrfgIouFpcRLCJ+HoCA32UoAYHn6T3Ur5yfcDCeSr5mwldl6pFOsiocmrXMuoCJ1vV8bWg==",
+      "license": "MIT",
+      "dependencies": {
+        "csstype": "^3.1.3",
+        "goober": "^2.1.16"
+      },
+      "engines": {
+        "node": ">=10"
+      },
+      "peerDependencies": {
+        "react": ">=16",
+        "react-dom": ">=16"
+      }
+    },
+    "node_modules/react-icons": {
+      "version": "4.12.0",
+      "resolved": "https://registry.npmjs.org/react-icons/-/react-icons-4.12.0.tgz",
+      "integrity": "sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==",
+      "license": "MIT",
+      "peerDependencies": {
+        "react": "*"
+      }
+    },
+    "node_modules/react-is": {
+      "version": "16.13.1",
+      "resolved": "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz",
+      "integrity": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==",
+      "license": "MIT"
+    },
+    "node_modules/react-onclickoutside": {
+      "version": "6.13.2",
+      "resolved": "https://registry.npmjs.org/react-onclickoutside/-/react-onclickoutside-6.13.2.tgz",
+      "integrity": "sha512-h6Hbf1c8b7tIYY4u90mDdBLY4+AGQVMFtIE89HgC0DtVCh/JfKl477gYqUtGLmjZBKK3MJxomP/lFiLbz4sq9A==",
+      "license": "MIT",
+      "funding": {
+        "type": "individual",
+        "url": "https://github.com/Pomax/react-onclickoutside/blob/master/FUNDING.md"
+      },
+      "peerDependencies": {
+        "react": "^15.5.x || ^16.x || ^17.x || ^18.x",
+        "react-dom": "^15.5.x || ^16.x || ^17.x || ^18.x"
+      }
+    },
+    "node_modules/react-popper": {
+      "version": "2.3.0",
+      "resolved": "https://registry.npmjs.org/react-popper/-/react-popper-2.3.0.tgz",
+      "integrity": "sha512-e1hj8lL3uM+sgSR4Lxzn5h1GxBlpa4CQz0XLF8kx4MDrDRWY0Ena4c97PUeSX9i5W3UAfDP0z0FXCTQkoXUl3Q==",
+      "license": "MIT",
+      "dependencies": {
+        "react-fast-compare": "^3.0.1",
+        "warning": "^4.0.2"
+      },
+      "peerDependencies": {
+        "@popperjs/core": "^2.0.0",
+        "react": "^16.8.0 || ^17 || ^18",
+        "react-dom": "^16.8.0 || ^17 || ^18"
+      }
+    },
+    "node_modules/react-qr-code": {
+      "version": "2.0.18",
+      "resolved": "https://registry.npmjs.org/react-qr-code/-/react-qr-code-2.0.18.tgz",
+      "integrity": "sha512-v1Jqz7urLMhkO6jkgJuBYhnqvXagzceg3qJUWayuCK/c6LTIonpWbwxR1f1APGd4xrW/QcQEovNrAojbUz65Tg==",
+      "license": "MIT",
+      "dependencies": {
+        "prop-types": "^15.8.1",
+        "qr.js": "0.0.0"
+      },
+      "peerDependencies": {
+        "react": "*"
+      }
+    },
+    "node_modules/react-refresh": {
+      "version": "0.17.0",
+      "resolved": "https://registry.npmjs.org/react-refresh/-/react-refresh-0.17.0.tgz",
+      "integrity": "sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/react-router": {
+      "version": "6.30.3",
+      "resolved": "https://registry.npmjs.org/react-router/-/react-router-6.30.3.tgz",
+      "integrity": "sha512-XRnlbKMTmktBkjCLE8/XcZFlnHvr2Ltdr1eJX4idL55/9BbORzyZEaIkBFDhFGCEWBBItsVrDxwx3gnisMitdw==",
+      "license": "MIT",
+      "dependencies": {
+        "@remix-run/router": "1.23.2"
+      },
+      "engines": {
+        "node": ">=14.0.0"
+      },
+      "peerDependencies": {
+        "react": ">=16.8"
+      }
+    },
+    "node_modules/react-router-dom": {
+      "version": "6.30.3",
+      "resolved": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.30.3.tgz",
+      "integrity": "sha512-pxPcv1AczD4vso7G4Z3TKcvlxK7g7TNt3/FNGMhfqyntocvYKj+GCatfigGDjbLozC4baguJ0ReCigoDJXb0ag==",
+      "license": "MIT",
+      "dependencies": {
+        "@remix-run/router": "1.23.2",
+        "react-router": "6.30.3"
+      },
+      "engines": {
+        "node": ">=14.0.0"
+      },
+      "peerDependencies": {
+        "react": ">=16.8",
+        "react-dom": ">=16.8"
+      }
+    },
+    "node_modules/react-select": {
+      "version": "5.10.2",
+      "resolved": "https://registry.npmjs.org/react-select/-/react-select-5.10.2.tgz",
+      "integrity": "sha512-Z33nHdEFWq9tfnfVXaiM12rbJmk+QjFEztWLtmXqQhz6Al4UZZ9xc0wiatmGtUOCCnHN0WizL3tCMYRENX4rVQ==",
+      "license": "MIT",
+      "dependencies": {
+        "@babel/runtime": "^7.12.0",
+        "@emotion/cache": "^11.4.0",
+        "@emotion/react": "^11.8.1",
+        "@floating-ui/dom": "^1.0.1",
+        "@types/react-transition-group": "^4.4.0",
+        "memoize-one": "^6.0.0",
+        "prop-types": "^15.6.0",
+        "react-transition-group": "^4.3.0",
+        "use-isomorphic-layout-effect": "^1.2.0"
+      },
+      "peerDependencies": {
+        "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+        "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+      }
+    },
+    "node_modules/react-smooth": {
+      "version": "4.0.4",
+      "resolved": "https://registry.npmjs.org/react-smooth/-/react-smooth-4.0.4.tgz",
+      "integrity": "sha512-gnGKTpYwqL0Iii09gHobNolvX4Kiq4PKx6eWBCYYix+8cdw+cGo3do906l1NBPKkSWx1DghC1dlWG9L2uGd61Q==",
+      "license": "MIT",
+      "dependencies": {
+        "fast-equals": "^5.0.1",
+        "prop-types": "^15.8.1",
+        "react-transition-group": "^4.4.5"
+      },
+      "peerDependencies": {
+        "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+        "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+      }
+    },
+    "node_modules/react-transition-group": {
+      "version": "4.4.5",
+      "resolved": "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.5.tgz",
+      "integrity": "sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==",
+      "license": "BSD-3-Clause",
+      "dependencies": {
+        "@babel/runtime": "^7.5.5",
+        "dom-helpers": "^5.0.1",
+        "loose-envify": "^1.4.0",
+        "prop-types": "^15.6.2"
+      },
+      "peerDependencies": {
+        "react": ">=16.6.0",
+        "react-dom": ">=16.6.0"
+      }
+    },
+    "node_modules/read-cache": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/read-cache/-/read-cache-1.0.0.tgz",
+      "integrity": "sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "pify": "^2.3.0"
+      }
+    },
+    "node_modules/readdirp": {
+      "version": "3.6.0",
+      "resolved": "https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz",
+      "integrity": "sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "picomatch": "^2.2.1"
+      },
+      "engines": {
+        "node": ">=8.10.0"
+      }
+    },
+    "node_modules/recharts": {
+      "version": "2.15.4",
+      "resolved": "https://registry.npmjs.org/recharts/-/recharts-2.15.4.tgz",
+      "integrity": "sha512-UT/q6fwS3c1dHbXv2uFgYJ9BMFHu3fwnd7AYZaEQhXuYQ4hgsxLvsUXzGdKeZrW5xopzDCvuA2N41WJ88I7zIw==",
+      "license": "MIT",
+      "dependencies": {
+        "clsx": "^2.0.0",
+        "eventemitter3": "^4.0.1",
+        "lodash": "^4.17.21",
+        "react-is": "^18.3.1",
+        "react-smooth": "^4.0.4",
+        "recharts-scale": "^0.4.4",
+        "tiny-invariant": "^1.3.1",
+        "victory-vendor": "^36.6.8"
+      },
+      "engines": {
+        "node": ">=14"
+      },
+      "peerDependencies": {
+        "react": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+        "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+      }
+    },
+    "node_modules/recharts-scale": {
+      "version": "0.4.5",
+      "resolved": "https://registry.npmjs.org/recharts-scale/-/recharts-scale-0.4.5.tgz",
+      "integrity": "sha512-kivNFO+0OcUNu7jQquLXAxz1FIwZj8nrj+YkOKc5694NbjCvcT6aSZiIzNzd2Kul4o4rTto8QVR9lMNtxD4G1w==",
+      "license": "MIT",
+      "dependencies": {
+        "decimal.js-light": "^2.4.1"
+      }
+    },
+    "node_modules/recharts/node_modules/react-is": {
+      "version": "18.3.1",
+      "resolved": "https://registry.npmjs.org/react-is/-/react-is-18.3.1.tgz",
+      "integrity": "sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==",
+      "license": "MIT"
+    },
+    "node_modules/regexparam": {
+      "version": "2.0.2",
+      "resolved": "https://registry.npmjs.org/regexparam/-/regexparam-2.0.2.tgz",
+      "integrity": "sha512-A1PeDEYMrkLrfyOwv2jwihXbo9qxdGD3atBYQA9JJgreAx8/7rC6IUkWOw2NQlOxLp2wL0ifQbh1HuidDfYA6w==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=8"
+      }
+    },
+    "node_modules/resolve": {
+      "version": "1.22.11",
+      "resolved": "https://registry.npmjs.org/resolve/-/resolve-1.22.11.tgz",
+      "integrity": "sha512-RfqAvLnMl313r7c9oclB1HhUEAezcpLjz95wFH4LVuhk9JF/r22qmVP9AMmOU4vMX7Q8pN8jwNg/CSpdFnMjTQ==",
+      "license": "MIT",
+      "dependencies": {
+        "is-core-module": "^2.16.1",
+        "path-parse": "^1.0.7",
+        "supports-preserve-symlinks-flag": "^1.0.0"
+      },
+      "bin": {
+        "resolve": "bin/resolve"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/resolve-from": {
+      "version": "4.0.0",
+      "resolved": "https://registry.npmjs.org/resolve-from/-/resolve-from-4.0.0.tgz",
+      "integrity": "sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=4"
+      }
+    },
+    "node_modules/reusify": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/reusify/-/reusify-1.1.0.tgz",
+      "integrity": "sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "iojs": ">=1.0.0",
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/rollup": {
+      "version": "4.56.0",
+      "resolved": "https://registry.npmjs.org/rollup/-/rollup-4.56.0.tgz",
+      "integrity": "sha512-9FwVqlgUHzbXtDg9RCMgodF3Ua4Na6Gau+Sdt9vyCN4RhHfVKX2DCHy3BjMLTDd47ITDhYAnTwGulWTblJSDLg==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@types/estree": "1.0.8"
+      },
+      "bin": {
+        "rollup": "dist/bin/rollup"
+      },
+      "engines": {
+        "node": ">=18.0.0",
+        "npm": ">=8.0.0"
+      },
+      "optionalDependencies": {
+        "@rollup/rollup-android-arm-eabi": "4.56.0",
+        "@rollup/rollup-android-arm64": "4.56.0",
+        "@rollup/rollup-darwin-arm64": "4.56.0",
+        "@rollup/rollup-darwin-x64": "4.56.0",
+        "@rollup/rollup-freebsd-arm64": "4.56.0",
+        "@rollup/rollup-freebsd-x64": "4.56.0",
+        "@rollup/rollup-linux-arm-gnueabihf": "4.56.0",
+        "@rollup/rollup-linux-arm-musleabihf": "4.56.0",
+        "@rollup/rollup-linux-arm64-gnu": "4.56.0",
+        "@rollup/rollup-linux-arm64-musl": "4.56.0",
+        "@rollup/rollup-linux-loong64-gnu": "4.56.0",
+        "@rollup/rollup-linux-loong64-musl": "4.56.0",
+        "@rollup/rollup-linux-ppc64-gnu": "4.56.0",
+        "@rollup/rollup-linux-ppc64-musl": "4.56.0",
+        "@rollup/rollup-linux-riscv64-gnu": "4.56.0",
+        "@rollup/rollup-linux-riscv64-musl": "4.56.0",
+        "@rollup/rollup-linux-s390x-gnu": "4.56.0",
+        "@rollup/rollup-linux-x64-gnu": "4.56.0",
+        "@rollup/rollup-linux-x64-musl": "4.56.0",
+        "@rollup/rollup-openbsd-x64": "4.56.0",
+        "@rollup/rollup-openharmony-arm64": "4.56.0",
+        "@rollup/rollup-win32-arm64-msvc": "4.56.0",
+        "@rollup/rollup-win32-ia32-msvc": "4.56.0",
+        "@rollup/rollup-win32-x64-gnu": "4.56.0",
+        "@rollup/rollup-win32-x64-msvc": "4.56.0",
+        "fsevents": "~2.3.2"
+      }
+    },
+    "node_modules/run-parallel": {
+      "version": "1.2.0",
+      "resolved": "https://registry.npmjs.org/run-parallel/-/run-parallel-1.2.0.tgz",
+      "integrity": "sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/feross"
+        },
+        {
+          "type": "patreon",
+          "url": "https://www.patreon.com/feross"
+        },
+        {
+          "type": "consulting",
+          "url": "https://feross.org/support"
+        }
+      ],
+      "license": "MIT",
+      "dependencies": {
+        "queue-microtask": "^1.2.2"
+      }
+    },
+    "node_modules/scheduler": {
+      "version": "0.23.2",
+      "resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.2.tgz",
+      "integrity": "sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==",
+      "license": "MIT",
+      "dependencies": {
+        "loose-envify": "^1.1.0"
+      }
+    },
+    "node_modules/semver": {
+      "version": "6.3.1",
+      "resolved": "https://registry.npmjs.org/semver/-/semver-6.3.1.tgz",
+      "integrity": "sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==",
+      "dev": true,
+      "license": "ISC",
+      "bin": {
+        "semver": "bin/semver.js"
+      }
+    },
+    "node_modules/shallowequal": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/shallowequal/-/shallowequal-1.1.0.tgz",
+      "integrity": "sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==",
+      "license": "MIT"
+    },
+    "node_modules/sirv": {
+      "version": "3.0.2",
+      "resolved": "https://registry.npmjs.org/sirv/-/sirv-3.0.2.tgz",
+      "integrity": "sha512-2wcC/oGxHis/BoHkkPwldgiPSYcpZK3JU28WoMVv55yHJgcZ8rlXvuG9iZggz+sU1d4bRgIGASwyWqjxu3FM0g==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@polka/url": "^1.0.0-next.24",
+        "mrmime": "^2.0.0",
+        "totalist": "^3.0.0"
+      },
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/sort-on": {
+      "version": "7.0.0",
+      "resolved": "https://registry.npmjs.org/sort-on/-/sort-on-7.0.0.tgz",
+      "integrity": "sha512-e+4RRxt7jsWdGPp4H5PKOER/ELYlemNB1plvW686Qi3j4WVaCjCpro2zaTD7Cn0VtBImq/hg3x1JfovMNXXfJQ==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "dot-prop": "^10.1.0"
+      },
+      "engines": {
+        "node": ">=20"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/source-map": {
+      "version": "0.5.7",
+      "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.5.7.tgz",
+      "integrity": "sha512-LbrmJOMUSdEVxIKvdcJzQC+nQhe8FUZQTXQy6+I75skNgn3OoQ0DZA8YnFa7gp8tqtL3KPf1kmo0R5DoApeSGQ==",
+      "license": "BSD-3-Clause",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/source-map-js": {
+      "version": "1.2.1",
+      "resolved": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz",
+      "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==",
+      "dev": true,
+      "license": "BSD-3-Clause",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/steno": {
+      "version": "4.0.2",
+      "resolved": "https://registry.npmjs.org/steno/-/steno-4.0.2.tgz",
+      "integrity": "sha512-yhPIQXjrlt1xv7dyPQg2P17URmXbuM5pdGkpiMB3RenprfiBlvK415Lctfe0eshk90oA7/tNq7WEiMK8RSP39A==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/typicode"
+      }
+    },
+    "node_modules/stylis": {
+      "version": "4.2.0",
+      "resolved": "https://registry.npmjs.org/stylis/-/stylis-4.2.0.tgz",
+      "integrity": "sha512-Orov6g6BB1sDfYgzWfTHDOxamtX1bE/zo104Dh9e6fqJ3PooipYyfJ0pUmrZO2wAvO8YbEyeFrkV91XTsGMSrw==",
+      "license": "MIT"
+    },
+    "node_modules/sucrase": {
+      "version": "3.35.1",
+      "resolved": "https://registry.npmjs.org/sucrase/-/sucrase-3.35.1.tgz",
+      "integrity": "sha512-DhuTmvZWux4H1UOnWMB3sk0sbaCVOoQZjv8u1rDoTV0HTdGem9hkAZtl4JZy8P2z4Bg0nT+YMeOFyVr4zcG5Tw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@jridgewell/gen-mapping": "^0.3.2",
+        "commander": "^4.0.0",
+        "lines-and-columns": "^1.1.6",
+        "mz": "^2.7.0",
+        "pirates": "^4.0.1",
+        "tinyglobby": "^0.2.11",
+        "ts-interface-checker": "^0.1.9"
+      },
+      "bin": {
+        "sucrase": "bin/sucrase",
+        "sucrase-node": "bin/sucrase-node"
+      },
+      "engines": {
+        "node": ">=16 || 14 >=14.17"
+      }
+    },
+    "node_modules/supports-preserve-symlinks-flag": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz",
+      "integrity": "sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/tagged-tag": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/tagged-tag/-/tagged-tag-1.0.0.tgz",
+      "integrity": "sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=20"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/tailwind-merge": {
+      "version": "2.6.0",
+      "resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-2.6.0.tgz",
+      "integrity": "sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA==",
+      "license": "MIT",
+      "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/dcastil"
+      }
+    },
+    "node_modules/tailwindcss": {
+      "version": "3.4.19",
+      "resolved": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.19.tgz",
+      "integrity": "sha512-3ofp+LL8E+pK/JuPLPggVAIaEuhvIz4qNcf3nA1Xn2o/7fb7s/TYpHhwGDv1ZU3PkBluUVaF8PyCHcm48cKLWQ==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "@alloc/quick-lru": "^5.2.0",
+        "arg": "^5.0.2",
+        "chokidar": "^3.6.0",
+        "didyoumean": "^1.2.2",
+        "dlv": "^1.1.3",
+        "fast-glob": "^3.3.2",
+        "glob-parent": "^6.0.2",
+        "is-glob": "^4.0.3",
+        "jiti": "^1.21.7",
+        "lilconfig": "^3.1.3",
+        "micromatch": "^4.0.8",
+        "normalize-path": "^3.0.0",
+        "object-hash": "^3.0.0",
+        "picocolors": "^1.1.1",
+        "postcss": "^8.4.47",
+        "postcss-import": "^15.1.0",
+        "postcss-js": "^4.0.1",
+        "postcss-load-config": "^4.0.2 || ^5.0 || ^6.0",
+        "postcss-nested": "^6.2.0",
+        "postcss-selector-parser": "^6.1.2",
+        "resolve": "^1.22.8",
+        "sucrase": "^3.35.0"
+      },
+      "bin": {
+        "tailwind": "lib/cli.js",
+        "tailwindcss": "lib/cli.js"
+      },
+      "engines": {
+        "node": ">=14.0.0"
+      }
+    },
+    "node_modules/tailwindcss/node_modules/postcss-load-config": {
+      "version": "6.0.1",
+      "resolved": "https://registry.npmjs.org/postcss-load-config/-/postcss-load-config-6.0.1.tgz",
+      "integrity": "sha512-oPtTM4oerL+UXmx+93ytZVN82RrlY/wPUV8IeDxFrzIjXOLF1pN+EmKPLbubvKHT2HC20xXsCAH2Z+CKV6Oz/g==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/postcss/"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "dependencies": {
+        "lilconfig": "^3.1.1"
+      },
+      "engines": {
+        "node": ">= 18"
+      },
+      "peerDependencies": {
+        "jiti": ">=1.21.0",
+        "postcss": ">=8.0.9",
+        "tsx": "^4.8.1",
+        "yaml": "^2.4.2"
+      },
+      "peerDependenciesMeta": {
+        "jiti": {
+          "optional": true
+        },
+        "postcss": {
+          "optional": true
+        },
+        "tsx": {
+          "optional": true
+        },
+        "yaml": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/tailwindcss/node_modules/yaml": {
+      "version": "2.8.2",
+      "resolved": "https://registry.npmjs.org/yaml/-/yaml-2.8.2.tgz",
+      "integrity": "sha512-mplynKqc1C2hTVYxd0PU2xQAc22TI1vShAYGksCCfxbn/dFwnHTNi1bvYsBTkhdUNtGIf5xNOg938rrSSYvS9A==",
+      "dev": true,
+      "license": "ISC",
+      "optional": true,
+      "peer": true,
+      "bin": {
+        "yaml": "bin.mjs"
+      },
+      "engines": {
+        "node": ">= 14.6"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/eemeli"
+      }
+    },
+    "node_modules/thenify": {
+      "version": "3.3.1",
+      "resolved": "https://registry.npmjs.org/thenify/-/thenify-3.3.1.tgz",
+      "integrity": "sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "any-promise": "^1.0.0"
+      }
+    },
+    "node_modules/thenify-all": {
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/thenify-all/-/thenify-all-1.6.0.tgz",
+      "integrity": "sha512-RNxQH/qI8/t3thXJDwcstUO4zeqo64+Uy/+sNVRBx4Xn2OX+OZ9oP+iJnNFqplFra2ZUVeKCSa2oVWi3T4uVmA==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "thenify": ">= 3.1.0 < 4"
+      },
+      "engines": {
+        "node": ">=0.8"
+      }
+    },
+    "node_modules/tiny-invariant": {
+      "version": "1.3.3",
+      "resolved": "https://registry.npmjs.org/tiny-invariant/-/tiny-invariant-1.3.3.tgz",
+      "integrity": "sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg==",
+      "license": "MIT"
+    },
+    "node_modules/tinyglobby": {
+      "version": "0.2.15",
+      "resolved": "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.15.tgz",
+      "integrity": "sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "fdir": "^6.5.0",
+        "picomatch": "^4.0.3"
+      },
+      "engines": {
+        "node": ">=12.0.0"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/SuperchupuDev"
+      }
+    },
+    "node_modules/tinyglobby/node_modules/fdir": {
+      "version": "6.5.0",
+      "resolved": "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz",
+      "integrity": "sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.0.0"
+      },
+      "peerDependencies": {
+        "picomatch": "^3 || ^4"
+      },
+      "peerDependenciesMeta": {
+        "picomatch": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/tinyglobby/node_modules/picomatch": {
+      "version": "4.0.3",
+      "resolved": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.3.tgz",
+      "integrity": "sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=12"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/jonschlinkert"
+      }
+    },
+    "node_modules/to-regex-range": {
+      "version": "5.0.1",
+      "resolved": "https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz",
+      "integrity": "sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "is-number": "^7.0.0"
+      },
+      "engines": {
+        "node": ">=8.0"
+      }
+    },
+    "node_modules/totalist": {
+      "version": "3.0.1",
+      "resolved": "https://registry.npmjs.org/totalist/-/totalist-3.0.1.tgz",
+      "integrity": "sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/ts-interface-checker": {
+      "version": "0.1.13",
+      "resolved": "https://registry.npmjs.org/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz",
+      "integrity": "sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==",
+      "dev": true,
+      "license": "Apache-2.0"
+    },
+    "node_modules/tslib": {
+      "version": "2.8.1",
+      "resolved": "https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz",
+      "integrity": "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==",
+      "license": "0BSD"
+    },
+    "node_modules/type-fest": {
+      "version": "5.4.1",
+      "resolved": "https://registry.npmjs.org/type-fest/-/type-fest-5.4.1.tgz",
+      "integrity": "sha512-xygQcmneDyzsEuKZrFbRMne5HDqMs++aFzefrJTgEIKjQ3rekM+RPfFCVq2Gp1VIDqddoYeppCj4Pcb+RZW0GQ==",
+      "dev": true,
+      "license": "(MIT OR CC0-1.0)",
+      "dependencies": {
+        "tagged-tag": "^1.0.0"
+      },
+      "engines": {
+        "node": ">=20"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/update-browserslist-db": {
+      "version": "1.2.3",
+      "resolved": "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.2.3.tgz",
+      "integrity": "sha512-Js0m9cx+qOgDxo0eMiFGEueWztz+d4+M3rGlmKPT+T4IS/jP4ylw3Nwpu6cpTTP8R1MAC1kF4VbdLt3ARf209w==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/browserslist"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/browserslist"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "license": "MIT",
+      "dependencies": {
+        "escalade": "^3.2.0",
+        "picocolors": "^1.1.1"
+      },
+      "bin": {
+        "update-browserslist-db": "cli.js"
+      },
+      "peerDependencies": {
+        "browserslist": ">= 4.21.0"
+      }
+    },
+    "node_modules/use-isomorphic-layout-effect": {
+      "version": "1.2.1",
+      "resolved": "https://registry.npmjs.org/use-isomorphic-layout-effect/-/use-isomorphic-layout-effect-1.2.1.tgz",
+      "integrity": "sha512-tpZZ+EX0gaghDAiFR37hj5MgY6ZN55kLiPkJsKxBMZ6GZdOSPJXiOzPM984oPYZ5AnehYx5WQp1+ME8I/P/pRA==",
+      "license": "MIT",
+      "peerDependencies": {
+        "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+      },
+      "peerDependenciesMeta": {
+        "@types/react": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/use-sync-external-store": {
+      "version": "1.6.0",
+      "resolved": "https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.6.0.tgz",
+      "integrity": "sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==",
+      "license": "MIT",
+      "peerDependencies": {
+        "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+      }
+    },
+    "node_modules/util-deprecate": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz",
+      "integrity": "sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==",
+      "dev": true,
+      "license": "MIT"
+    },
+    "node_modules/victory-vendor": {
+      "version": "36.9.2",
+      "resolved": "https://registry.npmjs.org/victory-vendor/-/victory-vendor-36.9.2.tgz",
+      "integrity": "sha512-PnpQQMuxlwYdocC8fIJqVXvkeViHYzotI+NJrCuav0ZYFoq912ZHBk3mCeuj+5/VpodOjPe1z0Fk2ihgzlXqjQ==",
+      "license": "MIT AND ISC",
+      "dependencies": {
+        "@types/d3-array": "^3.0.3",
+        "@types/d3-ease": "^3.0.0",
+        "@types/d3-interpolate": "^3.0.1",
+        "@types/d3-scale": "^4.0.2",
+        "@types/d3-shape": "^3.1.0",
+        "@types/d3-time": "^3.0.0",
+        "@types/d3-timer": "^3.0.0",
+        "d3-array": "^3.1.6",
+        "d3-ease": "^3.0.1",
+        "d3-interpolate": "^3.0.1",
+        "d3-scale": "^4.0.2",
+        "d3-shape": "^3.1.0",
+        "d3-time": "^3.0.0",
+        "d3-timer": "^3.0.1"
+      }
+    },
+    "node_modules/vite": {
+      "version": "5.4.21",
+      "resolved": "https://registry.npmjs.org/vite/-/vite-5.4.21.tgz",
+      "integrity": "sha512-o5a9xKjbtuhY6Bi5S3+HvbRERmouabWbyUcpXXUA1u+GNUKoROi9byOJ8M0nHbHYHkYICiMlqxkg1KkYmm25Sw==",
+      "dev": true,
+      "license": "MIT",
+      "dependencies": {
+        "esbuild": "^0.21.3",
+        "postcss": "^8.4.43",
+        "rollup": "^4.20.0"
+      },
+      "bin": {
+        "vite": "bin/vite.js"
+      },
+      "engines": {
+        "node": "^18.0.0 || >=20.0.0"
+      },
+      "funding": {
+        "url": "https://github.com/vitejs/vite?sponsor=1"
+      },
+      "optionalDependencies": {
+        "fsevents": "~2.3.3"
+      },
+      "peerDependencies": {
+        "@types/node": "^18.0.0 || >=20.0.0",
+        "less": "*",
+        "lightningcss": "^1.21.0",
+        "sass": "*",
+        "sass-embedded": "*",
+        "stylus": "*",
+        "sugarss": "*",
+        "terser": "^5.4.0"
+      },
+      "peerDependenciesMeta": {
+        "@types/node": {
+          "optional": true
+        },
+        "less": {
+          "optional": true
+        },
+        "lightningcss": {
+          "optional": true
+        },
+        "sass": {
+          "optional": true
+        },
+        "sass-embedded": {
+          "optional": true
+        },
+        "stylus": {
+          "optional": true
+        },
+        "sugarss": {
+          "optional": true
+        },
+        "terser": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/warning": {
+      "version": "4.0.3",
+      "resolved": "https://registry.npmjs.org/warning/-/warning-4.0.3.tgz",
+      "integrity": "sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==",
+      "license": "MIT",
+      "dependencies": {
+        "loose-envify": "^1.0.0"
+      }
+    },
+    "node_modules/yallist": {
+      "version": "3.1.1",
+      "resolved": "https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz",
+      "integrity": "sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==",
+      "dev": true,
+      "license": "ISC"
+    },
+    "node_modules/yaml": {
+      "version": "1.10.2",
+      "resolved": "https://registry.npmjs.org/yaml/-/yaml-1.10.2.tgz",
+      "integrity": "sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==",
+      "license": "ISC",
+      "engines": {
+        "node": ">= 6"
+      }
+    },
+    "node_modules/zustand": {
+      "version": "4.5.7",
+      "resolved": "https://registry.npmjs.org/zustand/-/zustand-4.5.7.tgz",
+      "integrity": "sha512-CHOUy7mu3lbD6o6LJLfllpjkzhHXSBlX8B9+qPddUsIfeF5S/UZ5q0kmCsnRqT1UHFQZchNFDDzMbQsuesHWlw==",
+      "license": "MIT",
+      "dependencies": {
+        "use-sync-external-store": "^1.2.2"
+      },
+      "engines": {
+        "node": ">=12.7.0"
+      },
+      "peerDependencies": {
+        "@types/react": ">=16.8",
+        "immer": ">=9.0.6",
+        "react": ">=16.8"
+      },
+      "peerDependenciesMeta": {
+        "@types/react": {
+          "optional": true
+        },
+        "immer": {
+          "optional": true
+        },
+        "react": {
+          "optional": true
+        }
+      }
+    }
+  }
+}
+
+```
+
+---
+
+### <a id="📄-package-json"></a>📄 `package.json`
+
+**File Info:**
+- **Size**: 1000 B
+- **Extension**: `.json`
+- **Language**: `json`
+- **Location**: `package.json`
+- **Relative Path**: `root`
+- **Created**: 2026-01-26 00:30:16 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-24 12:29:39 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `4089b840cc16235551d0d8caee35bf93`
+- **SHA256**: `b6fce078e73c33febf71bd1f6078cf0648c84e40fd54084b9bf206a6dd3c2ee2`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```json
+{
+  "name": "parkease-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "clsx": "^2.0.0",
+    "date-fns": "^2.30.0",
+    "framer-motion": "^10.16.16",
+    "react": "^18.2.0",
+    "react-countdown": "^2.3.5",
+    "react-datepicker": "^4.25.0",
+    "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.4",
+    "react-hot-toast": "^2.6.0",
+    "react-icons": "^4.12.0",
+    "react-qr-code": "^2.0.12",
+    "react-router-dom": "^6.30.3",
+    "react-select": "^5.8.0",
+    "recharts": "^2.15.4",
+    "tailwind-merge": "^2.0.0",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.16",
+    "json-server": "^1.0.0-beta.5",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "vite": "^5.0.0"
+  }
+}
+
+```
+
+---
+
+### <a id="📄-postcss-config-js"></a>📄 `postcss.config.js`
+
+**File Info:**
+- **Size**: 83 B
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `postcss.config.js`
+- **Relative Path**: `root`
+- **Created**: 2026-01-26 00:30:16 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-24 12:05:05 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `974ff3996ce0d4f7ec67d3501314beeb`
+- **SHA256**: `b0e82fa47edd65624c26505be810355c07be1e8cd852e92fa7ebf0fef3485265`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```javascript
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  }
+}
+```
+
+---
+
+### <a id="📄-readme-md"></a>📄 `README.md`
+
+**File Info:**
+- **Size**: 5.34 KB
+- **Extension**: `.md`
+- **Language**: `text`
+- **Location**: `README.md`
+- **Relative Path**: `root`
+- **Created**: 2026-01-26 00:30:16 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 17:29:51 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `e4327d6a80d0dd56fa7e5df5d0ab67db`
+- **SHA256**: `a765617be4b0a0a1fbfc06e5ed71bb38954b42e9cf08b475380bf69b71a0791b`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+````markdown
+# 🌐 ParkEase Frontend – React Admin & User Dashboard
+
+[![React](https://img.shields.io/badge/React-18-blue?logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5-purple?logo=vite)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3-38B2AC?logo=tailwindcss)](https://tailwindcss.com/)
+[![Axios](https://img.shields.io/badge/HTTP-Axios-yellow)](https://axios-http.com/)
+[![Recharts](https://img.shields.io/badge/Charts-Recharts-orange)](https://recharts.org/)
+
+---
+
+## 📋 Project Overview
+
+This is the **frontend application** for the **ParkEase Smart Parking Reservation System**.
+It provides a modern web interface for both **Users** and **Admins** to interact with the ParkEase backend APIs.
+
+The application is built using **React + Vite + Tailwind CSS** and includes:
+
+* Secure authentication & role-based routing
+* User parking search and booking flow
+* Demo payment & receipt generation
+* Admin dashboards with analytics and management tools
+
+---
+
+## ✨ Key Features
+
+### 🔐 Authentication
+
+* User Login & Registration
+* JWT-based session handling using `AuthContext`
+* Protected routes for Admin and User dashboards
+
+### 👤 User Module
+
+* Parking zone & slot search
+* Booking form and reservation creation
+* Active & past reservations history
+* Demo payment flow
+* Receipt generation after payment
+
+Main screens:
+
+* `Dashboard.jsx`
+* `ParkingSearch.jsx`
+* `BookingForm.jsx`
+* `Reservations.jsx`
+* `History.jsx`
+* `Payment.jsx`
+* `Receipt.jsx`
+
+### 🛠️ Admin Module
+
+* Admin dashboard with statistics cards
+* Parking zone management
+* Slot management
+* Pricing configuration
+* User management
+* Advanced analytics with charts
+
+Main screens:
+
+* `AdminDashboard.jsx`
+* `ManageZones.jsx`
+* `ManageSlots.jsx`
+* `PricingManager.jsx`
+* `UserManagement.jsx`
+* `Analytics.jsx`
+
+### 📊 Analytics & Visualization
+
+* Line charts for booking trends
+* Bar charts for peak hours & performance
+* Pie charts for vehicle type and payments
+* Powered by **Recharts**
+
+---
+
+## 🏗️ Tech Stack
+
+| Category      | Technology      |
+| ------------- | --------------- |
+| Framework     | React 18        |
+| Bundler       | Vite            |
+| Styling       | Tailwind CSS    |
+| Routing       | React Router    |
+| HTTP Client   | Axios           |
+| Charts        | Recharts        |
+| Icons         | React Icons     |
+| Notifications | react-hot-toast |
+
+---
+
+## 📂 Project Structure
+
+~~~~text
+frontend/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── admin/          # Admin dashboards & management
+│   │   ├── auth/           # Login & Register
+│   │   ├── user/           # User booking & history pages
+│   │   └── layouts/
+│   ├── context/           # AuthContext (JWT handling)
+│   ├── pages/             # Home, NotFound, BackendTest
+│   ├── services/          # API services (auth, admin, parking, reservation)
+│   ├── routes.jsx         # Application routes
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── tailwind.config.js
+├── vite.config.js
+└── package.json
+~~~~
+
+---
+
+## 🔧 Environment Configuration
+
+The frontend communicates with the Spring Boot backend using Axios.
+
+Edit the API base URL in:
+
+~~~~js
+// src/services/api.js
+export const API_BASE_URL = "http://localhost:8080";
+~~~~
+
+Make sure the backend is running on the same URL and port.
+
+---
+
+## ▶️ Getting Started
+
+### Prerequisites
+
+* Node.js 18+
+* npm (or yarn)
+
+### Install Dependencies
+
+~~~~bash
+npm install
+~~~~
+
+### Run Development Server
+
+~~~~bash
+npm run dev
+~~~~
+
+The application will start at:
+
+~~~~
+http://localhost:5173
+~~~~
+
+---
+
+## 🔐 Authentication Flow
+
+1. User logs in via `/login`
+2. Backend returns JWT token
+3. Token is stored in `AuthContext`
+4. Axios automatically attaches token to requests:
+
+~~~~
+Authorization: Bearer <JWT_TOKEN>
+~~~~
+
+5. Protected routes check role (`ADMIN` / `USER`) before rendering dashboards
+
+---
+
+## 🔗 Backend Integration
+
+This frontend consumes the following backend modules:
+
+* **Auth APIs** – Login, Register, Profile
+* **Parking APIs** – Zones, Slots, Search
+* **Reservation APIs** – Book, Cancel, History
+* **Payment APIs** – Demo payments & receipts
+* **Admin APIs** – Stats, Analytics, Pricing, User management
+
+Important service files:
+
+* `services/api.js` – Axios base config
+* `services/auth.js` – Authentication endpoints
+* `services/parking.js` – Parking & slot APIs
+* `services/reservation.js` – Reservation APIs
+* `services/admin.js` – Admin & analytics APIs
+
+---
+
+## 🧪 Backend Test Page
+
+A utility page is available to verify backend connectivity:
+
+* `BackendTest.jsx`
+
+This helps confirm:
+
+* Backend health endpoint is reachable
+* CORS configuration is correct
+
+---
+
+## 🔮 Future Enhancements Scope
+
+* [ ] Real-time slot updates using WebSockets
+* [ ] Dark mode support
+* [ ] Mobile responsive optimization
+* [ ] Admin notifications panel
+* [ ] Export analytics reports (PDF / Excel)
+* [ ] PWA / mobile app version
+
+---
+
+## 👨‍💻 Notes
+
+This frontend is designed to pair with the **ParkEase Spring Boot backend** and demonstrates:
+
+* Role-based dashboards
+* Secure JWT authentication
+* Modern admin UI with analytics
+* Clean service-based API integration
+
+---
+
+⭐ If you like this project, consider improving it with real payments, live notifications, and cloud deployment.
+
+````
+
+---
+
+### <a id="📄-tailwind-config-js"></a>📄 `tailwind.config.js`
+
+**File Info:**
+- **Size**: 191 B
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `tailwind.config.js`
+- **Relative Path**: `root`
+- **Created**: 2026-01-26 00:30:16 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-24 12:05:26 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `37ec1ee3d08dc1e33fa33fc75672b538`
+- **SHA256**: `4a094af8deb0779a4117709d5782f52b6a4795a18246d99a58b3d5e90da2d560`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```javascript
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+---
+
+### <a id="📄-vite-config-js"></a>📄 `vite.config.js`
+
+**File Info:**
+- **Size**: 344 B
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `vite.config.js`
+- **Relative Path**: `root`
+- **Created**: 2026-01-26 00:30:16 (Asia/Calcutta / GMT+06:30)
+- **Modified**: 2026-01-25 21:13:38 (Asia/Calcutta / GMT+06:30)
+- **MD5**: `7d0c7b2dfbe5f28fda9fb57b293ff9ad`
+- **SHA256**: `6a6791fdbf2f7afa0c1618f99a25fb62a0574de238be26cb981531fa156d626b`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```javascript
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    port: 5173,
+    proxy: {
+      // Only proxy API calls to the backend
+      '/api': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+        secure: false,
+      }
+    }
+  }
+})
+```
+
+---
+

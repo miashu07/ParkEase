@@ -1,0 +1,1078 @@
+{
+	"info": {
+		"_postman_id": "b5a7c8d9-e0f1-4a2b-c3d4-e5f6a7b8c9d0",
+		"name": "🚗 ParkEase API - Complete Collection",
+		"description": "Comprehensive API collection for ParkEase Parking Management System.\n\n**Features:**\n- JWT Authentication\n- User & Admin Operations\n- Parking Zone & Slot Management\n- Reservations\n- Demo Payment Integration\n- Pricing Management\n- Analytics\n\n**Base URL:** http://localhost:8080/api\n**Demo Credentials:**\n- Admin: admin@parkease.com / password123\n- User: user@example.com / password123",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "🔐 Authentication",
+			"description": "User registration, login, password reset, and profile management",
+			"item": [
+				{
+					"name": "Register New User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"john.doe@example.com\",\n    \"password\": \"password123\",\n    \"phone\": \"1234567890\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						},
+						"description": "Register a new user account. Returns user details and JWT token."
+					}
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 200) {",
+									"    const jsonData = pm.response.json();",
+									"    if (jsonData.token) {",
+									"        pm.collectionVariables.set('token', jsonData.token);",
+									"        console.log('✅ Token saved:', jsonData.token.substring(0, 20) + '...');",
+									"    }",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"admin@parkease.com\",\n    \"password\": \"password123\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						},
+						"description": "Login with email and password. Returns JWT token that auto-saves to collection variable."
+					}
+				},
+				{
+					"name": "Login as Admin",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 200) {",
+									"    const jsonData = pm.response.json();",
+									"    if (jsonData.token) {",
+									"        pm.collectionVariables.set('token', jsonData.token);",
+									"        console.log('✅ Admin Token saved');",
+									"    }",
+									"}"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"admin@parkease.com\",\n    \"password\": \"password123\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					}
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"john.doe@example.com\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/forgot-password",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"forgot-password"
+							]
+						},
+						"description": "Request password reset email"
+					}
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"token\": \"reset_token_here\",\n    \"newPassword\": \"newPassword123\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/reset-password",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"reset-password"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get User Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/auth/profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"profile"
+							]
+						},
+						"description": "Get current user profile information"
+					}
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"John Updated\",\n    \"phone\": \"9876543210\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"profile"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "👤 User Operations",
+			"description": "User-facing parking, reservation, and search operations",
+			"item": [
+				{
+					"name": "Get Parking Zones",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/user/zones",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"zones"
+							]
+						},
+						"description": "Get all available parking zones"
+					}
+				},
+				{
+					"name": "Get Zones by Location",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/user/zones?location=Downtown",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"zones"
+							],
+							"query": [
+								{
+									"key": "location",
+									"value": "Downtown"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Available Slots by Zone",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/user/slots?zoneId=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"slots"
+							],
+							"query": [
+								{
+									"key": "zoneId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Get all available slots for a specific parking zone"
+					}
+				},
+				{
+					"name": "Get Slots by Zone Name",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/user/zones/Central Parking/slots",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"zones",
+								"Central Parking",
+								"slots"
+							]
+						}
+					}
+				},
+				{
+					"name": "Calculate Price",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/user/price?vehicleType=HATCHBACK&hours=2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"price"
+							],
+							"query": [
+								{
+									"key": "vehicleType",
+									"value": "HATCHBACK",
+									"description": "TWO_WHEELER, HATCHBACK, SEDAN, SUV"
+								},
+								{
+									"key": "hours",
+									"value": "2"
+								}
+							]
+						},
+						"description": "Calculate parking price for specific vehicle type and duration"
+					}
+				},
+				{
+					"name": "Create Reservation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"slotId\": 1,\n    \"startTime\": \"2026-01-26T10:00:00\",\n    \"endTime\": \"2026-01-26T12:00:00\",\n    \"vehicleType\": \"HATCHBACK\",\n    \"vehicleNumber\": \"KA01AB1234\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/user/reserve",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"reserve"
+							]
+						},
+						"description": "Create a new parking reservation"
+					}
+				},
+				{
+					"name": "Get My Reservations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/user/reservations",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"reservations"
+							]
+						},
+						"description": "Get all reservations for current user"
+					}
+				},
+				{
+					"name": "Get History",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/user/history",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"history"
+							]
+						},
+						"description": "Get reservation history"
+					}
+				},
+				{
+					"name": "Cancel Reservation",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/user/cancel/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"cancel",
+								"1"
+							]
+						},
+						"description": "Cancel a reservation by ID"
+					}
+				}
+			]
+		},
+		{
+			"name": "👨‍💼 Admin - Zones",
+			"description": "Admin operations for parking zone management",
+			"item": [
+				{
+					"name": "Get All Zones (Admin)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/admin/zones",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"zones"
+							]
+						}
+					}
+				},
+				{
+					"name": "Create Parking Zone",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"North Parking\",\n    \"location\": \"North Zone\",\n    \"capacity\": 50,\n    \"isActive\": true\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/admin/zone",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"zone"
+							]
+						}
+					}
+				},
+				{
+					"name": "Update Zone",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Updated Zone Name\",\n    \"location\": \"Updated Location\",\n    \"capacity\": 60,\n    \"isActive\": true\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/admin/zones/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"zones",
+								"1"
+							]
+						}
+					}
+				},
+				{
+					"name": "Delete Zone",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/admin/zones/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"zones",
+								"1"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "👨‍💼 Admin - Slots",
+			"description": "Admin operations for parking slot management",
+			"item": [
+				{
+					"name": "Get Slots by Zone",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/admin/slots/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"slots",
+								"1"
+							]
+						},
+						"description": "Get all slots for a specific zone"
+					}
+				},
+				{
+					"name": "Create Slot",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/admin/slots/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"slots",
+								"1"
+							]
+						},
+						"description": "Create a new slot in zone (auto-generates slot number and QR code)"
+					}
+				},
+				{
+					"name": "Update Slot Status",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/admin/slots/1/status?status=AVAILABLE",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"slots",
+								"1",
+								"status"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "AVAILABLE",
+									"description": "AVAILABLE, OCCUPIED, RESERVED, MAINTENANCE"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "👨‍💼 Admin - Pricing",
+			"description": "Admin pricing management",
+			"item": [
+				{
+					"name": "Get All Prices",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/admin/pricing",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"pricing"
+							]
+						}
+					}
+				},
+				{
+					"name": "Update Price",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"vehicleType\": \"HATCHBACK\",\n    \"pricePerHour\": 60.0\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/admin/pricing/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"pricing",
+								"1"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "👨‍💼 Admin - Analytics",
+			"description": "Admin dashboard and analytics",
+			"item": [
+				{
+					"name": "Get Reports",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/admin/reports",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"reports"
+							]
+						},
+						"description": "Get comprehensive admin analytics and reports"
+					}
+				}
+			]
+		},
+		{
+			"name": "💳 Payment Integration (Main)",
+			"description": "Main payment integration endpoints",
+			"item": [
+				{
+					"name": "Initiate Payment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"reservationId\": 1,\n    \"amount\": 100.0,\n    \"paymentMode\": \"ONLINE\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/payment/initiate",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"payment",
+								"initiate"
+							]
+						}
+					}
+				},
+				{
+					"name": "Confirm Payment (Demo)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"reservationId\": 1,\n    \"amount\": 100.0,\n    \"paymentMode\": \"ONLINE\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/payment/demo",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"payment",
+								"demo"
+							]
+						}
+					}
+				},
+				{
+					"name": "Simulate Payment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"scenario\": \"success\",\n    \"amount\": 100.0\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/payment/simulate",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"payment",
+								"simulate"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "🔧 Demo Controller (Utils)",
+			"description": "Low-level demo payment utilities",
+			"item": [
+				{
+					"name": "Get Payment Mode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/payment/demo-controller/mode",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"payment",
+								"demo-controller",
+								"mode"
+							]
+						},
+						"description": "Check if demo mode is enabled"
+					}
+				},
+				{
+					"name": "Get Demo Instructions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/payment/demo-controller/instructions",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"payment",
+								"demo-controller",
+								"instructions"
+							]
+						}
+					}
+				},
+				{
+					"name": "Create Demo Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": 150.0,\n    \"description\": \"Parking Reservation Payment\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/payment/demo-controller/create-order",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"payment",
+								"demo-controller",
+								"create-order"
+							]
+						}
+					}
+				},
+				{
+					"name": "Verify Demo Payment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"orderId\": \"order_demo_12345\",\n    \"paymentId\": \"pay_demo_67890\",\n    \"signature\": \"demo_signature_abc123\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/payment/demo-controller/verify",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"payment",
+								"demo-controller",
+								"verify"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Payment Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/payment/demo-controller/status/pay_demo_12345",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"payment",
+								"demo-controller",
+								"status",
+								"pay_demo_12345"
+							]
+						}
+					}
+				},
+				{
+					"name": "Get Demo Receipt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/payment/demo-controller/receipt/pay_demo_12345?amount=150.0",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"payment",
+								"demo-controller",
+								"receipt",
+								"pay_demo_12345"
+							],
+							"query": [
+								{
+									"key": "amount",
+									"value": "150.0"
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "Simulate Payment Webhook",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"event\": \"payment.captured\",\n    \"paymentId\": \"pay_demo_12345\",\n    \"orderId\": \"order_demo_67890\",\n    \"amount\": 150.0,\n    \"status\": \"success\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/payment/demo-controller/webhook/simulate",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"payment",
+								"demo-controller",
+								"webhook",
+								"simulate"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "🏥 Health & Diagnostics",
+			"description": "System health and diagnostic endpoints",
+			"item": [
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/actuator/health",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"actuator",
+								"health"
+							]
+						}
+					}
+				},
+				{
+					"name": "API Info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/actuator/info",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"actuator",
+								"info"
+							]
+						}
+					}
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8080/api",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
