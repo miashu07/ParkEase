@@ -34,7 +34,8 @@ const DemoPayment = () => {
       }
       
       // Demo payment API call
-      const response = await fetch(`http://localhost:8080/payment/demo`, {
+      const baseUrl = import.meta.env.VITE_API_BASE_URL ? import.meta.env.VITE_API_BASE_URL.replace('/api', '') : 'http://localhost:8080';
+      const response = await fetch(`${baseUrl}/payment/demo`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
