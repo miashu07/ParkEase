@@ -18,9 +18,7 @@ public class CorsConfig {
                 config.setAllowedOrigins(Arrays.asList(
                                 "http://localhost:5173",
                                 "http://localhost:3000",
-                                "https://frontend-hcvw9qv9p-ashish-d-projects6.vercel.app",
-                                "https://frontend-kc2wukhq1-ashish-d-projects6.vercel.app",
-                                "https://frontend-three-weld-22.vercel.app",
+                                "https://parkease-a.vercel.app",
                                 "https://*.vercel.app",
                                 "https://*.onrender.com"));
 
