@@ -17,7 +17,11 @@ public class CorsConfig {
                 // Allow frontend origin
                 config.setAllowedOrigins(Arrays.asList(
                                 "http://localhost:5173",
-                                "http://localhost:3000"));
+                                "http://localhost:3000",
+                                "https://frontend-hcvw9qv9p-ashish-d-projects6.vercel.app",
+                                "https://frontend-kc2wukhq1-ashish-d-projects6.vercel.app",
+                                "https://frontend-three-weld-22.vercel.app",
+                                ".vercel.app"));
 
                 // Allow all methods
                 config.setAllowedMethods(Arrays.asList(
