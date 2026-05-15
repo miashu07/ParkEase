@@ -14,14 +14,15 @@ public class CorsConfig {
         public UrlBasedCorsConfigurationSource corsConfigurationSource() {
                 CorsConfiguration config = new CorsConfiguration();
 
-                // Allow frontend origin
+                // Allow frontend origin - use wildcard for testing
                 config.setAllowedOrigins(Arrays.asList(
                                 "http://localhost:5173",
                                 "http://localhost:3000",
                                 "https://frontend-hcvw9qv9p-ashish-d-projects6.vercel.app",
                                 "https://frontend-kc2wukhq1-ashish-d-projects6.vercel.app",
                                 "https://frontend-three-weld-22.vercel.app",
-                                ".vercel.app"));
+                                "https://*.vercel.app",
+                                "https://*.onrender.com"));
 
                 // Allow all methods
                 config.setAllowedMethods(Arrays.asList(
